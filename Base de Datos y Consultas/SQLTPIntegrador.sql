@@ -334,15 +334,15 @@ INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CAPILLA DE SITON',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CAPILLA LA ESPERANZA',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CASAS VEJAS',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CASEROS ESTE',1)
-INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CA—ADA DE CUEVAS',1)
-INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CA—ADA DEL TALA',1)
-INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CA—ADA VERDE',1)
+INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CA√ëADA DE CUEVAS',1)
+INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CA√ëADA DEL TALA',1)
+INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CA√ëADA VERDE',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CERRO PELADO',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CHARACATO',1)
-INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CHA—ARIACO',1)
+INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CHA√ëARIACO',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CHIPITIN',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CHUA',1)
-INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CHURQUI CA—ADA',1)
+INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('CHURQUI CA√ëADA',1)
 INSERT INTO LOCALIDADES (localidad, cod_provincia) VALUES('COLAZO',1)
 
 
@@ -420,19 +420,19 @@ select * from sucursales
 	Insert into sucursales values(4,950,'Avellaneda')
 	Insert into sucursales values(7,523,'Manuel Belgrano')
 	Insert into sucursales values(1,486,'Montevideo')
-	Insert into sucursales values(13,700,'Chacabuco')
+	Insert into sucursales values(12,700,'Chacabuco')
 
 select * from empleados
 
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('AYEL…N','ALLENDE','25 de Mayo',915,5,'22/11/1989',1,34587842,2,3,5);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('AYEL√âN','ALLENDE','25 de Mayo',915,5,'22/11/1989',1,34587842,2,3,5);
 	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('MARIELA','LUPO','Gral.Alvear',297,1,'15/3/1979',1,28578412,2,1,2);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('MARTÕN','TORRES','Santa Rosa',153,1,'11/11/1988',1,33645785,1,3,2);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('MART√çN','TORRES','Santa Rosa',153,1,'11/11/1988',1,33645785,1,3,2);
 	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('FLORENCIA','LUQUE','Ricchieri',3226,4,'05/03/1986',1,32957187,2,1,4);
 	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('JUAN','RODRIGUEZ','La Rioja',2401,6,'06/3/1975',1,2784124,1,3,5);
 	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('MARCOS','CARRIZO','Colombres',976,8,'25/01/1979',1,29304215,1,2,1);
 	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('LETICIA','MIRANDA','Obispo Clara',380,8,'30/07/1983',1,30547812,2,1,1);
 	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('SILVIA','JUAREZ','Murcia',1884,11,'27/12/1984',1,30997245,2,3,3);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('ESTEBAN','PEREZ','M·laga',1891,11,'14/08/1985',1,31547124,1,2,2);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('ESTEBAN','PEREZ','M√°laga',1891,11,'14/08/1985',1,31547124,1,2,2);
 	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('SEBASTIAN','LEDESMA','Ovidio Lagos',78,5,'09/02/1985',1,31247847,1,2,4);
 
 
@@ -527,7 +527,7 @@ select * from sucursales_suministros
 -- Consultas
 
 --Noe
---1) Totales y promedio de facturaciÛn mensual con filtros (rango de fechas, tipo de suministros, autorizados o no por obra social)
+--1) Totales y promedio de facturaci√≥n mensual con filtros (rango de fechas, tipo de suministros, autorizados o no por obra social)
 create PROC pa_total_facturacion
 	@fecha_desde datetime = null,
 	@fecha_hasta datetime = null,
@@ -536,7 +536,7 @@ create PROC pa_total_facturacion
 AS
 begin
 SELECT month (f.fecha) 'Mes',
-       year (f.fecha) 'AÒo',
+       year (f.fecha) 'A√±o',
        s.nombre 'Suministro',
        t.tipo 'Tipo de suministro',
        sum (d.cantidad*d.precio_unitario)'Total de facturacion',
@@ -565,13 +565,13 @@ begin
 	group by o.nombre
 end
 
--- Cantidad de clientes por mes en cierto aÒo pasado por parametro y promedio de gastos en cada mes x cliente
+-- Cantidad de clientes por mes en cierto a√±o pasado por parametro y promedio de gastos en cada mes x cliente
 create proc pa_clientes_mes
 	@anio int
 as
 begin
 	select	MONTH(fecha) Mes, 
-			year(fecha) AÒo, 
+			year(fecha) A√±o, 
 			count(c.id_cliente) Cantidad, 
 			sum(df.precio_unitario*cantidad-(df.precio_unitario*cantidad*descuento)) / count(c.id_cliente) 'Promedio Gastos'
 	from facturas f join clientes c on f.id_cliente = c.id_cliente
@@ -637,7 +637,7 @@ end
 -- Facu
 
 --SE QUIERE SABER LA CANTIDAD DE FACTURAS, LA FACTURACION TOTAL, LA FECHA DE LA PRIMER Y ULTIMA FACTURA POR EMPLEADO
---Y CLIENTE, PARA LAS FACTURAS DE ESTE A—O QUE OSCILEN ENTRE LOS CODIGOS 10 Y 100
+--Y CLIENTE, PARA LAS FACTURAS DE ESTE A√ëO QUE OSCILEN ENTRE LOS CODIGOS 10 Y 100
 --ORDENE POR VENDEDOR,CANTIDAD DE VENTAS EN FORMA DESCENDENTE Y CLIENTE.
 SELECT	E.NOMBRE+' '+E.APELLIDO EMPLEADO, C.NOMBRE+' '+C.APELLIDO CLIENTE,
 		COUNT (F.id_factura) CANTIDAD, 
@@ -654,7 +654,7 @@ ORDER BY 1, 3 DESC, 2
 --SE DESEA OBTENER UN LISTADO ORDENADO ALFABETICAMENTE POR APELLIDO Y NOMBRE
 --DONDE SE MUESTREN PRIMERO LOS EMPLEADOS Y LUEGO LOS CLIENTES, MOSTRANDO TAMBIEN EL BARRIO
 --DE LOS CLIENTES QUE COMIENCEN CON NUMEROS DE AFILIADO CONOCIDOS Y LOS VENDEDORES
---QUE TUVIERON VENTAS EN EL PRESENTE A—O
+--QUE TUVIERON VENTAS EN EL PRESENTE A√ëO
 --ORDENAR POR NOMBRE COMPLETO 
 SELECT C.id_cliente AS CODIGO, C.NOMBRE+' '+C.APELLIDO CLIENTE,
        B.BARRIO, 'CLIENTE' AS TIPO
@@ -694,21 +694,21 @@ HAVING SUM (df.precio_unitario*df.descuento) > (SELECT    sum(det.precio_unitari
                     WHERE su.venta_libre = 0)
 
 
--- Emitir un listado con los datos de los mÈdicos que no registran ninguna receta desde un aÒo en particular que se ingresar· por par·metro.
+-- Emitir un listado con los datos de los m√©dicos que no registran ninguna receta desde un a√±o en particular que se ingresar√° por par√°metro.
 
 
-create proc PA_Medico_AÒo
-	@aÒo int 
+create proc PA_Medico_A√±o
+	@a√±o int 
 as
 	select    m.id_medico 'Id Medico',
-			m.nombre + SPACE(2) + m.apellido 'Nombre MÈdico'
+			m.nombre + SPACE(2) + m.apellido 'Nombre M√©dico'
 	from    medicos m JOIN recetas r ON m.id_medico = r.id_medico
 	where    r.id_medico not in (SELECT re.id_medico
 								 FROM recetas re
-								 WHERE datediff(year,re.fecha,getdate()) <= @aÒo)
+								 WHERE datediff(year,re.fecha,getdate()) <= @a√±o)
 
                         
-exec PA_Medico_AÒo @aÒo = 2019
+exec PA_Medico_A√±o @a√±o = 2019
 
 
 
