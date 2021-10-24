@@ -1,0 +1,26 @@
+--1) Totales y promedio de facturación mensual con filtros (rango de fechas, tipo de suministros, autorizados por obra social)
+CREATE PROC pa_total_facturacion
+	@fecha_desde datetime = null,
+	@fecha_hasta datetime = null,
+	@tipo varchar (50)= '%'
+AS
+begin
+SELECT month (f.fecha) 'Mes',
+       year (f.fecha) 'Año',
+       s.nombre 'Suministro',
+       t.tipo 'Tipo de suministro',
+       sum (d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*descuento))'Total de facturacion',
+       sum(d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*descuento)) / count(f.id_factura) 'Promedio de facturacion'
+     FROM facturas f join detalles_factura d
+     ON f.id_factura = d.id_factura
+      join suministros s on s.codigo_barra=d.codigo_barra
+      join tipos_suministro t on t.id_tipo_suministro=s.id_tipo_suministro
+      join detalles_receta dr on dr.codigo_barra=s.codigo_barra
+     WHERE f.fecha between @fecha_desde and @fecha_hasta
+      and t.tipo like '%'+@tipo+'%'
+      and cod_aprobacion is not null
+     GROUP BY month (f.fecha), year (f.fecha), s.nombre,t.tipo
+     ORDER BY 2,1
+end
+
+exec pa_total_facturacion '1/1/2021','31/12/2021','Paracetamol'
