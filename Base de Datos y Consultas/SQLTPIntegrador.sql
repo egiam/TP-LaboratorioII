@@ -512,8 +512,6 @@ select * from detalles_factura
 	Insert into detalles_factura values(3,250,1,0.1,0,2)
 
 select * from recetas
-
-
 select * from detalles_receta
 
 
@@ -573,7 +571,7 @@ begin
 	select	MONTH(fecha) Mes, 
 			year(fecha) Año, 
 			count(c.id_cliente) Cantidad, 
-			sum(df.precio_unitario*cantidad-(df.precio_unitario*cantidad*descuento)) / count(c.id_cliente) 'Promedio Gastos'
+			sum(df.precio_unitario*cantidad*descuento) / count(c.id_cliente) 'Promedio Gastos'
 	from facturas f join clientes c on f.id_cliente = c.id_cliente
 					join detalles_factura df on f.id_factura = df.id_factura
 	where year(fecha) = @anio
