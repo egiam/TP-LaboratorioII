@@ -420,7 +420,7 @@ select * from sucursales
 	Insert into sucursales values(4,950,'Avellaneda')
 	Insert into sucursales values(7,523,'Manuel Belgrano')
 	Insert into sucursales values(1,486,'Montevideo')
-	Insert into sucursales values(12,700,'Chacabuco')
+	Insert into sucursales values(13,700,'Chacabuco')
 
 select * from empleados
 
