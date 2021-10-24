@@ -493,6 +493,7 @@ select * from suministros
 	Insert into suministros values('Ibuprofeno','Walgreens, de 200 mg. Comprimido.',1,299.99,2,20,50)
 	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,3,10,30)
 
+
 select * from detalles_entregas
 
 	Insert into detalles_entregas values(1,1,20)
@@ -508,15 +509,31 @@ select * from facturas
 select * from detalles_factura
 
 	Insert into detalles_factura values(1,150,2,0.05,0,1)
+	Insert into detalles_factura values(1,150,3,0.04,0,1)
+	Insert into detalles_factura values(1,150,5,0.06,0,1)
+	Insert into detalles_factura values(1,150,1,0.09,0,1)
 	Insert into detalles_factura values(2,200,4,0.07,1,3)
 	Insert into detalles_factura values(3,250,1,0.1,0,2)
 
 select * from recetas
+
+	Insert into recetas values(1,2,'Dolor del Cuerpo','15/10/2021',1)
+	Insert into recetas values(2,3,'Dolor de Cabeza','16/10/2021',2)
+	Insert into recetas values(3,5,'Dolor de Panza','18/10/2021',3)
+
 select * from detalles_receta
 
-
+	Insert into detalles_receta values(1,1,2,1)
+	Insert into detalles_receta values(1,1,4,1)
+	Insert into detalles_receta values(1,1,5,1)
+	Insert into detalles_receta values(1,1,1,1)
+	Insert into detalles_receta values(2,2,2,2)
+	Insert into detalles_receta values(3,3,1,3)
 
 select * from descuentos
+
+	Insert into descuentos values()
+
 select * from sucursales_suministros
 
 
@@ -526,7 +543,7 @@ select * from sucursales_suministros
 
 --Noe
 --1) Totales y promedio de facturación mensual con filtros (rango de fechas, tipo de suministros, autorizados o no por obra social)
-create PROC pa_total_facturacion
+alter PROC pa_total_facturacion
 	@fecha_desde datetime = null,
 	@fecha_hasta datetime = null,
 	@tipo varchar (50)= '%',
@@ -537,8 +554,8 @@ SELECT month (f.fecha) 'Mes',
        year (f.fecha) 'Año',
        s.nombre 'Suministro',
        t.tipo 'Tipo de suministro',
-       sum (d.cantidad*d.precio_unitario)'Total de facturacion',
-       avg (d.cantidad*d.precio_unitario) 'Promedio de facturacion'
+       sum (d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*descuento))'Total de facturacion',
+       sum(d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*descuento)) / count(f.id_factura) 'Promedio de facturacion'
      FROM facturas f join detalles_factura d
      ON f.id_factura = d.id_factura
       join suministros s on s.codigo_barra=d.codigo_barra
@@ -550,6 +567,8 @@ SELECT month (f.fecha) 'Mes',
      GROUP BY month (f.fecha), year (f.fecha), s.nombre,t.tipo
      ORDER BY 2,1
 end
+
+exec pa_total_facturacion '1/1/2021','31/12/2021','Paracetamol',1
 
 
 --Eze
@@ -564,19 +583,21 @@ begin
 end
 
 -- Cantidad de clientes por mes en cierto año pasado por parametro y promedio de gastos en cada mes x cliente
-create proc pa_clientes_mes
+alter proc pa_clientes_mes
 	@anio int
 as
 begin
 	select	MONTH(fecha) Mes, 
 			year(fecha) Año, 
 			count(c.id_cliente) Cantidad, 
-			sum(df.precio_unitario*cantidad*descuento) / count(c.id_cliente) 'Promedio Gastos'
+			sum(df.precio_unitario*cantidad-(df.precio_unitario*cantidad*descuento)) / count(c.id_cliente) 'Promedio Gastos'
 	from facturas f join clientes c on f.id_cliente = c.id_cliente
 					join detalles_factura df on f.id_factura = df.id_factura
 	where year(fecha) = @anio
 	group by year(fecha), month(fecha)
 end
+
+exec pa_clientes_mes 2021
 
 
 -- Suministros mas solicitadas, y verificar el stock total de cada uno
@@ -707,6 +728,11 @@ as
 
                         
 exec PA_Medico_Año @año = 2019
+
+
+
+
+
 
 
 
