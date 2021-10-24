@@ -24,3 +24,34 @@ SELECT month (f.fecha) 'Mes',
 end
 
 exec pa_total_facturacion '1/1/2021','31/12/2021','Paracetamol'
+
+--2) Cantidad de clientes por mes, en cierto año, pasado por parametro y promedio de gastos
+create proc pa_clientes_mes
+    @anio int
+as
+begin
+    select  month(fecha) 'Mes',
+            year(fecha) 'Año',
+            count(f.id_cliente) 'Cantidad',
+            sum(df.precio_unitario*cantidad*(1-descuento)) / count(f.id_cliente) 'Promedio Gastos'
+    from facturas f join clientes c on f.id_cliente = c.id_cliente
+                    join detalles_factura df on f.id_factura = df.id_factura
+    where year(fecha) = @anio
+    group by month(fecha), year(fecha)
+end
+exec pa_clientes_mes 2021
+
+--3) SE QUIERE SABER LA CANTIDAD DE FACTURAS, LA FACTURACION TOTAL, LA FECHA DE LA PRIMER Y ULTIMA FACTURA POR EMPLEADO
+--Y CLIENTE, PARA LAS FACTURAS DE ESTE AÑO QUE OSCILEN ENTRE LOS CODIGOS 1 Y 10
+--ORDENE POR VENDEDOR,CANTIDAD DE VENTAS EN FORMA DESCENDENTE Y CLIENTE.
+SELECT  E.NOMBRE+' '+E.APELLIDO 'EMPLEADO', C.NOMBRE+' '+C.APELLIDO 'CLIENTE',
+        COUNT (F.id_factura) 'CANTIDAD',
+        format(SUM(CANTIDAD*PRECIO_UNITARIO),'c2','es-Ar') 'TOTAL' ,
+         format(MIN(F.FECHA),'dd/MM/yyyy') 'PRIMERA',
+       format(MAX(F.FECHA),'dd/MM/yyyy') 'ULTIMA'
+FROM EMPLEADOS E JOIN FACTURAS F ON E.id_empleado=F.id_empleado
+                      JOIN detalles_factura DF ON DF.id_factura=F.id_factura
+                      JOIN CLIENTES C ON C.id_cliente=F.id_cliente
+WHERE YEAR(FECHA)=YEAR(GETDATE()) AND F.id_factura BETWEEN 1 AND 10
+GROUP BY E.NOMBRE+' '+E.APELLIDO, C.NOMBRE+' '+C.APELLIDO
+ORDER BY 1, 3 DESC, 2
