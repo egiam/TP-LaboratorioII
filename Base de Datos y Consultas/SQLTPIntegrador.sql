@@ -96,7 +96,8 @@ create table clientes
 	References planes(id_plan),
 	fecha_nac datetime,
 	id_tipo_sexo int foreign key
-	References sexos(id_tipo_sexo)
+	References sexos(id_tipo_sexo),
+	nro_afiliado int
 )
 
 create table tipo_contactos
@@ -151,6 +152,7 @@ create table contactos
 	References sucursales(id_sucursal)
 )
 
+--Muchos a muchos entre sucursales y contactos
 --create table sucursal_contacto
 --(
 --	id_sucursal_contacto int identity(1,1) primary key,
@@ -357,82 +359,360 @@ INSERT INTO BARRIOS(barrio, cod_localidad) VALUES ('SAN VICENTE',1)
 INSERT INTO BARRIOS(barrio, cod_localidad) VALUES ('JUNIOR',1)
 INSERT INTO BARRIOS(barrio, cod_localidad) VALUES ('MAIPU',1)
 INSERT INTO BARRIOS(barrio, cod_localidad) VALUES ('PANAMERICANO',1)
+Insert into barrios(barrio, cod_localidad) values ('Nva Cba',1)
 
---tipos contactos
-INSERT INTO tipo_contactos(tipo_contacto) values('Celular')
-INSERT INTO tipo_contactos(tipo_contacto) values('E-mail')
-INSERT INTO tipo_contactos(tipo_contacto) values('Instagram')
-INSERT INTO tipo_contactos(tipo_contacto) values('Twitter')
-INSERT INTO tipo_contactos(tipo_contacto) values('Linkedin')
-INSERT INTO tipo_contactos(tipo_contacto) values('Facebook')
-INSERT INTO tipo_contactos(tipo_contacto) values('Fijo')
-
-
---Clientes  --LE FALTA DATOS
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('ALONSO','CLAUDIO', 'Sarmiento', 1200, 3, 4433223, 2);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('ALVAREZ','MARCELO', 'San Juan', 550, 7, 2112122, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('ALVAREZ','CRISTINA', 'San Roque', 425, 9, 22121112, 3);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('ALVAREZ','CLAUDIO', 'Roure', 900, 4, 987654, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('CAMPOS','RAUL', 'San Martin', 850, 7, 3456234, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('DURAN','CARLA', 'Belgrano', 850,3, 3467834, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('PEREZ','MARIA', 'Monserrat', 850,6, 148625, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('ZAMORA','CARLOS LUIS', 'Manantiales', 850,7, 4865565, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('PEREZ','ANA', 'Avellaneda', 850,1, 8462451, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('PEREA','LUIS M.', 'Don Bosco', 850,6, 75625855, 1);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('PONCE','CARMELO', 'Colon', 850,4, 234565432, 2);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('GALES','JULIA', 'Colon', 850,4, 74565545, 2);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('SUAREZ','PAOLA', 'Colon', 850,4, 85555455, 3);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('MARANINI','JOSE', 'Colon', 850,4, 238955432, 2);
-INSERT INTO CLIENTES (apellido,nombre,calle,nro_calle,cod_barrio,nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo) VALUES ('FONCECA','BERTA', 'Alverdi', 850,2, 4785565, 3);
-
-
---contactos --FALTAN DATOS
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('154784247',1,15,null);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('lupom@gmail.com',2,null,2);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('@cris.alvarez',3,9,null);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('@m.alvarez',4,2,null);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('158479254',1,null,5);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('j.gales@hotmail.com',2,12,null);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('4579821',7,null,7);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('155248475',1,null,3);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('rcampos@gmail.com',2,5,null);
-insert into contactos (contacto,id_tipo_contacto,id_cliente,id_empleado,id_empresas_log,id_sucursal) values('156123421',1,null,8);
-
-
-
---facturas
 
 set dateformat dmy
 
-insert into facturas(fecha,id_cliente,id_empleado) values('16/12/2018',7,1)
-insert into facturas(fecha,id_cliente,id_empleado) values('26/06/2020',6,2)
-insert into facturas(fecha,id_cliente,id_empleado) values('18/02/2021',5,1)
-insert into facturas(fecha,id_cliente,id_empleado) values('13/09/2015',4,2)
-insert into facturas(fecha,id_cliente,id_empleado) values('19/03/2019',3,1)
-insert into facturas(fecha,id_cliente,id_empleado) values('09/10/2020',2,2)
-insert into facturas(fecha,id_cliente,id_empleado) values('03/10/2021',1,1)
-insert into facturas(fecha,id_cliente,id_empleado) values('29/07/2015',4,2)
-insert into facturas(fecha,id_cliente,id_empleado) values('07/08/2016',1,1)
-insert into facturas(fecha,id_cliente,id_empleado) values('31/12/2020',7,2)
+
+--Selects
+
+select * from provincias
+select * from localidades
+select * from barrios
+select * from obras_sociales
+
+	Insert into obras_sociales values('Amicos')
+	Insert into obras_sociales values('PAMI')
+	Insert into obras_sociales values('Juancimes')
+	Insert into obras_sociales values('Fabiola')
+
+select * from planes
+
+	Insert into planes values('Familiar',1)
+	Insert into planes values('Individual',2)
+	Insert into planes values('Duo',3)
+	Insert into planes values('VIP',4)
+
+select * from tipo_contactos
+
+	INSERT INTO tipo_contactos(tipo_contacto) values('Celular')
+	INSERT INTO tipo_contactos(tipo_contacto) values('E-mail')
+	INSERT INTO tipo_contactos(tipo_contacto) values('Instagram')
+	INSERT INTO tipo_contactos(tipo_contacto) values('Twitter')
+	INSERT INTO tipo_contactos(tipo_contacto) values('Linkedin')
+	INSERT INTO tipo_contactos(tipo_contacto) values('Facebook')
+	INSERT INTO tipo_contactos(tipo_contacto) values('Fijo')
+
+select * from Sexos
+
+	Insert into Sexos values('Masculino')
+	Insert into Sexos values('Femenino')
+	Insert into Sexos values('Otro')
+
+select * from empresas_logistica
+
+	Insert into empresas_logistica values('Marques y Asociados', 9, 1502, 'Alberdi')
+	Insert into empresas_logistica values('Falabella',4, 2500, 'Mendoza')
+	Insert into empresas_logistica values('Coniferal', 5, 3500, 'Don Bosco')
+
+select * from tipos_documento
+
+	Insert into tipos_documento values('DNI')
+	Insert into tipos_documento values('Cedula Federal')
+	Insert into tipos_documento values('Pasaporte')
+	Insert into tipos_documento values('Pasaporte Extranjero')
+	Insert into tipos_documento values('Libreta de Enrrolamiento')
+
+select * from sucursales
+
+	Insert into sucursales values(2,1200,'Mancuerdi')
+	Insert into sucursales values(4,950,'Avellaneda')
+	Insert into sucursales values(7,523,'Manuel Belgrano')
+	Insert into sucursales values(1,486,'Montevideo')
+	Insert into sucursales values(13,700,'Chacabuco')
+
+select * from empleados
+
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('AYELÉN','ALLENDE','25 de Mayo',915,5,'22/11/1989',1,34587842,2,3,5);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('MARIELA','LUPO','Gral.Alvear',297,1,'15/3/1979',1,28578412,2,1,2);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('MARTÍN','TORRES','Santa Rosa',153,1,'11/11/1988',1,33645785,1,3,2);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('FLORENCIA','LUQUE','Ricchieri',3226,4,'05/03/1986',1,32957187,2,1,4);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('JUAN','RODRIGUEZ','La Rioja',2401,6,'06/3/1975',1,2784124,1,3,5);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('MARCOS','CARRIZO','Colombres',976,8,'25/01/1979',1,29304215,1,2,1);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('LETICIA','MIRANDA','Obispo Clara',380,8,'30/07/1983',1,30547812,2,1,1);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('SILVIA','JUAREZ','Murcia',1884,11,'27/12/1984',1,30997245,2,3,3);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('ESTEBAN','PEREZ','Málaga',1891,11,'14/08/1985',1,31547124,1,2,2);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('SEBASTIAN','LEDESMA','Ovidio Lagos',78,5,'09/02/1985',1,31247847,1,2,4);
 
 
---detalles
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(2,1,5480.00,30)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(3,2,3590.00,23)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(4,3,10980.00,3)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(5,4,1580.00,4)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(6,5,2290.00,45)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(7,6,4500.00,2)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(8,7,12570.00,1)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(9,8,15740.00,22)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(10,9,7250.00,11)
-insert into detalles_factura(id_factura,codigo_barra,precio_unitario,cantidad,descuento,reembolsado) values(1,10,6780.00,12)
+select * from clientes
 
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('ALONSO','CLAUDIO', 'Sarmiento', 1200, 3, 4433223, 2,1,'11/12/1996',1,45);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('ALVAREZ','MARCELO', 'San Juan', 550, 7, 2112122, 1, 4,'10/11/2000',1,10);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('ALVAREZ','CRISTINA', 'San Roque', 425, 9, 22121112, 3, 2,'25/11/1976',2,52);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('ALVAREZ','CLAUDIO', 'Roure', 900, 4, 987654, 1, 3,'25/2/1979',1,25);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('CAMPOS','RAUL', 'San Martin', 850, 7, 3456234, 1, 1,'15/2/1996',1,13);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('DURAN','CARLA', 'Belgrano', 850,3, 3467834, 1, 2,'15/5/1976',2,31);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('PEREZ','MARIA', 'Monserrat', 850,6, 148625, 1, 3,'5/9/1983',2,14);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('ZAMORA','CARLOS LUIS', 'Manantiales', 850,7, 4865565, 1, 4,'25/1/1989',1,41);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('PEREZ','ANA', 'Avellaneda', 850,1, 8462451, 1, 1,'25/12/1981',2,45);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('PEREA','LUIS M.', 'Don Bosco', 850,6, 75625855, 1, 2,'31/12/1982',1,12);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('PONCE','CARMELO', 'Colon', 850,4, 234565432, 2, 3,'1/1/1984',1,32);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('GALES','JULIA', 'Colon', 850,4, 74565545, 2, 4,'1/2/1988',2,86);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('SUAREZ','PAOLA', 'Colon', 850,4, 85555455, 3, 2,'27/6/1985',2,98);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('MARANINI','JOSE', 'Colon', 850,4, 238955432, 2, 1,'7/8/1977',1,65);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('FONCECA','BERTA', 'Alverdi', 850,2, 4785565, 3, 4,'29/7/1999',2,54);
+
+
+select * from contactos
+
+	Insert into contactos values('alonsoC@hotmail.com',1,null,null,null,null) --contacto, id_cliente, id_empresas_log, id_tipo_contacto, id_empleado, id_sucursal
+	Insert into contactos values('marcos@hotmail.com',null,null,null,6,null)
+	Insert into contactos values('ponce@hotmail.com',11,null,null,null,null)
+	Insert into contactos values('duran@hotmail.com',6,null,null,null,null)
+	Insert into contactos values('fonceca@hotmail.com',15,null,null,null,null)
+
+
+select * from medicos
+
+	Insert into medicos values('Juan','Alfonso',555)
+	Insert into medicos values('Esteban','Vitrivich',655)
+	Insert into medicos values('Maria','Bettos',111)
+	Insert into medicos values('Monica','Gates',222)
+	Insert into medicos values('Emanuel','Garcia',331)
+
+select * from entrega_suministro
+
+	insert into entrega_suministro values('15/10/2021',2,3)
+	insert into entrega_suministro values('16/10/2021',3,4)
+	insert into entrega_suministro values('18/10/2021',8,2)
+	insert into entrega_suministro values('24/10/2021',6,1)
+
+select * from tipos_suministro
+
+	Insert into tipos_suministro values('Paracetamol')
+	Insert into tipos_suministro values('Ibuprofeno')
+	Insert into tipos_suministro values('Corticas')
+	Insert into tipos_suministro values('Dexalergin')
+	Insert into tipos_suministro values('Aspirin')
+
+select * from suministros
+
+	Insert into suministros values('Paracetamol','Tafirol, de 1 g. Comprimido.',1,199.99,1,20,50)
+	Insert into suministros values('Ibuprofeno','Walgreens, de 200 mg. Comprimido.',1,299.99,2,20,50)
+	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,3,10,30)
+
+select * from detalles_entregas
+
+	Insert into detalles_entregas values(1,1,20)
+	Insert into detalles_entregas values(2,2,20)
+	Insert into detalles_entregas values(3,3,10)
+
+select * from facturas
+
+	Insert into facturas values(2,'15/10/2021',3)
+	Insert into facturas values(4,'16/10/2021',5)
+	Insert into facturas values(1,'18/10/2021',2)
+
+select * from detalles_factura
+
+	Insert into detalles_factura values(1,150,2,0.05,0,1)
+	Insert into detalles_factura values(2,200,4,0.07,1,3)
+	Insert into detalles_factura values(3,250,1,0.1,0,2)
+
+select * from recetas
+
+
+select * from detalles_receta
+
+
+
+select * from descuentos
+select * from sucursales_suministros
 
 
 --drop database Farmaceutica
 
 -- Consultas
+
+--Noe
+--1) Totales y promedio de facturación mensual con filtros (rango de fechas, tipo de suministros, autorizados o no por obra social)
+create PROC pa_total_facturacion
+	@fecha_desde datetime = null,
+	@fecha_hasta datetime = null,
+	@tipo varchar (50)= '%',
+	@codigo int = null
+AS
+begin
+SELECT month (f.fecha) 'Mes',
+       year (f.fecha) 'Año',
+       s.nombre 'Suministro',
+       t.tipo 'Tipo de suministro',
+       sum (d.cantidad*d.precio_unitario)'Total de facturacion',
+       avg (d.cantidad*d.precio_unitario) 'Promedio de facturacion'
+     FROM facturas f join detalles_factura d
+     ON f.id_factura = d.id_factura
+      join suministros s on s.codigo_barra=d.codigo_barra
+      join tipos_suministro t on t.id_tipo_suministro=s.id_tipo_suministro
+      join detalles_receta dr on dr.codigo_barra=s.codigo_barra
+     WHERE f.fecha between @fecha_desde and @fecha_hasta
+      and s.nombre like '%'+@tipo+'%'
+      and cod_aprobacion = @codigo
+     GROUP BY month (f.fecha), year (f.fecha), s.nombre,t.tipo
+     ORDER BY 2,1
+end
+
+
+--Eze
+-- Cantidad de clientes con cierta obra social
+create proc pa_clie_Osocial
+as
+begin
+	select o.nombre 'Obra Social', count(c.id_cliente) Cantidad
+	from clientes c join planes p on c.id_plan = p.id_plan
+					join obras_sociales o on p.id_obra_social = o.id_obra_social
+	group by o.nombre
+end
+
+-- Cantidad de clientes por mes en cierto año pasado por parametro y promedio de gastos en cada mes x cliente
+create proc pa_clientes_mes
+	@anio int
+as
+begin
+	select	MONTH(fecha) Mes, 
+			year(fecha) Año, 
+			count(c.id_cliente) Cantidad, 
+			sum(df.precio_unitario*cantidad-(df.precio_unitario*cantidad*descuento)) / count(c.id_cliente) 'Promedio Gastos'
+	from facturas f join clientes c on f.id_cliente = c.id_cliente
+					join detalles_factura df on f.id_factura = df.id_factura
+	where year(fecha) = @anio
+	group by year(fecha), month(fecha)
+end
+
+
+-- Suministros mas solicitadas, y verificar el stock total de cada uno
+create proc pa_suministros_stock
+as
+begin
+	select top 10 ts.tipo Suministro, count(s.id_tipo_suministro) Cantidad, sum(stock) 'Stock total'
+	from suministros s join tipos_suministro ts on s.id_tipo_suministro = ts.id_tipo_suministro
+	group by ts.tipo
+	order by Cantidad desc	
+end
+
+
+-- Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social
+create proc pa_tiene_OS
+	@codigo int = 1
+as
+begin
+	declare @tiene int = 0
+	select @tiene = 1
+	from clientes c join planes p on c.id_cliente = p.id_plan
+	where	c.id_cliente = @codigo and
+			c.id_plan is not null
+
+	if @tiene = 1
+	begin
+		print 'Tiene obra social'
+		--exec pa_datos_OS
+		select	o.nombre 'Obra Social', p.nombre 'Nombre del plan', o.id_obra_social 'Codigo OS', p.id_plan 'Codigo Plan',
+				d.descuento*100 + '% en ' + ts.tipo as 'Descuentos en',  
+				l.localidad + ', ' + pr.provincia as 'Lugar del descuento',
+				'Desde: ' + fecha_desde + ' | Hasta: ' + fecha_hasta as 'Fechas -> Desde | Hasta'
+		from clientes c join planes p on c.id_plan = p.id_plan
+						join obras_sociales o on p.id_obra_social = o.id_obra_social
+						join descuentos d on p.id_plan = d.id_plan
+						join localidades l on d.cod_localidad = l.cod_localidad
+						join provincias pr on l.cod_provincia = pr.cod_provincia
+						join tipos_suministro ts on d.id_tipo_suministro = ts.id_tipo_suministro
+		where c.id_cliente = @codigo
+	end
+	else
+	begin
+		select 'No tiene obra social'
+	end
+end
+
+
+
+-- 
+
+
+
+
+
+
+-- Facu
+
+--SE QUIERE SABER LA CANTIDAD DE FACTURAS, LA FACTURACION TOTAL, LA FECHA DE LA PRIMER Y ULTIMA FACTURA POR EMPLEADO
+--Y CLIENTE, PARA LAS FACTURAS DE ESTE AÑO QUE OSCILEN ENTRE LOS CODIGOS 10 Y 100
+--ORDENE POR VENDEDOR,CANTIDAD DE VENTAS EN FORMA DESCENDENTE Y CLIENTE.
+SELECT	E.NOMBRE+' '+E.APELLIDO EMPLEADO, C.NOMBRE+' '+C.APELLIDO CLIENTE,
+		COUNT (F.id_factura) CANTIDAD, 
+		SUM(CANTIDAD*PRECIO_UNITARIO) TOTAL , 
+		MIN(F.FECHA) PRIMERA, 
+		MAX(F.FECHA) ULTIMA
+FROM EMPLEADOS E JOIN FACTURAS F ON E.id_empleado=F.id_empleado
+                      JOIN detalles_factura DF ON DF.id_factura=F.id_factura 
+                      JOIN CLIENTES C ON C.id_cliente=F.id_cliente
+WHERE YEAR(FECHA)=YEAR(GETDATE()) AND F.id_factura BETWEEN 10 AND 100
+GROUP BY E.NOMBRE+' '+E.APELLIDO, C.NOMBRE+' '+C.APELLIDO
+ORDER BY 1, 3 DESC, 2
+
+--SE DESEA OBTENER UN LISTADO ORDENADO ALFABETICAMENTE POR APELLIDO Y NOMBRE
+--DONDE SE MUESTREN PRIMERO LOS EMPLEADOS Y LUEGO LOS CLIENTES, MOSTRANDO TAMBIEN EL BARRIO
+--DE LOS CLIENTES QUE COMIENCEN CON NUMEROS DE AFILIADO CONOCIDOS Y LOS VENDEDORES
+--QUE TUVIERON VENTAS EN EL PRESENTE AÑO
+--ORDENAR POR NOMBRE COMPLETO 
+SELECT C.id_cliente AS CODIGO, C.NOMBRE+' '+C.APELLIDO CLIENTE,
+       B.BARRIO, 'CLIENTE' AS TIPO
+FROM CLIENTES C JOIN BARRIOS B ON B.COD_BARRIO=C.COD_BARRIO
+WHERE C.nro_afiliado is NOT NULL
+UNION
+SELECT E.id_empleado AS CODIGO, E.NOMBRE+' '+E.APELLIDO VENDEDOR, 
+       B.BARRIO, 'EMPLEADO' AS TIPO
+FROM EMPLEADOS E JOIN BARRIOS B ON B.COD_BARRIO=E.COD_BARRIO
+     JOIN FACTURAS F ON F.id_empleado = E.id_empleado
+WHERE YEAR(FECHA)=YEAR(GETDATE())
+ORDER BY 2 DESC
+
+
+-- Lauti
+
+-- Ruben
+--Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos de venta libre, por obra social en los que lo recaudado fue superior a lo recaudado en medicamentos que no sean de venta libre
+
+SELECT	ts.tipo 'Medicamento', pl.id_obra_social + ' ' + os.nombre 'Obra Social',
+		AVG (s.precio) 'Precio Promedio',
+		SUM (df.precio_unitario*d.descuento*df.cantidad*df.descuento) 'Importe Total'
+FROM Suministros s JOIN detalles_factura df ON s.codigo_barra = df.codigo_barra
+				join tipos_suministro ts on s.id_tipo_suministro = ts.id_tipo_suministro
+				JOIN Descuentos d ON ts.id_tipo_suministro = d.id_tipo_suministro
+				JOIN Planes pl ON d.id_plan = pl.id_plan
+				join obras_sociales os on pl.id_obra_social = os.id_obra_social
+
+WHERE s.venta_libre = 1
+GROUP BY pl.id_obra_social, ts.tipo, os.nombre
+
+HAVING SUM (df.precio_unitario*df.descuento) > (SELECT    sum(det.precio_unitario*des.descuento*det.cantidad*det.descuento)
+                    FROM Suministros su JOIN detalles_factura det ON su.codigo_barra = det.codigo_barra
+						join tipos_suministro tso on su.id_tipo_suministro = tso.id_tipo_suministro
+						JOIN Descuentos des ON tso.id_tipo_suministro = des.id_tipo_suministro
+						JOIN Planes pla ON des.id_plan = pla.id_plan
+                    WHERE su.venta_libre = 0)
+
+
+-- Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año en particular que se ingresará por parámetro.
+
+
+create proc PA_Medico_Año
+	@año int 
+as
+	select    m.id_medico 'Id Medico',
+			m.nombre + SPACE(2) + m.apellido 'Nombre Médico'
+	from    medicos m JOIN recetas r ON m.id_medico = r.id_medico
+	where    r.id_medico not in (SELECT re.id_medico
+								 FROM recetas re
+								 WHERE datediff(year,re.fecha,getdate()) <= @año)
+
+                        
+exec PA_Medico_Año @año = 2019
+
+
+
+
 
 
 
