@@ -1,5 +1,5 @@
 --1) Totales y promedio de facturación mensual con filtros (rango de fechas, tipo de suministros, autorizados por obra social)
-CREATE PROC pa_total_facturacion
+Create PROC pa_total_facturacion
 	@fecha_desde datetime = null,
 	@fecha_hasta datetime = null,
 	@tipo varchar (50)= '%'
@@ -9,8 +9,8 @@ SELECT month (f.fecha) 'Mes',
        year (f.fecha) 'Año',
        s.nombre 'Suministro',
        t.tipo 'Tipo de suministro',
-       sum (d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento)))'Total de facturacion',
-       sum(d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento))) / count(f.id_factura) 'Promedio de facturacion'
+       format(sum (d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento))),'c2','es-Ar')'Total de facturacion',
+       format(sum(d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento)))/ count(f.id_factura),'c2','es-Ar') 'Promedio de facturacion'
      FROM facturas f join detalles_factura d
      ON f.id_factura = d.id_factura
       join suministros s on s.codigo_barra=d.codigo_barra
@@ -33,7 +33,7 @@ begin
     select  month(fecha) 'Mes',
             year(fecha) 'Año',
             count(f.id_cliente) 'Cantidad',
-            sum(df.precio_unitario*cantidad*(1-descuento)) / count(f.id_cliente) 'Promedio Gastos'
+            format(sum(df.precio_unitario*cantidad*(1-descuento)) / count(f.id_cliente),'c2','es-Ar') 'Promedio Gastos'
     from facturas f join clientes c on f.id_cliente = c.id_cliente
                     join detalles_factura df on f.id_factura = df.id_factura
     where year(fecha) = @anio
@@ -97,8 +97,8 @@ create proc pa_med_os
 as
 begin
 	SELECT	ts.tipo 'Medicamento', str(pl.id_obra_social) + ' ' + os.nombre 'Obra Social',
-			AVG (s.precio) 'Precio Promedio',
-			SUM (df.precio_unitario*df.cantidad*(1-df.descuento)) 'Importe Total'
+			format(AVG (s.precio),'c2','es-Ar') 'Precio Promedio',
+			format(SUM (df.precio_unitario*df.cantidad*(1-df.descuento)),'c2','es-Ar') 'Importe Total'
 	FROM Suministros s JOIN detalles_factura df ON s.codigo_barra = df.codigo_barra
 					join tipos_suministro ts on s.id_tipo_suministro = ts.id_tipo_suministro
 					JOIN Descuentos d ON ts.id_tipo_suministro = d.id_tipo_suministro
@@ -153,3 +153,21 @@ begin
 	having  count(c.id_cliente)>=@min_cant_afiliados
 end
 exec pa_clie_Osocial 1
+
+--8) Listado que muestre el monto maximo, minimo y total que gasto cada cliente el mes pasado, pero solo donde
+--el importe total gastado sea menor a $10000
+alter proc pa_mes_pas
+as
+begin
+	select	c.nombre + ' ' + c.apellido Cliente, 
+			format(max(df.precio_unitario*cantidad*(1-descuento)),'c2','es-Ar') 'Monto Maximo', 
+			format(min(df.precio_unitario*cantidad*(1-descuento)),'c2','es-Ar') 'Monto Minimo',
+			format(sum(df.precio_unitario*cantidad*(1-descuento)),'c2','es-Ar') 'Monto Total'
+	from	detalles_factura df join facturas f on df.id_factura = f.id_factura
+			join clientes c on f.id_cliente = c.id_cliente
+	where datediff(month,fecha,getdate()) = 1
+	group by c.nombre + ' ' + c.apellido
+	having sum(df.precio_unitario*cantidad*(1-descuento)) < 10000
+end
+
+exec pa_mes_pas
