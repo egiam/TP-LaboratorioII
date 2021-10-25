@@ -492,6 +492,7 @@ select * from suministros
 	Insert into suministros values('Paracetamol','Tafirol, de 1 g. Comprimido.',1,199.99,1,20,50)
 	Insert into suministros values('Ibuprofeno','Walgreens, de 200 mg. Comprimido.',1,299.99,2,20,50)
 	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,3,10,30)
+	insert into suministros values('Prueba','Probando para consulta',0,299.99,4,15,20)
 
 
 select * from detalles_entregas
