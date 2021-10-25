@@ -635,9 +635,9 @@ begin
 		print 'Tiene obra social'
 		--exec pa_datos_OS
 		select	o.nombre 'Obra Social', p.nombre 'Nombre del plan', o.id_obra_social 'Codigo OS', p.id_plan 'Codigo Plan',
-				str(d.descuento*100) + '% en ' + ts.tipo as 'Descuentos en',  
+				trim(str(d.descuento*100) + '% en ' + ts.tipo) as 'Descuentos en',  
 				l.localidad + ', ' + pr.provincia as 'Lugar del descuento',
-				'Desde: ' + convert(varchar,fecha_desde,131) + ' | Hasta: ' + convert(varchar,fecha_hasta,131) as 'Fechas -> Desde | Hasta'
+				'Desde: ' + convert(varchar,format(fecha_desde,'dd/MM/yyyy'),131) + ' | Hasta: ' + convert(varchar,format(fecha_hasta,'dd/MM/yyyy'),131) as 'Fechas -> Desde | Hasta'
 		from clientes c join planes p on c.id_plan = p.id_plan
 						join obras_sociales o on p.id_obra_social = o.id_obra_social
 						join descuentos d on p.id_plan = d.id_plan
