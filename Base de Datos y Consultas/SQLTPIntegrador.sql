@@ -707,16 +707,21 @@ ORDER BY 2 DESC
 -- Lauti
 --Listado que muestre el monto maximo, minimo y total que gasto cada cliente el mes pasado, pero solo donde
 --el importe total gastado sea menor a $10000
-select	c.nombre + ' ' + c.apellido Cliente, 
-		max(df.precio_unitario*cantidad*(1-descuento)) 'Monto Maximo', 
-		min(df.precio_unitario*cantidad*(1-descuento)) 'Monto Minimo',
-		sum(df.precio_unitario*cantidad*(1-descuento)) 'Monto Total'
-from	detalles_factura df join facturas f on df.id_factura = f.id_factura
-		join clientes c on f.id_cliente = c.id_cliente
-where datediff(month,fecha,getdate()) = 1
-group by c.nombre + ' ' + c.apellido
-having sum(df.precio_unitario*cantidad*(1-descuento)) < 10000
+create proc pa_mes_pas
+as
+begin
+	select	c.nombre + ' ' + c.apellido Cliente, 
+			max(df.precio_unitario*cantidad*(1-descuento)) 'Monto Maximo', 
+			min(df.precio_unitario*cantidad*(1-descuento)) 'Monto Minimo',
+			sum(df.precio_unitario*cantidad*(1-descuento)) 'Monto Total'
+	from	detalles_factura df join facturas f on df.id_factura = f.id_factura
+			join clientes c on f.id_cliente = c.id_cliente
+	where datediff(month,fecha,getdate()) = 1
+	group by c.nombre + ' ' + c.apellido
+	having sum(df.precio_unitario*cantidad*(1-descuento)) < 10000
+end
 
+exec pa_mes_pas
 
 
 -- Ruben
