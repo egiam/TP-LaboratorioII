@@ -124,18 +124,18 @@ exec pa_med_os
 --6) Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año en particular que se ingresará por parámetro.
 
 
-alter proc PA_Medico_Año
-	@año int 
+alter proc pa_medico_año
+  @año int 
 as
-	select  m.nombre + SPACE(2) + m.apellido 'Nombre Médico', matricula 'Matricula'
---	from    medicos m JOIN recetas r ON m.id_medico = r.id_medico
-from medicos m
-	where    m.id_medico not in (SELECT re.id_medico
-								 FROM recetas re
-								 WHERE year(fecha) >= @año)
+  select  nombre + space(2) + apellido 'nombre médico', matricula 'matricula'
+     from    medicos  
+     where    id_medico not in (select re.id_medico
+  			          from recetas re
+		                        where year(fecha) >= @año)
+
+-- exec pa_medico_año @año = 2019
 
 
-exec PA_Medico_Año @año = 2019
 
 --7)Cantidades de afiliados por obra social que realizaron compras, y total de descuentos aplicados
 --filtrando aquellas obras sociales que tengan como minimo la cantidad de afiliados indicado por parametro
