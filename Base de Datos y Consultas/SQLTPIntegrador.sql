@@ -506,6 +506,7 @@ select * from facturas
 	Insert into facturas values(2,'15/10/2021',3)
 	Insert into facturas values(4,'16/10/2021',5)
 	Insert into facturas values(1,'18/10/2021',2)
+	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',2)
 
 select * from detalles_factura
 
@@ -515,6 +516,7 @@ select * from detalles_factura
 	Insert into detalles_factura values(1,150,1,0.09,0,1)
 	Insert into detalles_factura values(2,200,4,0.07,1,3)
 	Insert into detalles_factura values(3,250,1,0.1,0,2)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(4,350,1,0.1,0,2)
 
 select * from recetas
 
