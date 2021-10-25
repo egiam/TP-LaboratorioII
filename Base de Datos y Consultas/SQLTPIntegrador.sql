@@ -530,9 +530,17 @@ select * from detalles_receta
 	Insert into detalles_receta values(2,2,2,2)
 	Insert into detalles_receta values(3,3,1,3)
 
+set dateformat dmy
+
 select * from descuentos
 
-	Insert into descuentos values()
+	Insert into descuentos values(1,0.1,'1/1/2021','31/12/2021',1,1)
+	Insert into descuentos values(2,0.1,'1/1/2021','31/12/2021',2,2)
+	Insert into descuentos values(3,0.1,'1/1/2021','31/12/2021',3,3)
+	Insert into descuentos values(4,0.1,'1/1/2021','31/12/2021',4,4)
+	Insert into descuentos values(3,0.1,'1/1/2021','31/12/2021',5,3)
+	Insert into descuentos values(2,0.1,'1/1/2021','31/12/2021',6,2)
+	Insert into descuentos values(1,0.1,'1/1/2021','31/12/2021',7,1)
 
 select * from sucursales_suministros
 
@@ -612,7 +620,7 @@ end
 
 
 -- Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social
-create proc pa_tiene_OS
+alter proc pa_tiene_OS
 	@codigo int = 1
 as
 begin
@@ -627,9 +635,9 @@ begin
 		print 'Tiene obra social'
 		--exec pa_datos_OS
 		select	o.nombre 'Obra Social', p.nombre 'Nombre del plan', o.id_obra_social 'Codigo OS', p.id_plan 'Codigo Plan',
-				d.descuento*100 + '% en ' + ts.tipo as 'Descuentos en',  
+				str(d.descuento*100) + '% en ' + ts.tipo as 'Descuentos en',  
 				l.localidad + ', ' + pr.provincia as 'Lugar del descuento',
-				'Desde: ' + fecha_desde + ' | Hasta: ' + fecha_hasta as 'Fechas -> Desde | Hasta'
+				'Desde: ' + convert(varchar,fecha_desde,131) + ' | Hasta: ' + convert(varchar,fecha_hasta,131) as 'Fechas -> Desde | Hasta'
 		from clientes c join planes p on c.id_plan = p.id_plan
 						join obras_sociales o on p.id_obra_social = o.id_obra_social
 						join descuentos d on p.id_plan = d.id_plan
@@ -643,6 +651,9 @@ begin
 		select 'No tiene obra social'
 	end
 end
+
+
+exec pa_tiene_OS 1
 
 
 
@@ -716,7 +727,7 @@ HAVING SUM (df.precio_unitario*df.descuento) > (SELECT    sum(det.precio_unitari
 -- Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año en particular que se ingresará por parámetro.
 
 
-create proc PA_Medico_Año
+alter proc PA_Medico_Año
 	@año int 
 as
 	select    m.id_medico 'Id Medico',
@@ -724,9 +735,9 @@ as
 	from    medicos m JOIN recetas r ON m.id_medico = r.id_medico
 	where    r.id_medico not in (SELECT re.id_medico
 								 FROM recetas re
-								 WHERE datediff(year,re.fecha,getdate()) <= @año)
+								 WHERE year(fecha) <= @año)
 
-                        
+
 exec PA_Medico_Año @año = 2019
 
 
