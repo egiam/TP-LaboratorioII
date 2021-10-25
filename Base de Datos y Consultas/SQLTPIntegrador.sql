@@ -507,6 +507,7 @@ select * from facturas
 	Insert into facturas values(4,'16/10/2021',5)
 	Insert into facturas values(1,'18/10/2021',2)
 	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',2)
+	insert into facturas values(3,'11/9/2021',5)
 
 select * from detalles_factura
 
@@ -517,6 +518,7 @@ select * from detalles_factura
 	Insert into detalles_factura values(2,200,4,0.07,1,3)
 	Insert into detalles_factura values(3,250,1,0.1,0,2)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(4,350,1,0.1,0,2)
+	insert into detalles_factura values(4,225,4,0.2,0,2)
 
 select * from recetas
 
@@ -703,6 +705,19 @@ ORDER BY 2 DESC
 
 
 -- Lauti
+--Listado que muestre el monto maximo, minimo y total que gasto cada cliente el mes pasado, pero solo donde
+--el importe total gastado sea menor a $10000
+select	c.nombre + ' ' + c.apellido Cliente, 
+		max(df.precio_unitario*cantidad*(1-descuento)) 'Monto Maximo', 
+		min(df.precio_unitario*cantidad*(1-descuento)) 'Monto Minimo',
+		sum(df.precio_unitario*cantidad*(1-descuento)) 'Monto Total'
+from	detalles_factura df join facturas f on df.id_factura = f.id_factura
+		join clientes c on f.id_cliente = c.id_cliente
+where datediff(month,fecha,getdate()) = 1
+group by c.nombre + ' ' + c.apellido
+having sum(df.precio_unitario*cantidad*(1-descuento)) < 10000
+
+
 
 -- Ruben
 --Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos de venta libre, por obra social en los que lo recaudado fue superior a lo recaudado en medicamentos que no sean de venta libre
