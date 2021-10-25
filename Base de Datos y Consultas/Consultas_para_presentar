@@ -127,12 +127,29 @@ exec pa_med_os
 alter proc PA_Medico_Año
 	@año int 
 as
-	select    m.id_medico 'Id Medico',
-			m.nombre + SPACE(2) + m.apellido 'Nombre Médico'
-	from    medicos m JOIN recetas r ON m.id_medico = r.id_medico
-	where    r.id_medico not in (SELECT re.id_medico
+	select  m.nombre + SPACE(2) + m.apellido 'Nombre Médico', matricula 'Matricula'
+--	from    medicos m JOIN recetas r ON m.id_medico = r.id_medico
+from medicos m
+	where    m.id_medico not in (SELECT re.id_medico
 								 FROM recetas re
-								 WHERE year(fecha) <= @año)
+								 WHERE year(fecha) >= @año)
 
 
 exec PA_Medico_Año @año = 2019
+
+--7)Cantidades de afiliados por obra social que realizaron compras, y total de descuentos aplicados
+--filtrando aquellas obras sociales que tengan como minimo la cantidad de afiliados indicado por parametro
+alter proc pa_clie_Osocial
+@min_cant_afiliados int=0
+as
+begin
+    select o.nombre 'Obra Social', count(c.id_cliente) 'Cantidad de afiliados',
+	format(sum(df.descuento*precio_unitario*cantidad),'c2','es-Ar')'Descuento total aplicado'	
+    from clientes c join planes p on c.id_plan = p.id_plan
+                    join obras_sociales o on p.id_obra_social = o.id_obra_social
+					join facturas f on f.id_cliente=c.id_cliente
+					join detalles_factura df on df.id_factura=f.id_factura
+    group by o.nombre
+	having  count(c.id_cliente)>=@min_cant_afiliados
+end
+exec pa_clie_Osocial 1
