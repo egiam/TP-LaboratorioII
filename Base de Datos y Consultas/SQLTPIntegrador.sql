@@ -704,24 +704,26 @@ ORDER BY 2 DESC
 -- Ruben
 --Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos de venta libre, por obra social en los que lo recaudado fue superior a lo recaudado en medicamentos que no sean de venta libre
 
-SELECT	ts.tipo 'Medicamento', pl.id_obra_social + ' ' + os.nombre 'Obra Social',
+SELECT	ts.tipo 'Medicamento', str(pl.id_obra_social) + ' ' + os.nombre 'Obra Social',
 		AVG (s.precio) 'Precio Promedio',
-		SUM (df.precio_unitario*d.descuento*df.cantidad*df.descuento) 'Importe Total'
+		SUM (df.precio_unitario*cantidad-(df.precio_unitario*cantidad*df.descuento)) 'Importe Total'
 FROM Suministros s JOIN detalles_factura df ON s.codigo_barra = df.codigo_barra
 				join tipos_suministro ts on s.id_tipo_suministro = ts.id_tipo_suministro
 				JOIN Descuentos d ON ts.id_tipo_suministro = d.id_tipo_suministro
 				JOIN Planes pl ON d.id_plan = pl.id_plan
 				join obras_sociales os on pl.id_obra_social = os.id_obra_social
-
 WHERE s.venta_libre = 1
 GROUP BY pl.id_obra_social, ts.tipo, os.nombre
-
-HAVING SUM (df.precio_unitario*df.descuento) > (SELECT    sum(det.precio_unitario*des.descuento*det.cantidad*det.descuento)
-                    FROM Suministros su JOIN detalles_factura det ON su.codigo_barra = det.codigo_barra
-						join tipos_suministro tso on su.id_tipo_suministro = tso.id_tipo_suministro
-						JOIN Descuentos des ON tso.id_tipo_suministro = des.id_tipo_suministro
-						JOIN Planes pla ON des.id_plan = pla.id_plan
-                    WHERE su.venta_libre = 0)
+HAVING	SUM (df.precio_unitario*cantidad-(df.precio_unitario*cantidad*df.descuento)) > 
+		(SELECT sum(det.precio_unitario*cantidad-(det.precio_unitario*cantidad*det.descuento))
+         FROM Suministros su JOIN detalles_factura det ON su.codigo_barra = det.codigo_barra
+         WHERE su.venta_libre = 0
+		 group by su.codigo_barra) 
+		 or
+		 (SELECT sum(det.precio_unitario*cantidad-(det.precio_unitario*cantidad*det.descuento))
+         FROM Suministros su JOIN detalles_factura det ON su.codigo_barra = det.codigo_barra
+         WHERE su.venta_libre = 0
+		 group by su.codigo_barra) is null
 
 
 -- Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año en particular que se ingresará por parámetro.
