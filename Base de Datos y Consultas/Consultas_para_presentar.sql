@@ -1,3 +1,8 @@
+
+select cod_barrio, barrio, localidad from localidades l join barrios b on b.cod_localidad = l.cod_localidad
+
+set dateformat dmy
+
 --1) Totales y promedio de facturación mensual con filtros (rango de fechas, tipo de suministros, autorizados por obra social)
 Create PROC pa_total_facturacion
 	@fecha_desde datetime = null,
@@ -57,7 +62,7 @@ GROUP BY E.NOMBRE+' '+E.APELLIDO, C.NOMBRE+' '+C.APELLIDO
 ORDER BY 1, 3 DESC, 2
 
 --4) Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social
-alter proc pa_tiene_OS
+create proc pa_tiene_OS
 	@codigo int = 1
 as
 begin
@@ -124,7 +129,7 @@ exec pa_med_os
 --6) Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año en particular que se ingresará por parámetro.
 
 
-alter proc pa_medico_año
+create proc pa_medico_año
   @año int 
 as
   select  nombre + space(2) + apellido 'nombre médico', matricula 'matricula'
@@ -139,7 +144,7 @@ as
 
 --7)Cantidades de afiliados por obra social que realizaron compras, y total de descuentos aplicados
 --filtrando aquellas obras sociales que tengan como minimo la cantidad de afiliados indicado por parametro
-alter proc pa_clie_Osocial
+create proc pa_clie_Osocial
 @min_cant_afiliados int=0
 as
 begin
@@ -156,7 +161,7 @@ exec pa_clie_Osocial 1
 
 --8) Listado que muestre el monto maximo, minimo y total que gasto cada cliente el mes pasado, pero solo donde
 --el importe total gastado sea menor a $10000
-alter proc pa_mes_pas
+create proc pa_mes_pas
 as
 begin
 	select	c.nombre + ' ' + c.apellido Cliente, 
