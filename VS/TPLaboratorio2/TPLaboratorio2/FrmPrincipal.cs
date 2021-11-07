@@ -249,6 +249,11 @@ namespace ModernGUI_V3
             HideSubMenu();
         }
 
+        private void panelBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL

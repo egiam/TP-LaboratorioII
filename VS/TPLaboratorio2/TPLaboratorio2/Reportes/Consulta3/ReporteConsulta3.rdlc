@@ -56,55 +56,26 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="Textbox1">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Datos:</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.92828cm</Top>
-            <Left>0.55245cm</Left>
-            <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Tablix Name="Tablix1">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>4.27271cm</Width>
+                  <Width>4.81316cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.37312cm</Width>
+                  <Width>3.91357cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.52104cm</Width>
+                  <Width>2.06149cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.1825cm</Width>
+                  <Width>2.72295cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>3.04045cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>3.04045cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -501,43 +472,80 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>3.2512cm</Top>
+            <Top>7.72266cm</Top>
             <Left>0.55245cm</Left>
             <Height>1.2cm</Height>
-            <Width>16.34937cm</Width>
-            <ZIndex>1</ZIndex>
+            <Width>19.59209cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
-          <Chart Name="Sparkline3">
+          <Chart Name="Chart2">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="ChartGroup" />
-                  <Label />
+                  <Group Name="Chart2_CategoryGroup">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Empleado.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Empleado.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <Label>=Fields!Empleado.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label />
+                  <Label>Cantidad</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="EmptySeriesName">
+                <ChartSeries Name="Total">
                   <ChartDataPoints>
                     <ChartDataPoint>
-                      <ChartDataPointValues />
+                      <ChartDataPointValues>
+                        <Y>=Sum(Fields!Cantidad.Value)</Y>
+                      </ChartDataPointValues>
+                      <ChartDataLabel>
+                        <Style />
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
+                      </ChartDataLabel>
+                      <Style>
+                        <Color>SteelBlue</Color>
+                        <BackgroundGradientEndColor>Plum</BackgroundGradientEndColor>
+                      </Style>
+                      <ChartMarker>
+                        <Style />
+                      </ChartMarker>
+                      <DataElementOutput>Output</DataElementOutput>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Shape</Type>
                   <Style />
+                  <ChartEmptyPoints>
+                    <Style />
+                    <ChartMarker>
+                      <Style />
+                    </ChartMarker>
+                    <ChartDataLabel>
+                      <Style />
+                    </ChartDataLabel>
+                  </ChartEmptyPoints>
+                  <ValueAxisName>Primary</ValueAxisName>
+                  <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
                 </ChartSeries>
               </ChartSeriesCollection>
             </ChartData>
@@ -545,13 +553,13 @@
               <ChartArea Name="Default">
                 <ChartCategoryAxes>
                   <ChartAxis Name="Primary">
-                    <Visible>False</Visible>
                     <Style>
                       <Border>
                         <Color>Gainsboro</Color>
                         <Style>None</Style>
                       </Border>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Candara</FontFamily>
+                      <FontSize>9pt</FontSize>
                       <Color>#5c5c5c</Color>
                     </Style>
                     <ChartAxisTitle>
@@ -561,7 +569,6 @@
                         <Color>#5c5c5c</Color>
                       </Style>
                     </ChartAxisTitle>
-                    <Margin>False</Margin>
                     <ChartMajorGridLines>
                       <Enabled>False</Enabled>
                       <Style>
@@ -597,12 +604,13 @@
                     <CrossAt>NaN</CrossAt>
                     <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
+                    <AllowLabelRotation>Rotate45</AllowLabelRotation>
+                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
                     <ChartAxisScaleBreak>
                       <Style />
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                   <ChartAxis Name="Secondary">
-                    <Visible>False</Visible>
                     <Style>
                       <Border>
                         <Color>Gainsboro</Color>
@@ -618,7 +626,6 @@
                         <Color>#5c5c5c</Color>
                       </Style>
                     </ChartAxisTitle>
-                    <Margin>False</Margin>
                     <ChartMajorGridLines>
                       <Enabled>False</Enabled>
                       <Style>
@@ -662,7 +669,6 @@
                 </ChartCategoryAxes>
                 <ChartValueAxes>
                   <ChartAxis Name="Primary">
-                    <Visible>False</Visible>
                     <Style>
                       <Border>
                         <Color>Gainsboro</Color>
@@ -717,7 +723,6 @@
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                   <ChartAxis Name="Secondary">
-                    <Visible>False</Visible>
                     <Style>
                       <Border>
                         <Color>Gainsboro</Color>
@@ -773,12 +778,55 @@
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                 </ChartValueAxes>
+                <ChartThreeDProperties>
+                  <Enabled>true</Enabled>
+                  <Rotation>15</Rotation>
+                  <Inclination>20</Inclination>
+                  <DepthRatio>80</DepthRatio>
+                  <GapDepth>50</GapDepth>
+                  <WallThickness>4</WallThickness>
+                </ChartThreeDProperties>
                 <Style>
-                  <BackgroundColor>#00ffffff</BackgroundColor>
+                  <BackgroundColor>LightBlue</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
+                  <BackgroundGradientEndColor>LimeGreen</BackgroundGradientEndColor>
+                  <BackgroundHatchType>DashedVertical</BackgroundHatchType>
                 </Style>
               </ChartArea>
             </ChartAreas>
+            <ChartLegends>
+              <ChartLegend Name="Default">
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <Position>TopLeft</Position>
+                <ChartLegendTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </ChartLegendTitle>
+                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+              </ChartLegend>
+            </ChartLegends>
+            <ChartTitles>
+              <ChartTitle Name="Default">
+                <Caption>Cantidad de ventas por empleado</Caption>
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextAlign>Left</TextAlign>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <Color>#a6a6a6</Color>
+                </Style>
+                <Position>TopLeft</Position>
+              </ChartTitle>
+            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -796,12 +844,12 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <rd:DesignerMode>Sparkline</rd:DesignerMode>
-            <Top>0.57891cm</Top>
-            <Left>13.64933cm</Left>
-            <Height>4.405cm</Height>
-            <Width>5.54917cm</Width>
-            <ZIndex>2</ZIndex>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>0.72064cm</Top>
+            <Left>0.55245cm</Left>
+            <Height>6.45521cm</Height>
+            <Width>19.59209cm</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
