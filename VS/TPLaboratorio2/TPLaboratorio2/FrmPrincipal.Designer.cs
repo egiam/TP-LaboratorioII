@@ -63,9 +63,9 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnTablas = new System.Windows.Forms.Button();
             this.panelSubConsultas = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnConsulta5 = new System.Windows.Forms.Button();
+            this.btnConsulta4 = new System.Windows.Forms.Button();
+            this.btnConsulta3 = new System.Windows.Forms.Button();
             this.btnConsulta2 = new System.Windows.Forms.Button();
             this.btnConsulta1 = new System.Windows.Forms.Button();
             this.txtConsultas = new System.Windows.Forms.Button();
@@ -766,9 +766,9 @@
             // panelSubConsultas
             // 
             this.panelSubConsultas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
-            this.panelSubConsultas.Controls.Add(this.button5);
-            this.panelSubConsultas.Controls.Add(this.button4);
-            this.panelSubConsultas.Controls.Add(this.button3);
+            this.panelSubConsultas.Controls.Add(this.btnConsulta5);
+            this.panelSubConsultas.Controls.Add(this.btnConsulta4);
+            this.panelSubConsultas.Controls.Add(this.btnConsulta3);
             this.panelSubConsultas.Controls.Add(this.btnConsulta2);
             this.panelSubConsultas.Controls.Add(this.btnConsulta1);
             this.panelSubConsultas.Dock = System.Windows.Forms.DockStyle.Top;
@@ -777,68 +777,70 @@
             this.panelSubConsultas.Size = new System.Drawing.Size(188, 179);
             this.panelSubConsultas.TabIndex = 7;
             // 
-            // button5
+            // btnConsulta5
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 136);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(188, 34);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Consulta5";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnConsulta5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsulta5.FlatAppearance.BorderSize = 0;
+            this.btnConsulta5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnConsulta5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnConsulta5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsulta5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulta5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConsulta5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta5.Location = new System.Drawing.Point(0, 136);
+            this.btnConsulta5.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsulta5.Name = "btnConsulta5";
+            this.btnConsulta5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnConsulta5.Size = new System.Drawing.Size(188, 34);
+            this.btnConsulta5.TabIndex = 11;
+            this.btnConsulta5.Text = "Consulta5";
+            this.btnConsulta5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsulta5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnConsulta4
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 102);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(188, 34);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Consulta4";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnConsulta4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsulta4.FlatAppearance.BorderSize = 0;
+            this.btnConsulta4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnConsulta4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnConsulta4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsulta4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulta4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConsulta4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta4.Location = new System.Drawing.Point(0, 102);
+            this.btnConsulta4.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsulta4.Name = "btnConsulta4";
+            this.btnConsulta4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnConsulta4.Size = new System.Drawing.Size(188, 34);
+            this.btnConsulta4.TabIndex = 10;
+            this.btnConsulta4.Text = "Consulta4";
+            this.btnConsulta4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsulta4.UseVisualStyleBackColor = true;
+            this.btnConsulta4.Click += new System.EventHandler(this.btnConsulta4_Click);
             // 
-            // button3
+            // btnConsulta3
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 68);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(188, 34);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Consulta3";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnConsulta3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsulta3.FlatAppearance.BorderSize = 0;
+            this.btnConsulta3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnConsulta3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnConsulta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsulta3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulta3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConsulta3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta3.Location = new System.Drawing.Point(0, 68);
+            this.btnConsulta3.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsulta3.Name = "btnConsulta3";
+            this.btnConsulta3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnConsulta3.Size = new System.Drawing.Size(188, 34);
+            this.btnConsulta3.TabIndex = 9;
+            this.btnConsulta3.Text = "Consulta3";
+            this.btnConsulta3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsulta3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsulta3.UseVisualStyleBackColor = true;
+            this.btnConsulta3.Click += new System.EventHandler(this.btnConsulta3_Click);
             // 
             // btnConsulta2
             // 
@@ -1055,9 +1057,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnTablas;
         private System.Windows.Forms.Panel panelSubConsultas;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnConsulta5;
+        private System.Windows.Forms.Button btnConsulta4;
+        private System.Windows.Forms.Button btnConsulta3;
         private System.Windows.Forms.Button btnConsulta2;
         private System.Windows.Forms.Button btnConsulta1;
         private System.Windows.Forms.Button txtConsultas;
