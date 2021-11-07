@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ModernGUI_V3;
 
 namespace TPLaboratorio2
 {
@@ -16,7 +17,7 @@ namespace TPLaboratorio2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmClientes2());
+            Application.Run(new FormPrincipal());
         }
     }
 }
