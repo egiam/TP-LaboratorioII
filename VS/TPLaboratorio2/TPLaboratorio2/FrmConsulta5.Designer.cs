@@ -1,7 +1,7 @@
 ﻿
 namespace TPLaboratorio2
 {
-    partial class FrmConsulta3
+    partial class FrmConsulta5
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,29 @@ namespace TPLaboratorio2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta5));
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rpvClientes = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(391, 19);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "pero solo donde el importe total gastado sea menor a $10000";
             // 
             // label2
             // 
@@ -48,8 +61,8 @@ namespace TPLaboratorio2
             this.label2.Location = new System.Drawing.Point(359, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 26);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Consulta 3";
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Consulta 5";
             // 
             // label1
             // 
@@ -60,10 +73,10 @@ namespace TPLaboratorio2
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(607, 19);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Se quiere saber la cantidad de facturas, la facturacion total, la fecha de la pri" +
-    "mer y ultima factura ";
+            this.label1.Size = new System.Drawing.Size(578, 19);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Listado que muestre el monto máximo, mínimo y total que gastó cada cliente el mes" +
+    " pasado,";
             // 
             // groupBox1
             // 
@@ -74,13 +87,13 @@ namespace TPLaboratorio2
             this.groupBox1.Location = new System.Drawing.Point(11, 114);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(782, 392);
-            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
             // rpvClientes
             // 
             this.rpvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta3.ReporteConsulta3.rdlc";
+            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta5.ReporteConsutla5.rdlc";
             this.rpvClientes.Location = new System.Drawing.Point(3, 16);
             this.rpvClientes.Name = "rpvClientes";
             this.rpvClientes.ServerReport.BearerToken = null;
@@ -97,25 +110,10 @@ namespace TPLaboratorio2
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 11;
+            this.btnCerrar.TabIndex = 16;
             this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(557, 19);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "por empleado y cliente, para las facturas de este año que oscilen entre los codig" +
-    "os 1 y 10";
-            // 
-            // FrmConsulta3
+            // FrmConsulta5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,9 +123,9 @@ namespace TPLaboratorio2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrar);
-            this.Name = "FrmConsulta3";
-            this.Text = "Consulta 3";
-            this.Load += new System.EventHandler(this.FrmConsulta3_Load);
+            this.Name = "FrmConsulta5";
+            this.Text = "Consulta 5";
+            this.Load += new System.EventHandler(this.FrmConsulta5_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
@@ -137,11 +135,11 @@ namespace TPLaboratorio2
 
         #endregion
 
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Microsoft.Reporting.WinForms.ReportViewer rpvClientes;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.Label label3;
     }
 }

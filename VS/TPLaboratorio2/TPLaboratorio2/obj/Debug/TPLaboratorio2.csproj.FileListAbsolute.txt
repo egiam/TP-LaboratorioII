@@ -75,6 +75,7 @@ D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmProvincias.resources
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmLocalidades.resources
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmBarrios.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmLogistica.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -144,6 +145,7 @@ C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Properties.Resources.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmBarrios.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmLocalidades.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmLogistica.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmProvincias.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.csproj.GenerateResource.cache
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\RdlCompile.cache
@@ -151,5 +153,5 @@ C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.csproj.CoreCompileInputs.cache
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.exe
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.pdb
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.FrmConsulta5.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.csproj.AssemblyReference.cache
-D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmLogistica.resources

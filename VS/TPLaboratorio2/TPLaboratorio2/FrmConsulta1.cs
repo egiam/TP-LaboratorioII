@@ -45,5 +45,15 @@ namespace TPLaboratorio2
         {
             this.Close();
         }
+
+        private void lblTipoSuministro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTipoSuministro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

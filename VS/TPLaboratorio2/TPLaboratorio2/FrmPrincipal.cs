@@ -254,6 +254,14 @@ namespace ModernGUI_V3
 
         }
 
+        private void btnConsulta5_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmConsulta5>();
+            btnConsulta5.BackColor = Color.FromArgb(12, 61, 92);
+            HideSubMenu();
+
+        }
+
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL

@@ -97,7 +97,7 @@ end
 end
 --exec pa_tiene_os 1
 
---5) Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos 
+--5) Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos --NO SE USA
 --de venta libre, por obra social en los que lo recaudado fue superior a lo recaudado 
 --en medicamentos que no sean de venta libre
 create proc pa_med_os
@@ -127,36 +127,40 @@ or
 		group by su.codigo_barra) is null
 		end
 --exec pa_med_os
---6) Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año en particular que se ingresará por parámetro.
+--6) Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año --NO SE USA
+--en particular que se ingresará por parámetro.
 create proc pa_medico_año
 @año int
 as
 select nombre + space(2) + apellido 'nombre médico', matricula 'matricula'
 from medicos
 where id_medico not in (select re.id_medico
-from recetas re
-where year(fecha) >= @año)
+						from recetas re
+						where year(fecha) >= @año)
 -- exec pa_medico_año @año = 2019
 
---7) Cantidades de afiliados por obra social que realizaron compras, y total de
+--7) Cantidades de afiliados por obra social que realizaron compras, y total de --CONSULTA 4
 --descuentos aplicados filtrando aquellas obras sociales que tengan como mínimo la cantidad
 --de afiliados indicado por parámetro
-create proc pa_clie_osocial
+create or alter proc pa_clie_osocial
 @min_cant_afiliados int=0
 as
 begin
-select o.nombre 'obra social', count(c.id_cliente) 'cantidad de afiliados',
-format(sum(df.descuento*precio_unitario*cantidad),'c2','es-ar')'descuento total aplicado'
+select o.nombre 'obraSocial', count(c.id_cliente) 'cantidadAfiliados',
+format(sum(df.descuento*precio_unitario*cantidad),'c2','es-ar')'descuentoAplicado'
 from clientes c join planes p on c.id_plan = p.id_plan
 join obras_sociales o on p.id_obra_social = o.id_obra_social
 join facturas f on f.id_cliente=c.id_cliente
 join detalles_factura df on df.id_factura=f.id_factura
 group by o.nombre
 having count(c.id_cliente)>=@min_cant_afiliados
+order by 1
 end
 
 --exec pa_clie_osocial 1
---8) Listado que muestre el monto máximo, mínimo y total que gasto cada cliente el mes pasado, pero solo donde el importe total gastado sea menor a $10000
+
+--8) Listado que muestre el monto máximo, mínimo y total que gasto cada cliente el mes pasado,
+--pero solo donde el importe total gastado sea menor a $10000
 create proc pa_mes_pas
 as
 begin

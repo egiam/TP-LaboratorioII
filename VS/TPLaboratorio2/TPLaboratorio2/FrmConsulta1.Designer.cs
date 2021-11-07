@@ -112,7 +112,7 @@ namespace TPLaboratorio2
             // btnGenerar
             // 
             this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerar.Location = new System.Drawing.Point(121, 102);
+            this.btnGenerar.Location = new System.Drawing.Point(531, 135);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(155, 23);
             this.btnGenerar.TabIndex = 10;
@@ -127,28 +127,31 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTipoSuministro.AutoSize = true;
             this.lblTipoSuministro.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoSuministro.Location = new System.Drawing.Point(33, 64);
+            this.lblTipoSuministro.Location = new System.Drawing.Point(428, 56);
             this.lblTipoSuministro.Name = "lblTipoSuministro";
             this.lblTipoSuministro.Size = new System.Drawing.Size(137, 19);
             this.lblTipoSuministro.TabIndex = 8;
             this.lblTipoSuministro.Text = "Tipo de suministro:";
+            this.lblTipoSuministro.Click += new System.EventHandler(this.lblTipoSuministro_Click);
             // 
             // txtTipoSuministro
             // 
             this.txtTipoSuministro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTipoSuministro.Location = new System.Drawing.Point(176, 65);
+            this.txtTipoSuministro.Location = new System.Drawing.Point(571, 57);
             this.txtTipoSuministro.Name = "txtTipoSuministro";
             this.txtTipoSuministro.Size = new System.Drawing.Size(100, 20);
             this.txtTipoSuministro.TabIndex = 9;
+            this.txtTipoSuministro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTipoSuministro.TextChanged += new System.EventHandler(this.txtTipoSuministro_TextChanged);
             // 
             // dtpDesde
             // 
             this.dtpDesde.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpDesde.Location = new System.Drawing.Point(438, 62);
+            this.dtpDesde.Location = new System.Drawing.Point(163, 57);
             this.dtpDesde.Name = "dtpDesde";
             this.dtpDesde.Size = new System.Drawing.Size(200, 20);
             this.dtpDesde.TabIndex = 15;
@@ -158,7 +161,7 @@ namespace TPLaboratorio2
             this.dtpHasta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpHasta.Location = new System.Drawing.Point(438, 101);
+            this.dtpHasta.Location = new System.Drawing.Point(163, 96);
             this.dtpHasta.Name = "dtpHasta";
             this.dtpHasta.Size = new System.Drawing.Size(200, 20);
             this.dtpHasta.TabIndex = 16;
@@ -170,7 +173,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FechaHasta.AutoSize = true;
             this.FechaHasta.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FechaHasta.Location = new System.Drawing.Point(339, 101);
+            this.FechaHasta.Location = new System.Drawing.Point(64, 96);
             this.FechaHasta.Name = "FechaHasta";
             this.FechaHasta.Size = new System.Drawing.Size(93, 19);
             this.FechaHasta.TabIndex = 17;
@@ -183,7 +186,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFechaDesde.AutoSize = true;
             this.lblFechaDesde.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaDesde.Location = new System.Drawing.Point(339, 62);
+            this.lblFechaDesde.Location = new System.Drawing.Point(64, 57);
             this.lblFechaDesde.Name = "lblFechaDesde";
             this.lblFechaDesde.Size = new System.Drawing.Size(96, 19);
             this.lblFechaDesde.TabIndex = 18;

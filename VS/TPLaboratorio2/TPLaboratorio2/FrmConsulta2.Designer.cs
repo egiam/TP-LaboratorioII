@@ -73,6 +73,7 @@ namespace TPLaboratorio2
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(100, 20);
             this.txtAnio.TabIndex = 1;
+            this.txtAnio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnGenerar
             // 

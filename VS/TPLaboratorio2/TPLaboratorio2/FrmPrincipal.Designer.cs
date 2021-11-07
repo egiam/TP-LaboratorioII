@@ -799,6 +799,7 @@
             this.btnConsulta5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsulta5.UseVisualStyleBackColor = true;
+            this.btnConsulta5.Click += new System.EventHandler(this.btnConsulta5_Click);
             // 
             // btnConsulta4
             // 

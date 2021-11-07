@@ -84,6 +84,12 @@
     <Compile Include="FrmConsulta4.Designer.cs">
       <DependentUpon>FrmConsulta4.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsulta5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsulta5.Designer.cs">
+      <DependentUpon>FrmConsulta5.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSConsulta3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\Consulta5\DSConsulta5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSConsulta5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Tablas\FrmBarrios.cs">
       <SubType>Form</SubType>
@@ -153,6 +164,9 @@
     <EmbeddedResource Include="FrmConsulta4.resx">
       <DependentUpon>FrmConsulta4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsulta5.resx">
+      <DependentUpon>FrmConsulta5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +186,7 @@
     <EmbeddedResource Include="Reportes\Consulta4\ReporteConsulta4.rdlc" />
     <EmbeddedResource Include="Reportes\Consulta2\ReporteClientes.rdlc" />
     <EmbeddedResource Include="Reportes\Consulta3\ReporteConsulta3.rdlc" />
+    <EmbeddedResource Include="Reportes\Consulta5\ReporteConsutla5.rdlc" />
     <EmbeddedResource Include="Tablas\FrmBarrios.resx">
       <DependentUpon>FrmBarrios.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +241,17 @@
     </None>
     <None Include="Reportes\Consulta3\DSConsulta3.xss">
       <DependentUpon>DSConsulta3.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Consulta5\DSConsulta5.xsc">
+      <DependentUpon>DSConsulta5.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Consulta5\DSConsulta5.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSConsulta5.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Consulta5\DSConsulta5.xss">
+      <DependentUpon>DSConsulta5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
