@@ -44,15 +44,15 @@ group by datename(month,fecha), year(fecha)
 end
 --exec pa_clientes_mes 2021
 
---3) Se quiere saber la cantidad de facturas, la facturacion total,
+--3) Se quiere saber la cantidad de facturas, la facturacion total, --NO LA ESTOY HACIENDO
 --la fecha de la primer y ultima factura por empleado y cliente, 
 --para las facturas de este año que oscilen entre los codigos 1 y 10
 --ordenado por vendedor, cantidad de ventas en forma descendente y cliente.
-select e.nombre+' '+e.apellido 'empleado', c.nombre+' '+c.apellido 'cliente',
-count (f.id_factura) 'cantidad',
-format(sum(cantidad*precio_unitario),'c2','es-ar') 'total' ,
-format(min(f.fecha),'dd/mm/yyyy') 'primera',
-format(max(f.fecha),'dd/mm/yyyy') 'ultima'
+select e.nombre+' '+e.apellido 'Empleado', c.nombre+' '+c.apellido 'Cliente',
+count (f.id_factura) 'Cantidad',
+format(sum(cantidad*precio_unitario),'c2','es-ar') 'Total' ,
+format(min(f.fecha),'dd/mm/yyyy') 'PrimerFecha',
+format(max(f.fecha),'dd/mm/yyyy') 'UltimaFecha'
 from empleados e join facturas f on e.id_empleado=f.id_empleado
 join detalles_factura df on df.id_factura=f.id_factura
 join clientes c on c.id_cliente=f.id_cliente
@@ -60,8 +60,7 @@ where year(fecha)=year(getdate()) and f.id_factura between 1 and 10
 group by e.nombre+' '+e.apellido, c.nombre+' '+c.apellido
 order by 1, 3 desc, 2
 
---4) Verificar si el cliente tiene obra social, si tiene mostrar los datos
---de la obra social
+--4) Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social
 create proc pa_tiene_os
 @codigo int = 1
 as

@@ -1,4 +1,4 @@
-﻿namespace TPLaboratorio2.Reportes
+﻿namespace TPLaboratorio2.Reportes.Consulta2
 {
 
 

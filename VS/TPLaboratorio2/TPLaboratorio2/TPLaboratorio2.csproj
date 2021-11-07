@@ -72,6 +72,18 @@
     </Compile>
     <Compile Include="Dao\HelperDao.cs" />
     <Compile Include="Dao\Parametro.cs" />
+    <Compile Include="FrmConsulta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsulta3.Designer.cs">
+      <DependentUpon>FrmConsulta3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsulta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsulta4.Designer.cs">
+      <DependentUpon>FrmConsulta4.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,17 +98,31 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reportes\DSReportes.cs">
+    <Compile Include="Reportes\Consulta2\DSReportes.cs">
       <DependentUpon>DSReportes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\DSReportes.Designer.cs">
+    <Compile Include="Reportes\Consulta2\DSReportes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSReportes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\Consulta3\DSConsulta3.cs">
+      <DependentUpon>DSConsulta3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Consulta3\DSConsulta3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSConsulta3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FrmConsulta1.resx">
       <DependentUpon>FrmConsulta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsulta3.resx">
+      <DependentUpon>FrmConsulta3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsulta4.resx">
+      <DependentUpon>FrmConsulta4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -114,7 +140,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reportes\ReporteClientes.rdlc" />
+    <EmbeddedResource Include="Reportes\Consulta2\ReporteClientes.rdlc" />
+    <EmbeddedResource Include="Reportes\Consulta3\ReporteConsulta3.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -125,16 +152,27 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Reportes\DSReportes.xsc">
+    <None Include="Reportes\Consulta2\DSReportes.xsc">
       <DependentUpon>DSReportes.xsd</DependentUpon>
     </None>
-    <None Include="Reportes\DSReportes.xsd">
+    <None Include="Reportes\Consulta2\DSReportes.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DSReportes.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Reportes\DSReportes.xss">
+    <None Include="Reportes\Consulta2\DSReportes.xss">
       <DependentUpon>DSReportes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Consulta3\DSConsulta3.xsc">
+      <DependentUpon>DSConsulta3.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Consulta3\DSConsulta3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSConsulta3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Consulta3\DSConsulta3.xss">
+      <DependentUpon>DSConsulta3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
