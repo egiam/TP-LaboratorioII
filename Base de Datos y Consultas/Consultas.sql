@@ -159,15 +159,15 @@ end
 
 --exec pa_clie_osocial 1
 
---8) Listado que muestre el monto máximo, mínimo y total que gasto cada cliente el mes pasado,
+--8) Listado que muestre el monto máximo, mínimo y total que gastó cada cliente el mes pasado,
 --pero solo donde el importe total gastado sea menor a $10000
-create proc pa_mes_pas
+create or alter proc pa_mes_pas
 as
 begin
 select c.nombre + ' ' + c.apellido cliente,
-format(max(df.precio_unitario*cantidad*(1-descuento)),'c2','es-ar') 'monto maximo',
-format(min(df.precio_unitario*cantidad*(1-descuento)),'c2','es-ar') 'monto minimo',
-format(sum(df.precio_unitario*cantidad*(1-descuento)),'c2','es-ar') 'monto total'
+max(df.precio_unitario*cantidad*(1-descuento))'montoMaximo',
+min(df.precio_unitario*cantidad*(1-descuento)) 'montoMinimo',
+sum(df.precio_unitario*cantidad*(1-descuento)) 'montoTotal'
 from detalles_factura df join facturas f on df.id_factura = f.id_factura
 join clientes c on f.id_cliente = c.id_cliente
 where datediff(month,fecha,getdate()) = 1
