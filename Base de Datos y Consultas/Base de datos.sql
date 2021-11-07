@@ -493,6 +493,7 @@ select * from suministros
 	Insert into suministros values('Ibuprofeno','Walgreens, de 200 mg. Comprimido.',1,299.99,2,20,50)
 	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,3,10,30)
 	insert into suministros values('Prueba','Probando para consulta',0,299.99,4,15,20)
+	
 
 
 select * from detalles_entregas
@@ -510,7 +511,7 @@ select * from clientes
 	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',2)
 	insert into facturas values(3,'11/9/2021',5)
 	Insert into facturas(id_cliente, fecha, id_empleado) values(5,'19/09/2021',3)
-
+	Insert into facturas(id_cliente, fecha, id_empleado) values(7,'13/08/2021',4)
 select * from detalles_factura
 
 	Insert into detalles_factura values(1,150,2,0.05,0,1)
@@ -523,7 +524,7 @@ select * from detalles_factura
 	insert into detalles_factura values(4,225,4,0.2,0,2)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,400,2,0.1,0,2)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,1000,3,0.1,0,3)
-
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(7,500,4,0.1,0,1)
 select * from suministros
 select * from recetas
 

@@ -28,9 +28,11 @@ namespace TPLaboratorio2
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            if (true)
+            if (txtAnio.Text=="")
             {
-
+                MessageBox.Show("Debe ingresar un Año!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtAnio.Focus();
+                return;
             }
             
             SqlConnection cnn = new SqlConnection(Properties.Resources.strConexion);
