@@ -457,12 +457,13 @@ select * from clientes
 
 select * from contactos
 
-	Insert into contactos values('alonsoC@hotmail.com',1,null,null,null,null) --contacto, id_cliente, id_empresas_log, id_tipo_contacto, id_empleado, id_sucursal
-	Insert into contactos values('marcos@hotmail.com',null,null,null,6,null)
-	Insert into contactos values('ponce@hotmail.com',11,null,null,null,null)
-	Insert into contactos values('duran@hotmail.com',6,null,null,null,null)
-	Insert into contactos values('fonceca@hotmail.com',15,null,null,null,null)
+	Insert into contactos values('alonsoC@hotmail.com',1,null,2,null,null) --contacto, id_cliente, id_empresas_log, id_tipo_contacto, id_empleado, id_sucursal
+	Insert into contactos values('marcos@hotmail.com',null,null,2,6,null)
+	Insert into contactos values('ponce@hotmail.com',11,null,2,null,null)
+	Insert into contactos values('duran@hotmail.com',6,null,2,null,null)
+	Insert into contactos values('fonceca@hotmail.com',15,null,2,null,null)
 
+delete from contactos
 
 select * from medicos
 
