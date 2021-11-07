@@ -1,0 +1,10 @@
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\obj\Debug\TPLabo.csproj.AssemblyReference.cache
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\obj\Debug\ModernGUI_V3.exe
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\obj\Debug\ModernGUI_V3.pdb
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\bin\Debug\ModernGUI_V3.exe.config
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\bin\Debug\ModernGUI_V3.exe
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\bin\Debug\ModernGUI_V3.pdb
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\obj\Debug\ModernGUI_V3.FormPrincipal.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\obj\Debug\ModernGUI_V3.Properties.Resources.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\obj\Debug\TPLabo.csproj.GenerateResource.cache
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLabo\ModernGUI_V3\obj\Debug\TPLabo.csproj.CoreCompileInputs.cache
