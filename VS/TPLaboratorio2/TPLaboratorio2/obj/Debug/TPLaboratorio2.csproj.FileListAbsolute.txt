@@ -152,3 +152,4 @@ C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.exe
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.pdb
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.csproj.AssemblyReference.cache
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmLogistica.resources
