@@ -1,17 +1,14 @@
---1) Totales y promedio de facturación mensual con filtros 
---(rango de fechas, tipo de suministros, autorizados por obra social)
-create proc pa_total_facturacion
+
+--1) Totales por mes, suministro y tipo suministro.
+create or alter proc pa_total_facturacion
 @fecha_desde datetime = null,
 @fecha_hasta datetime = null,
 @tipo varchar (50)= '%'
 as
 begin
-select month (f.fecha) 'mes',
-year (f.fecha) 'año',
-s.nombre 'suministro',
-t.tipo 'tipo de suministro',
-format(sum (d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento))),'c2','es-ar')'total de facturacion',
-format(sum(d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento)))/count(f.id_factura),'c2','es-ar') 'promedio de facturacion'
+select month (f.fecha) 'Mes', year (f.fecha) 'Año', s.nombre 'Suministro', t.tipo 'Tipo de suministro',
+format(sum (d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento))),'c2','es-ar')'Total de facturacion'
+--format(sum(d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento)))/count(f.id_factura),'c2','es-ar') 'promedio de facturacion'
 from facturas f join detalles_factura d
 on f.id_factura = d.id_factura
 join suministros s on s.codigo_barra=d.codigo_barra
@@ -20,11 +17,15 @@ join detalles_receta dr on dr.codigo_barra=s.codigo_barra
 where f.fecha between @fecha_desde and @fecha_hasta
 and t.tipo like '%'+@tipo+'%'
 and cod_aprobacion is not null
-group by month (f.fecha), year (f.fecha), s.nombre,t.tipo
+group by month (f.fecha), year (f.fecha), s.nombre, t.tipo
 order by 2,1
 end
 
---exec pa_total_facturacion '1/1/2021','31/12/2021','paracetamol'
+select * from facturas f
+where month(fecha)=8
+select * from detalles_factura
+
+--exec pa_total_facturacion '1/1/2021','31/12/2021'
 
 --2) Cantidad de clientes por mes, en cierto año, pasado por parametro y promedio de gastos
 create or alter proc pa_clientes_mes

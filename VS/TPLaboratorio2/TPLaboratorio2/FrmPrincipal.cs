@@ -195,7 +195,9 @@ namespace ModernGUI_V3
 
         private void btnConsulta1_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormulario<FrmConsulta1>();
+            btnConsulta1.BackColor = Color.FromArgb(12, 61, 92);
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -205,7 +207,7 @@ namespace ModernGUI_V3
 
         private void btnConsulta2_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FrmClientes2>();
+            AbrirFormulario<FrmConsulta2>();
             btnConsulta2.BackColor = Color.FromArgb(12, 61, 92);
         }
 

@@ -59,7 +59,6 @@ C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.FrmClientes2.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Properties.Resources.resources
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.csproj.GenerateResource.cache
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\RdlCompile.cache
@@ -140,3 +139,5 @@ D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.exe
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.pdb
 C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\ModernGUI_V3.FormPrincipal.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.FrmConsulta1.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.FrmConsulta2.resources

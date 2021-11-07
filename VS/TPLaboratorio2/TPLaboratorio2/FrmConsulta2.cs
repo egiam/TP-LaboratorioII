@@ -12,9 +12,9 @@ using TPLaboratorio2.Dao;
 
 namespace TPLaboratorio2
 {
-    public partial class FrmClientes2 : Form
+    public partial class FrmConsulta2 : Form
     {
-        public FrmClientes2()
+        public FrmConsulta2()
         {
             InitializeComponent();
         }

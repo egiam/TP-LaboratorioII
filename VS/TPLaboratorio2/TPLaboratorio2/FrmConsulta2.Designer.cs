@@ -1,7 +1,7 @@
 ﻿
 namespace TPLaboratorio2
 {
-    partial class FrmClientes2
+    partial class FrmConsulta2
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace TPLaboratorio2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClientes2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta2));
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.lblAnio = new System.Windows.Forms.Label();
             this.txtAnio = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@ namespace TPLaboratorio2
             // 
             this.lblAnio.AutoSize = true;
             this.lblAnio.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnio.Location = new System.Drawing.Point(35, 47);
+            this.lblAnio.Location = new System.Drawing.Point(23, 47);
             this.lblAnio.Name = "lblAnio";
             this.lblAnio.Size = new System.Drawing.Size(40, 19);
             this.lblAnio.TabIndex = 0;
@@ -70,7 +70,8 @@ namespace TPLaboratorio2
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(215, 47);
+            this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerar.Location = new System.Drawing.Point(633, 88);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(155, 23);
             this.btnGenerar.TabIndex = 2;
@@ -115,7 +116,7 @@ namespace TPLaboratorio2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 88);
+            this.label1.Location = new System.Drawing.Point(23, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(556, 19);
             this.label1.TabIndex = 6;
@@ -132,7 +133,7 @@ namespace TPLaboratorio2
             this.label2.TabIndex = 7;
             this.label2.Text = "Consulta 2";
             // 
-            // FrmClientes2
+            // FrmConsulta2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,7 +145,7 @@ namespace TPLaboratorio2
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.txtAnio);
             this.Controls.Add(this.lblAnio);
-            this.Name = "FrmClientes2";
+            this.Name = "FrmConsulta2";
             this.Text = "Consulta 2";
             this.Load += new System.EventHandler(this.FrmClientes2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();

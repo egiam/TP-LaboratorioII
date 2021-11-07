@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmConsulta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsulta1.Designer.cs">
+      <DependentUpon>FrmConsulta1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dao\HelperDao.cs" />
     <Compile Include="Dao\Parametro.cs" />
     <Compile Include="FrmPrincipal.cs">
@@ -72,11 +78,11 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmClientes2.cs">
+    <Compile Include="FrmConsulta2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmClientes2.Designer.cs">
-      <DependentUpon>FrmClientes2.cs</DependentUpon>
+    <Compile Include="FrmConsulta2.Designer.cs">
+      <DependentUpon>FrmConsulta2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,11 +95,14 @@
       <DependentUpon>DSReportes.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FrmConsulta1.resx">
+      <DependentUpon>FrmConsulta1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmClientes2.resx">
-      <DependentUpon>FrmClientes2.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConsulta2.resx">
+      <DependentUpon>FrmConsulta2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
