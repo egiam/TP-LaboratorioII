@@ -111,11 +111,8 @@ namespace TPLaboratorio2
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerar.Location = new System.Drawing.Point(659, 106);
+            this.btnGenerar.Location = new System.Drawing.Point(121, 102);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(155, 23);
             this.btnGenerar.TabIndex = 10;

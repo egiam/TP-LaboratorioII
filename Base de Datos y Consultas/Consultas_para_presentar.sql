@@ -1,4 +1,5 @@
 
+select cod_barrio, barrio, localidad from localidades l join barrios b on b.cod_localidad = l.cod_localidad
 
 set dateformat dmy
 

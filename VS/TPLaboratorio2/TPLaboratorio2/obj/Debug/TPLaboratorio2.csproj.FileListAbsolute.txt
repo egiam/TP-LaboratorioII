@@ -146,3 +146,6 @@ D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.FrmConsulta3.resources
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.FrmConsulta4.resources
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.FrmConsulta2.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmProvincias.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmLocalidades.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmBarrios.resources

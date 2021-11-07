@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TPLaboratorio2;
+using TPLaboratorio2.Tablas;
 
 namespace ModernGUI_V3
 {
@@ -211,7 +212,8 @@ namespace ModernGUI_V3
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<FrmProvincias>();
+            HideSubMenu();
         }
 
         private void btnConsulta2_Click(object sender, EventArgs e)
@@ -232,6 +234,18 @@ namespace ModernGUI_V3
         {
             AbrirFormulario<FrmConsulta4>();
             btnConsulta4.BackColor = Color.FromArgb(12, 61, 92);
+            HideSubMenu();
+        }
+
+        private void btnLocalidades_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmLocalidades>();
+            HideSubMenu();
+        }
+
+        private void btnBarrios_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmBarrios>();
             HideSubMenu();
         }
 

@@ -56,9 +56,9 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnBarrios = new System.Windows.Forms.Button();
+            this.btnLocalidades = new System.Windows.Forms.Button();
+            this.btnProvincias = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnTablas = new System.Windows.Forms.Button();
@@ -427,9 +427,9 @@
             this.panelSubTabla1.Controls.Add(this.button12);
             this.panelSubTabla1.Controls.Add(this.button11);
             this.panelSubTabla1.Controls.Add(this.button10);
-            this.panelSubTabla1.Controls.Add(this.button9);
-            this.panelSubTabla1.Controls.Add(this.button8);
-            this.panelSubTabla1.Controls.Add(this.button7);
+            this.panelSubTabla1.Controls.Add(this.btnBarrios);
+            this.panelSubTabla1.Controls.Add(this.btnLocalidades);
+            this.panelSubTabla1.Controls.Add(this.btnProvincias);
             this.panelSubTabla1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSubTabla1.Location = new System.Drawing.Point(0, 0);
             this.panelSubTabla1.Name = "panelSubTabla1";
@@ -648,69 +648,71 @@
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnBarrios
             // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 74);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(141, 37);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "Consulta1";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnBarrios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBarrios.FlatAppearance.BorderSize = 0;
+            this.btnBarrios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnBarrios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnBarrios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarrios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarrios.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBarrios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBarrios.Location = new System.Drawing.Point(0, 74);
+            this.btnBarrios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBarrios.Name = "btnBarrios";
+            this.btnBarrios.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnBarrios.Size = new System.Drawing.Size(141, 37);
+            this.btnBarrios.TabIndex = 10;
+            this.btnBarrios.Text = "Barrios";
+            this.btnBarrios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBarrios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBarrios.UseVisualStyleBackColor = true;
+            this.btnBarrios.Click += new System.EventHandler(this.btnBarrios_Click);
             // 
-            // button8
+            // btnLocalidades
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 37);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(141, 37);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "Consulta1";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnLocalidades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLocalidades.FlatAppearance.BorderSize = 0;
+            this.btnLocalidades.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnLocalidades.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnLocalidades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocalidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocalidades.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLocalidades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLocalidades.Location = new System.Drawing.Point(0, 37);
+            this.btnLocalidades.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLocalidades.Name = "btnLocalidades";
+            this.btnLocalidades.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnLocalidades.Size = new System.Drawing.Size(141, 37);
+            this.btnLocalidades.TabIndex = 9;
+            this.btnLocalidades.Text = "Localidades";
+            this.btnLocalidades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLocalidades.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLocalidades.UseVisualStyleBackColor = true;
+            this.btnLocalidades.Click += new System.EventHandler(this.btnLocalidades_Click);
             // 
-            // button7
+            // btnProvincias
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(141, 37);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Consulta1";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnProvincias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProvincias.FlatAppearance.BorderSize = 0;
+            this.btnProvincias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnProvincias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnProvincias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProvincias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProvincias.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProvincias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProvincias.Location = new System.Drawing.Point(0, 0);
+            this.btnProvincias.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProvincias.Name = "btnProvincias";
+            this.btnProvincias.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnProvincias.Size = new System.Drawing.Size(141, 37);
+            this.btnProvincias.TabIndex = 8;
+            this.btnProvincias.Text = "Provincias";
+            this.btnProvincias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProvincias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProvincias.UseVisualStyleBackColor = true;
+            this.btnProvincias.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox1
             // 
@@ -1053,9 +1055,9 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnBarrios;
+        private System.Windows.Forms.Button btnLocalidades;
+        private System.Windows.Forms.Button btnProvincias;
         private System.Windows.Forms.Button btnTablas;
         private System.Windows.Forms.Panel panelSubConsultas;
         private System.Windows.Forms.Button btnConsulta5;
