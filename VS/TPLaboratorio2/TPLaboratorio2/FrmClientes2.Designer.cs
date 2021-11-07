@@ -55,7 +55,7 @@ namespace TPLaboratorio2
             // 
             this.lblAnio.AutoSize = true;
             this.lblAnio.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnio.Location = new System.Drawing.Point(35, 59);
+            this.lblAnio.Location = new System.Drawing.Point(35, 47);
             this.lblAnio.Name = "lblAnio";
             this.lblAnio.Size = new System.Drawing.Size(40, 19);
             this.lblAnio.TabIndex = 0;
@@ -63,14 +63,14 @@ namespace TPLaboratorio2
             // 
             // txtAnio
             // 
-            this.txtAnio.Location = new System.Drawing.Point(80, 60);
+            this.txtAnio.Location = new System.Drawing.Point(80, 48);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(100, 20);
             this.txtAnio.TabIndex = 1;
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(215, 59);
+            this.btnGenerar.Location = new System.Drawing.Point(215, 47);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(155, 23);
             this.btnGenerar.TabIndex = 2;
@@ -85,7 +85,7 @@ namespace TPLaboratorio2
             this.rpvClientes.Location = new System.Drawing.Point(3, 16);
             this.rpvClientes.Name = "rpvClientes";
             this.rpvClientes.ServerReport.BearerToken = null;
-            this.rpvClientes.Size = new System.Drawing.Size(886, 457);
+            this.rpvClientes.Size = new System.Drawing.Size(776, 373);
             this.rpvClientes.TabIndex = 3;
             // 
             // btnCerrar
@@ -93,7 +93,7 @@ namespace TPLaboratorio2
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(882, 11);
+            this.btnCerrar.Location = new System.Drawing.Point(812, 11);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
@@ -105,9 +105,9 @@ namespace TPLaboratorio2
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rpvClientes);
-            this.groupBox1.Location = new System.Drawing.Point(12, 122);
+            this.groupBox1.Location = new System.Drawing.Point(12, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(892, 476);
+            this.groupBox1.Size = new System.Drawing.Size(782, 392);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
@@ -115,7 +115,7 @@ namespace TPLaboratorio2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 100);
+            this.label1.Location = new System.Drawing.Point(26, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(556, 19);
             this.label1.TabIndex = 6;
@@ -126,7 +126,7 @@ namespace TPLaboratorio2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(387, 5);
+            this.label2.Location = new System.Drawing.Point(360, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 26);
             this.label2.TabIndex = 7;
@@ -136,7 +136,7 @@ namespace TPLaboratorio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 606);
+            this.ClientSize = new System.Drawing.Size(843, 515);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);

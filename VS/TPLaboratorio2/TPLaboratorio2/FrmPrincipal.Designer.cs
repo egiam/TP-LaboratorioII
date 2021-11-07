@@ -710,6 +710,7 @@
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox1
             // 
@@ -859,6 +860,7 @@
             this.btnConsulta2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsulta2.UseVisualStyleBackColor = true;
+            this.btnConsulta2.Click += new System.EventHandler(this.btnConsulta2_Click);
             // 
             // btnConsulta1
             // 
