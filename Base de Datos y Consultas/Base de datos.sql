@@ -502,12 +502,14 @@ select * from detalles_entregas
 	Insert into detalles_entregas values(3,3,10)
 
 select * from facturas
+select * from clientes
 
 	Insert into facturas values(2,'15/10/2021',3)
 	Insert into facturas values(4,'16/10/2021',5)
 	Insert into facturas values(1,'18/10/2021',2)
 	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',2)
 	insert into facturas values(3,'11/9/2021',5)
+	Insert into facturas(id_cliente, fecha, id_empleado) values(5,'19/09/2021',3)
 
 select * from detalles_factura
 
@@ -519,8 +521,12 @@ select * from detalles_factura
 	Insert into detalles_factura values(3,250,1,0.1,0,2)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(4,350,1,0.1,0,2)
 	insert into detalles_factura values(4,225,4,0.2,0,2)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,400,2,0.1,0,2)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,1000,3,0.1,0,3)
 
+select * from suministros
 select * from recetas
+
 
 	Insert into recetas values(1,2,'Dolor del Cuerpo','15/10/2021',1)
 	Insert into recetas values(2,3,'Dolor de Cabeza','16/10/2021',2)

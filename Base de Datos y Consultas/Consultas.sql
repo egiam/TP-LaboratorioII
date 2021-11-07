@@ -27,14 +27,15 @@ end
 --exec pa_total_facturacion '1/1/2021','31/12/2021','paracetamol'
 
 --2) Cantidad de clientes por mes, en cierto año, pasado por parametro y promedio de gastos
-create proc pa_clientes_mes
+create or alter proc pa_clientes_mes
 @anio int
 as
 begin
 select month(fecha) 'mes',
-year(fecha) 'año',
+year(fecha) 'anio',
 count(f.id_cliente) 'cantidad',
-format(sum(df.precio_unitario*cantidad*(1-descuento)) / count(f.id_cliente),'c2','es-ar') 'promedio gastos'
+format(sum(df.precio_unitario*cantidad*(1-descuento)) / count(f.id_cliente),'c2','es-ar')
+'promedio'
 from facturas f join clientes c on f.id_cliente = c.id_cliente
 join detalles_factura df on f.id_factura = df.id_factura
 where year(fecha) = @anio
@@ -132,7 +133,10 @@ where id_medico not in (select re.id_medico
 from recetas re
 where year(fecha) >= @año)
 -- exec pa_medico_año @año = 2019
---7) Cantidades de afiliados por obra social que realizaron compras, y total de descuentos aplicados filtrando aquellas obras sociales que tengan como mínimo la cantidad de afiliados indicado por parámetro
+
+--7) Cantidades de afiliados por obra social que realizaron compras, y total de
+--descuentos aplicados filtrando aquellas obras sociales que tengan como mínimo la cantidad
+--de afiliados indicado por parámetro
 create proc pa_clie_osocial
 @min_cant_afiliados int=0
 as
