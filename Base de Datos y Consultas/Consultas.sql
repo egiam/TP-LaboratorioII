@@ -44,10 +44,13 @@ group by datename(month,fecha), year(fecha)
 end
 --exec pa_clientes_mes 2021
 
---3) Se quiere saber la cantidad de facturas, la facturacion total, --NO LA ESTOY HACIENDO
+--3) Se quiere saber la cantidad de facturas, la facturacion total, 
 --la fecha de la primer y ultima factura por empleado y cliente, 
 --para las facturas de este año que oscilen entre los codigos 1 y 10
 --ordenado por vendedor, cantidad de ventas en forma descendente y cliente.
+create or alter proc pa_consulta3
+as
+begin
 select e.nombre+' '+e.apellido 'Empleado', c.nombre+' '+c.apellido 'Cliente',
 count (f.id_factura) 'Cantidad',
 format(sum(cantidad*precio_unitario),'c2','es-ar') 'Total' ,
@@ -59,8 +62,9 @@ join clientes c on c.id_cliente=f.id_cliente
 where year(fecha)=year(getdate()) and f.id_factura between 1 and 10
 group by e.nombre+' '+e.apellido, c.nombre+' '+c.apellido
 order by 1, 3 desc, 2
-
---4) Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social
+end
+exec pa_consulta3
+--4) Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social --NO SE USA
 create proc pa_tiene_os
 @codigo int = 1
 as
@@ -150,6 +154,7 @@ join detalles_factura df on df.id_factura=f.id_factura
 group by o.nombre
 having count(c.id_cliente)>=@min_cant_afiliados
 end
+
 --exec pa_clie_osocial 1
 --8) Listado que muestre el monto máximo, mínimo y total que gasto cada cliente el mes pasado, pero solo donde el importe total gastado sea menor a $10000
 create proc pa_mes_pas
