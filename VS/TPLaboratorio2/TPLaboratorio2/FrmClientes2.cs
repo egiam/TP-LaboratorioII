@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TPLaboratorio2.Dao;
 
 namespace TPLaboratorio2
 {
@@ -35,27 +36,16 @@ namespace TPLaboratorio2
                 return;
             }
             
-            SqlConnection cnn = new SqlConnection(Properties.Resources.strConexion);
+            List<Parametro> parametros = new List<Parametro>();
+            parametros.Add(new Parametro("@anio", txtAnio.Text));
+            DataTable tabla=HelperDao.GetInstance().EjecutarSP("pa_clientes_mes", parametros);
 
-         
-            SqlCommand cmd = new SqlCommand();
-            DataTable tabla = new DataTable();
-
-            cnn.Open();
-            cmd.Connection = cnn;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "pa_clientes_mes";
-
-            cmd.Parameters.AddWithValue("@anio",Convert.ToInt32(txtAnio.Text));
-
-            tabla.Load(cmd.ExecuteReader());
 
             rpvClientes.LocalReport.DataSources.Clear();
             rpvClientes.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", tabla));
 
             rpvClientes.RefreshReport();
 
-            cnn.Close();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
