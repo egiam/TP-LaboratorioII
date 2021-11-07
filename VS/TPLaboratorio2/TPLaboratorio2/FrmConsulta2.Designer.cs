@@ -82,7 +82,7 @@ namespace TPLaboratorio2
             // rpvClientes
             // 
             this.rpvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.ReporteClientes.rdlc";
+            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta2.ReporteClientes.rdlc";
             this.rpvClientes.Location = new System.Drawing.Point(3, 16);
             this.rpvClientes.Name = "rpvClientes";
             this.rpvClientes.ServerReport.BearerToken = null;
