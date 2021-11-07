@@ -52,5 +52,10 @@ namespace TPLaboratorio2
         {
             this.Close();
         }
+
+        private void rpvClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

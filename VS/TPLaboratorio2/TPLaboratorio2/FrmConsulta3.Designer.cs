@@ -36,8 +36,7 @@ namespace TPLaboratorio2
             this.rpvClientes = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnGenerar = new System.Windows.Forms.Button();
-            this.txtAnio = new System.Windows.Forms.TextBox();
-            this.lblAnio = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
@@ -60,12 +59,12 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 92);
+            this.label1.Location = new System.Drawing.Point(12, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(556, 19);
+            this.label1.Size = new System.Drawing.Size(607, 19);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Cantidad de clientes por mes, en cierto año, pasado por parametro y promedio de v" +
-    "entas";
+            this.label1.Text = "Se quiere saber la cantidad de facturas, la facturacion total, la fecha de la pri" +
+    "mer y ultima factura ";
             // 
             // groupBox1
             // 
@@ -82,7 +81,7 @@ namespace TPLaboratorio2
             // rpvClientes
             // 
             this.rpvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.ReporteClientes.rdlc";
+            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta3.ReporteConsulta3.rdlc";
             this.rpvClientes.Location = new System.Drawing.Point(3, 16);
             this.rpvClientes.Name = "rpvClientes";
             this.rpvClientes.ServerReport.BearerToken = null;
@@ -113,44 +112,36 @@ namespace TPLaboratorio2
             this.btnGenerar.TabIndex = 10;
             this.btnGenerar.Text = "Generar";
             this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
-            // txtAnio
+            // label3
             // 
-            this.txtAnio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAnio.Location = new System.Drawing.Point(79, 52);
-            this.txtAnio.Name = "txtAnio";
-            this.txtAnio.Size = new System.Drawing.Size(100, 20);
-            this.txtAnio.TabIndex = 9;
-            // 
-            // lblAnio
-            // 
-            this.lblAnio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAnio.AutoSize = true;
-            this.lblAnio.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnio.Location = new System.Drawing.Point(22, 51);
-            this.lblAnio.Name = "lblAnio";
-            this.lblAnio.Size = new System.Drawing.Size(40, 19);
-            this.lblAnio.TabIndex = 8;
-            this.lblAnio.Text = "Año:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(557, 19);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "por empleado y cliente, para las facturas de este año que oscilen entre los codig" +
+    "os 1 y 10";
             // 
             // FrmConsulta3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 515);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnGenerar);
-            this.Controls.Add(this.txtAnio);
-            this.Controls.Add(this.lblAnio);
             this.Name = "FrmConsulta3";
             this.Text = "Consulta 3";
+            this.Load += new System.EventHandler(this.FrmConsulta3_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
@@ -166,7 +157,6 @@ namespace TPLaboratorio2
         private Microsoft.Reporting.WinForms.ReportViewer rpvClientes;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Button btnGenerar;
-        private System.Windows.Forms.TextBox txtAnio;
-        private System.Windows.Forms.Label lblAnio;
+        private System.Windows.Forms.Label label3;
     }
 }
