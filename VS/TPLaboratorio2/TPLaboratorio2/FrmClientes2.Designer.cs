@@ -29,11 +29,14 @@ namespace TPLaboratorio2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClientes2));
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.lblAnio = new System.Windows.Forms.Label();
             this.txtAnio = new System.Windows.Forms.TextBox();
             this.btnGenerar = new System.Windows.Forms.Button();
             this.rpvClientes = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -79,11 +82,26 @@ namespace TPLaboratorio2
             this.rpvClientes.Size = new System.Drawing.Size(797, 375);
             this.rpvClientes.TabIndex = 3;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(769, 11);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // FrmClientes2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.rpvClientes);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.txtAnio);
@@ -91,6 +109,7 @@ namespace TPLaboratorio2
             this.Name = "FrmClientes2";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmClientes2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,6 +122,7 @@ namespace TPLaboratorio2
         private System.Windows.Forms.TextBox txtAnio;
         private System.Windows.Forms.Button btnGenerar;
         private Microsoft.Reporting.WinForms.ReportViewer rpvClientes;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }
 

@@ -57,5 +57,10 @@ namespace TPLaboratorio2
 
             cnn.Close();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
