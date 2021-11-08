@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TPLaboratorio2;
 using TPLaboratorio2.Tablas;
@@ -41,6 +36,8 @@ namespace ModernGUI_V3
                 panelSubTabla1.Visible = false;
             if (panelSubTabla2.Visible == true)
                 panelSubTabla2.Visible = false;
+            txtConsultas.BackColor = Color.FromArgb(4, 41, 68);
+            btnTablas.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void ShowSubMenu(Panel subMenu)
@@ -112,17 +109,17 @@ namespace ModernGUI_V3
             sw = this.Size.Width;
             sh = this.Size.Height;
             btnMaximizar.Visible = false;
-            btnRestaurar. Visible = true;
+            btnRestaurar.Visible = true;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            btnMaximizar.Visible = true ;
+            btnMaximizar.Visible = true;
             btnRestaurar.Visible = false;
-            this.Size = new Size(sw,sh);
-            this.Location = new Point(lx,ly);
+            this.Size = new Size(sw, sh);
+            this.Location = new Point(lx, ly);
         }
 
         private void panelBarraTitulo_MouseMove(object sender, MouseEventArgs e)
@@ -196,11 +193,19 @@ namespace ModernGUI_V3
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             ShowSubMenu(panelSubTabla2);
+            if (panelSubTabla1.Visible == true || panelSubTabla2.Visible == true)
+                btnTablas.BackColor = Color.FromArgb(22, 71, 102);
+            else
+                btnTablas.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
             ShowSubMenu(panelSubTabla1);
+            if (panelSubTabla1.Visible == true || panelSubTabla2.Visible == true)
+                btnTablas.BackColor = Color.FromArgb(22, 71, 102);
+            else
+                btnTablas.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void btnConsulta1_Click(object sender, EventArgs e)
@@ -262,10 +267,17 @@ namespace ModernGUI_V3
 
         }
 
+        private void btnLogistica_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmLogistica>();
+            HideSubMenu();
+        }
+
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new() {
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
             Form formulario;
             formulario = panelformularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
             //si el formulario/instancia no existe
@@ -279,14 +291,16 @@ namespace ModernGUI_V3
                 panelformularios.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
-                formulario.FormClosed += new FormClosedEventHandler(CloseForms );
+                formulario.FormClosed += new FormClosedEventHandler(CloseForms);
             }
             //si el formulario/instancia existe
-            else {
+            else
+            {
                 formulario.BringToFront();
             }
         }
-        private void CloseForms(object sender,FormClosedEventArgs e) {
+        private void CloseForms(object sender, FormClosedEventArgs e)
+        {
             if (Application.OpenForms["FrmConsulta1"] == null)
                 btnConsulta1.BackColor = Color.FromArgb(39, 39, 69);
             if (Application.OpenForms["FrmConsulta2"] == null)
@@ -295,6 +309,8 @@ namespace ModernGUI_V3
                 btnConsulta3.BackColor = Color.FromArgb(39, 39, 69);
             if (Application.OpenForms["FrmConsulta4"] == null)
                 btnConsulta4.BackColor = Color.FromArgb(39, 39, 69);
+            if (Application.OpenForms["FrmConsulta5"] == null)
+                btnConsulta5.BackColor = Color.FromArgb(39, 39, 69);
         }
     }
 }

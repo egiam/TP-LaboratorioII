@@ -55,7 +55,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnLogistica = new System.Windows.Forms.Button();
             this.btnBarrios = new System.Windows.Forms.Button();
             this.btnLocalidades = new System.Windows.Forms.Button();
             this.btnProvincias = new System.Windows.Forms.Button();
@@ -426,7 +426,7 @@
             this.panelSubTabla1.Controls.Add(this.button13);
             this.panelSubTabla1.Controls.Add(this.button12);
             this.panelSubTabla1.Controls.Add(this.button11);
-            this.panelSubTabla1.Controls.Add(this.button10);
+            this.panelSubTabla1.Controls.Add(this.btnLogistica);
             this.panelSubTabla1.Controls.Add(this.btnBarrios);
             this.panelSubTabla1.Controls.Add(this.btnLocalidades);
             this.panelSubTabla1.Controls.Add(this.btnProvincias);
@@ -627,26 +627,27 @@
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnLogistica
             // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(0, 111);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(141, 37);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Consulta1";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnLogistica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogistica.FlatAppearance.BorderSize = 0;
+            this.btnLogistica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnLogistica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogistica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogistica.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLogistica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogistica.Location = new System.Drawing.Point(0, 111);
+            this.btnLogistica.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogistica.Name = "btnLogistica";
+            this.btnLogistica.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnLogistica.Size = new System.Drawing.Size(141, 37);
+            this.btnLogistica.TabIndex = 11;
+            this.btnLogistica.Text = "Logistica";
+            this.btnLogistica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogistica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogistica.UseVisualStyleBackColor = true;
+            this.btnLogistica.Click += new System.EventHandler(this.btnLogistica_Click);
             // 
             // btnBarrios
             // 
@@ -1056,7 +1057,7 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnLogistica;
         private System.Windows.Forms.Button btnBarrios;
         private System.Windows.Forms.Button btnLocalidades;
         private System.Windows.Forms.Button btnProvincias;

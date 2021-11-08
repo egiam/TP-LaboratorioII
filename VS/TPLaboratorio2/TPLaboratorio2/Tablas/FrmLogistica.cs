@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TPLaboratorio2.Tablas
@@ -20,7 +14,7 @@ namespace TPLaboratorio2.Tablas
 
         private void FrmLogistica_Load(object sender, EventArgs e)
         {
-            string select = "select id_empresas_log";
+            string select = "select id_empresas_log, nombre, barrio, calle+', '+str(nro_calle) from empresas_logistica e join barrios b on e.cod_barrio = b.cod_barrio";
             grdES.DataSource = consultarTabla(select);
         }
 

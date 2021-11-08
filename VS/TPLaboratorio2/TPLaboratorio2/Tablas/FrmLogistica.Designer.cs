@@ -74,7 +74,7 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdES.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdES.Location = new System.Drawing.Point(228, 79);
+            this.grdES.Location = new System.Drawing.Point(173, 77);
             this.grdES.Name = "grdES";
             this.grdES.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -89,7 +89,7 @@ namespace TPLaboratorio2.Tablas
             this.grdES.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdES.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.grdES.RowTemplate.ReadOnly = true;
-            this.grdES.Size = new System.Drawing.Size(345, 361);
+            this.grdES.Size = new System.Drawing.Size(455, 361);
             this.grdES.TabIndex = 33;
             // 
             // FrmLogistica

@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TPLaboratorio2.Dao
 {
@@ -14,7 +11,7 @@ namespace TPLaboratorio2.Dao
         private static HelperDao instance;
         private HelperDao()
         {
-            
+
         }
 
         public static HelperDao GetInstance()
@@ -44,12 +41,12 @@ namespace TPLaboratorio2.Dao
                 else
                     cmd.Parameters.AddWithValue(p.Nombre, p.Valor.ToString());
             }
-            
+
             tabla.Load(cmd.ExecuteReader());
             cnn.Close();
 
             return tabla;
-            
+
         }
     }
 }

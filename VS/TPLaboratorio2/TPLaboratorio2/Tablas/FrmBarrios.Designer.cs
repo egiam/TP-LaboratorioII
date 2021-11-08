@@ -42,6 +42,7 @@ namespace TPLaboratorio2.Tablas
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(366, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 26);
@@ -53,7 +54,7 @@ namespace TPLaboratorio2.Tablas
             this.grdBarrios.AllowUserToAddRows = false;
             this.grdBarrios.AllowUserToDeleteRows = false;
             this.grdBarrios.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.grdBarrios.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.grdBarrios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.grdBarrios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -94,6 +95,7 @@ namespace TPLaboratorio2.Tablas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grdBarrios);
