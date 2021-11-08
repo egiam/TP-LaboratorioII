@@ -463,7 +463,7 @@ select * from contactos
 	Insert into contactos values('duran@hotmail.com',6,null,2,null,null)
 	Insert into contactos values('fonceca@hotmail.com',15,null,2,null,null)
 
-delete from contactos
+--delete from contactos
 
 select * from medicos
 
