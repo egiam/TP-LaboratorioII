@@ -102,7 +102,7 @@
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Margin = new System.Windows.Forms.Padding(2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1022, 537);
+            this.panelContenedor.Size = new System.Drawing.Size(1070, 587);
             this.panelContenedor.TabIndex = 0;
             // 
             // panelformularios
@@ -115,7 +115,7 @@
             this.panelformularios.Location = new System.Drawing.Point(188, 32);
             this.panelformularios.Margin = new System.Windows.Forms.Padding(2);
             this.panelformularios.Name = "panelformularios";
-            this.panelformularios.Size = new System.Drawing.Size(834, 505);
+            this.panelformularios.Size = new System.Drawing.Size(882, 555);
             this.panelformularios.TabIndex = 2;
             // 
             // panelSubTabla2
@@ -137,7 +137,7 @@
             this.panelSubTabla2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSubTabla2.Location = new System.Drawing.Point(141, 0);
             this.panelSubTabla2.Name = "panelSubTabla2";
-            this.panelSubTabla2.Size = new System.Drawing.Size(141, 505);
+            this.panelSubTabla2.Size = new System.Drawing.Size(141, 555);
             this.panelSubTabla2.TabIndex = 2;
             // 
             // btnVolver
@@ -150,7 +150,7 @@
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Location = new System.Drawing.Point(0, 468);
+            this.btnVolver.Location = new System.Drawing.Point(0, 518);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -433,7 +433,7 @@
             this.panelSubTabla1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSubTabla1.Location = new System.Drawing.Point(0, 0);
             this.panelSubTabla1.Name = "panelSubTabla1";
-            this.panelSubTabla1.Size = new System.Drawing.Size(141, 505);
+            this.panelSubTabla1.Size = new System.Drawing.Size(141, 555);
             this.panelSubTabla1.TabIndex = 1;
             this.panelSubTabla1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -447,7 +447,7 @@
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiguiente.Location = new System.Drawing.Point(0, 468);
+            this.btnSiguiente.Location = new System.Drawing.Point(0, 518);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -724,7 +724,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(6, 14);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(817, 480);
+            this.pictureBox1.Size = new System.Drawing.Size(865, 530);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -740,7 +740,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 32);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(188, 505);
+            this.panelMenu.Size = new System.Drawing.Size(188, 555);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -944,7 +944,7 @@
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(1022, 32);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(1070, 32);
             this.panelBarraTitulo.TabIndex = 0;
             this.panelBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBarraTitulo_Paint);
             this.panelBarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseMove);
@@ -954,7 +954,7 @@
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(964, 8);
+            this.btnRestaurar.Location = new System.Drawing.Point(1012, 8);
             this.btnRestaurar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(20, 20);
@@ -969,7 +969,7 @@
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(937, 8);
+            this.btnMinimizar.Location = new System.Drawing.Point(985, 8);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
@@ -983,7 +983,7 @@
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(964, 8);
+            this.btnMaximizar.Location = new System.Drawing.Point(1012, 8);
             this.btnMaximizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(20, 20);
@@ -997,7 +997,7 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(991, 8);
+            this.btnCerrar.Location = new System.Drawing.Point(1039, 8);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
@@ -1010,7 +1010,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 537);
+            this.ClientSize = new System.Drawing.Size(1070, 587);
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);

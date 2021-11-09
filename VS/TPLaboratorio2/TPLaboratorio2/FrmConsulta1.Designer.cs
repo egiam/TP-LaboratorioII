@@ -66,6 +66,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(13, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(284, 19);
@@ -87,7 +88,12 @@ namespace TPLaboratorio2
             // grdResultado
             // 
             this.grdResultado.AllowUserToAddRows = false;
+            this.grdResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdResultado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.grdResultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,7 +103,6 @@ namespace TPLaboratorio2
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.grdResultado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdResultado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdResultado.Enabled = false;
             this.grdResultado.Location = new System.Drawing.Point(3, 16);
             this.grdResultado.Name = "grdResultado";
@@ -121,8 +126,14 @@ namespace TPLaboratorio2
             // 
             // btnGenerar
             // 
+            this.btnGenerar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerar.Location = new System.Drawing.Point(531, 135);
+            this.btnGenerar.FlatAppearance.BorderSize = 0;
+            this.btnGenerar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnGenerar.Location = new System.Drawing.Point(636, 138);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(155, 23);
             this.btnGenerar.TabIndex = 10;
@@ -137,6 +148,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTipoSuministro.AutoSize = true;
             this.lblTipoSuministro.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoSuministro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTipoSuministro.Location = new System.Drawing.Point(428, 56);
             this.lblTipoSuministro.Name = "lblTipoSuministro";
             this.lblTipoSuministro.Size = new System.Drawing.Size(137, 19);
@@ -186,6 +198,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FechaHasta.AutoSize = true;
             this.FechaHasta.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FechaHasta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FechaHasta.Location = new System.Drawing.Point(64, 96);
             this.FechaHasta.Name = "FechaHasta";
             this.FechaHasta.Size = new System.Drawing.Size(93, 19);
@@ -199,6 +212,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFechaDesde.AutoSize = true;
             this.lblFechaDesde.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaDesde.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFechaDesde.Location = new System.Drawing.Point(64, 57);
             this.lblFechaDesde.Name = "lblFechaDesde";
             this.lblFechaDesde.Size = new System.Drawing.Size(96, 19);
@@ -210,6 +224,7 @@ namespace TPLaboratorio2
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(338, 3);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 26);
@@ -220,6 +235,7 @@ namespace TPLaboratorio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(843, 515);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblFechaDesde);

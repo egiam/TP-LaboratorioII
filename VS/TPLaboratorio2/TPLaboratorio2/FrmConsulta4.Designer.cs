@@ -63,6 +63,7 @@ namespace TPLaboratorio2
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(359, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 26);
@@ -76,6 +77,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(26, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(592, 19);
@@ -97,7 +99,10 @@ namespace TPLaboratorio2
             // 
             // rpvClientes
             // 
+            this.rpvClientes.BackColor = System.Drawing.SystemColors.Control;
+            this.rpvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rpvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpvClientes.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta4.ReporteConsulta4.rdlc";
             this.rpvClientes.Location = new System.Drawing.Point(3, 16);
             this.rpvClientes.Name = "rpvClientes";
@@ -109,6 +114,11 @@ namespace TPLaboratorio2
             // 
             this.btnGenerar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerar.FlatAppearance.BorderSize = 0;
+            this.btnGenerar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(110)))));
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnGenerar.Location = new System.Drawing.Point(635, 109);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(155, 23);
@@ -135,6 +145,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnio.AutoSize = true;
             this.lblAnio.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnio.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblAnio.Location = new System.Drawing.Point(303, 110);
             this.lblAnio.Name = "lblAnio";
             this.lblAnio.Size = new System.Drawing.Size(209, 19);
@@ -148,6 +159,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(26, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(595, 19);
@@ -162,6 +174,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(26, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 19);
@@ -172,6 +185,7 @@ namespace TPLaboratorio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(843, 515);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

@@ -92,7 +92,10 @@ namespace TPLaboratorio2
             // 
             // rpvClientes
             // 
+            this.rpvClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.rpvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rpvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpvClientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta5.ReporteConsutla5.rdlc";
             this.rpvClientes.Location = new System.Drawing.Point(3, 16);
             this.rpvClientes.Name = "rpvClientes";
@@ -118,12 +121,14 @@ namespace TPLaboratorio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(843, 515);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrar);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "FrmConsulta5";
             this.Text = "Consulta 5";
             this.Load += new System.EventHandler(this.FrmConsulta5_Load);
