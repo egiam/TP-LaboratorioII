@@ -238,3 +238,5 @@ C:\Users\Luis\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2
 C:\Users\Luis\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.pdb
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmObraSocial.resources
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmPlan.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmContacto.resources
+D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmTipoContacto.resources

@@ -291,6 +291,12 @@ namespace ModernGUI_V3
             HideSubMenu();
         }
 
+        private void btnContacto_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmContacto>();
+            HideSubMenu();
+        }
+
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL

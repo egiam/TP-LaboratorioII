@@ -529,6 +529,7 @@
             this.btnContacto.Text = "Contacto";
             this.btnContacto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnContacto.UseVisualStyleBackColor = true;
+            this.btnContacto.Click += new System.EventHandler(this.btnContacto_Click);
             // 
             // btnTC
             // 
