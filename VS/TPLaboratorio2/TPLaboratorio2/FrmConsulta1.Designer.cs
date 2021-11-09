@@ -29,6 +29,7 @@ namespace TPLaboratorio2
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta1));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -77,21 +78,30 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.grdResultado);
-            this.groupBox1.Location = new System.Drawing.Point(138, 164);
+            this.groupBox1.Location = new System.Drawing.Point(17, 171);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(551, 310);
+            this.groupBox1.Size = new System.Drawing.Size(777, 310);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             // 
             // grdResultado
             // 
             this.grdResultado.AllowUserToAddRows = false;
+            this.grdResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdResultado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdResultado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdResultado.Enabled = false;
             this.grdResultado.Location = new System.Drawing.Point(3, 16);
             this.grdResultado.Name = "grdResultado";
-            this.grdResultado.Size = new System.Drawing.Size(545, 291);
+            this.grdResultado.Size = new System.Drawing.Size(771, 291);
             this.grdResultado.TabIndex = 0;
             this.grdResultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -140,8 +150,9 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTipoSuministro.Location = new System.Drawing.Point(571, 57);
+            this.txtTipoSuministro.MaximumSize = new System.Drawing.Size(200, 20);
             this.txtTipoSuministro.Name = "txtTipoSuministro";
-            this.txtTipoSuministro.Size = new System.Drawing.Size(100, 20);
+            this.txtTipoSuministro.Size = new System.Drawing.Size(200, 20);
             this.txtTipoSuministro.TabIndex = 9;
             this.txtTipoSuministro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTipoSuministro.TextChanged += new System.EventHandler(this.txtTipoSuministro_TextChanged);
@@ -152,6 +163,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpDesde.Location = new System.Drawing.Point(163, 57);
+            this.dtpDesde.MaximumSize = new System.Drawing.Size(200, 20);
             this.dtpDesde.Name = "dtpDesde";
             this.dtpDesde.Size = new System.Drawing.Size(200, 20);
             this.dtpDesde.TabIndex = 15;
@@ -162,6 +174,7 @@ namespace TPLaboratorio2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpHasta.Location = new System.Drawing.Point(163, 96);
+            this.dtpHasta.MaximumSize = new System.Drawing.Size(200, 20);
             this.dtpHasta.Name = "dtpHasta";
             this.dtpHasta.Size = new System.Drawing.Size(200, 20);
             this.dtpHasta.TabIndex = 16;

@@ -30,17 +30,19 @@ namespace TPLaboratorio2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta2));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.lblAnio = new System.Windows.Forms.Label();
             this.txtAnio = new System.Windows.Forms.TextBox();
             this.btnGenerar = new System.Windows.Forms.Button();
-            this.rpvClientes = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.dgReseltado = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rpvClientes = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgReseltado)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -87,17 +89,6 @@ namespace TPLaboratorio2
             this.btnGenerar.UseVisualStyleBackColor = true;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
-            // rpvClientes
-            // 
-            this.rpvClientes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta2.ReporteClientes.rdlc";
-            this.rpvClientes.Location = new System.Drawing.Point(3, 16);
-            this.rpvClientes.Name = "rpvClientes";
-            this.rpvClientes.ServerReport.BearerToken = null;
-            this.rpvClientes.Size = new System.Drawing.Size(776, 373);
-            this.rpvClientes.TabIndex = 3;
-            this.rpvClientes.Load += new System.EventHandler(this.rpvClientes_Load);
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -111,18 +102,6 @@ namespace TPLaboratorio2
             this.btnCerrar.TabIndex = 4;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.rpvClientes);
-            this.groupBox1.Location = new System.Drawing.Point(12, 110);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(782, 392);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
             // 
             // label1
             // 
@@ -149,14 +128,52 @@ namespace TPLaboratorio2
             this.label2.TabIndex = 7;
             this.label2.Text = "Consulta 2";
             // 
+            // dgReseltado
+            // 
+            this.dgReseltado.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgReseltado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgReseltado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgReseltado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+            this.dgReseltado.Location = new System.Drawing.Point(12, 160);
+            this.dgReseltado.Name = "dgReseltado";
+            this.dgReseltado.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgReseltado.Size = new System.Drawing.Size(443, 340);
+            this.dgReseltado.TabIndex = 8;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // rpvClientes
+            // 
+            this.rpvClientes.BackColor = System.Drawing.Color.DarkGray;
+            this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta2.ReporteClientes.rdlc";
+            this.rpvClientes.Location = new System.Drawing.Point(467, 150);
+            this.rpvClientes.Name = "rpvClientes";
+            this.rpvClientes.ServerReport.BearerToken = null;
+            this.rpvClientes.Size = new System.Drawing.Size(365, 350);
+            this.rpvClientes.TabIndex = 3;
+            this.rpvClientes.Load += new System.EventHandler(this.rpvClientes_Load);
+            // 
             // FrmConsulta2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 515);
+            this.Controls.Add(this.rpvClientes);
+            this.Controls.Add(this.dgReseltado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.txtAnio);
@@ -165,7 +182,7 @@ namespace TPLaboratorio2
             this.Text = "Consulta 2";
             this.Load += new System.EventHandler(this.FrmClientes2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgReseltado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,11 +194,12 @@ namespace TPLaboratorio2
         private System.Windows.Forms.Label lblAnio;
         private System.Windows.Forms.TextBox txtAnio;
         private System.Windows.Forms.Button btnGenerar;
-        private Microsoft.Reporting.WinForms.ReportViewer rpvClientes;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dgReseltado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private Microsoft.Reporting.WinForms.ReportViewer rpvClientes;
     }
 }
 

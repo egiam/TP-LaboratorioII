@@ -480,7 +480,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>7.21995cm</Top>
+            <Top>9.12495cm</Top>
             <Left>0.73766cm</Left>
             <Height>1.8cm</Height>
             <Width>18.44682cm</Width>
@@ -853,7 +853,7 @@
                   </ChartAxis>
                 </ChartValueAxes>
                 <Style>
-                  <BackgroundColor>#00ffffff</BackgroundColor>
+                  <BackgroundColor>LightGrey</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
                 </Style>
               </ChartArea>
@@ -891,7 +891,7 @@
                 <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
-            <Palette>Pacific</Palette>
+            <Palette>Excel</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
@@ -909,23 +909,28 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.85294cm</Top>
-            <Left>2.88078cm</Left>
-            <Height>5.76729cm</Height>
-            <Width>11.16417cm</Width>
+            <Top>0.29732cm</Top>
+            <Left>0.73766cm</Left>
+            <Height>7.2225cm</Height>
+            <Width>18.44682cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>White</BackgroundColor>
+              <BackgroundColor>LightGrey</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
         </ReportItems>
-        <Height>5.875in</Height>
-        <Style />
+        <Height>5.47824in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>LightGrey</BackgroundColor>
+        </Style>
       </Body>
       <Width>8.04167in</Width>
       <Page>
