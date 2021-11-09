@@ -1,7 +1,7 @@
 ﻿
 namespace TPLaboratorio2.Tablas
 {
-    partial class FrmTipoContacto
+    partial class FrmSucursales
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace TPLaboratorio2.Tablas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTipoContacto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSucursales));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -51,20 +51,20 @@ namespace TPLaboratorio2.Tablas
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 43;
+            this.btnCerrar.TabIndex = 49;
             this.btnCerrar.TabStop = false;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(321, 11);
+            this.label3.Location = new System.Drawing.Point(358, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 26);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "Tipo de Contacto";
+            this.label3.Size = new System.Drawing.Size(98, 26);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Contacto";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // grdPlan
             // 
@@ -91,7 +91,7 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdPlan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdPlan.Location = new System.Drawing.Point(305, 77);
+            this.grdPlan.Location = new System.Drawing.Point(222, 77);
             this.grdPlan.Name = "grdPlan";
             this.grdPlan.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -106,10 +106,10 @@ namespace TPLaboratorio2.Tablas
             this.grdPlan.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdPlan.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.grdPlan.RowTemplate.ReadOnly = true;
-            this.grdPlan.Size = new System.Drawing.Size(235, 361);
-            this.grdPlan.TabIndex = 41;
+            this.grdPlan.Size = new System.Drawing.Size(357, 361);
+            this.grdPlan.TabIndex = 47;
             // 
-            // FrmTipoContacto
+            // FrmSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,9 +117,9 @@ namespace TPLaboratorio2.Tablas
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grdPlan);
-            this.Name = "FrmTipoContacto";
-            this.Text = "FrmTipoContacto";
-            this.Load += new System.EventHandler(this.FrmTipoContacto_Load);
+            this.Name = "FrmSucursales";
+            this.Text = "FrmSucursales";
+            this.Load += new System.EventHandler(this.FrmSucursales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdPlan)).EndInit();
             this.ResumeLayout(false);

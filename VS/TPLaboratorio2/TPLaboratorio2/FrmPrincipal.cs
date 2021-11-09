@@ -297,6 +297,24 @@ namespace ModernGUI_V3
             HideSubMenu();
         }
 
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmClientes>();
+            HideSubMenu();
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmEmpleados>();
+            HideSubMenu();
+        }
+
+        private void btnSucursales_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmSucursales>();
+            HideSubMenu();
+        }
+
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
