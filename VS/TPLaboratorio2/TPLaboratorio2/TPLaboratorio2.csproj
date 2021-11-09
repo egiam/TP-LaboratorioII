@@ -131,6 +131,7 @@
       <DependentUpon>DSConsulta5.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Tablas\ConeccionEntreForms.cs" />
     <Compile Include="Tablas\FrmBarrios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +149,18 @@
     </Compile>
     <Compile Include="Tablas\FrmLogistica.Designer.cs">
       <DependentUpon>FrmLogistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmObraSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmObraSocial.Designer.cs">
+      <DependentUpon>FrmObraSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmPlan.Designer.cs">
+      <DependentUpon>FrmPlan.cs</DependentUpon>
     </Compile>
     <Compile Include="Tablas\FrmProvincias.cs">
       <SubType>Form</SubType>
@@ -195,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmLogistica.resx">
       <DependentUpon>FrmLogistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmObraSocial.resx">
+      <DependentUpon>FrmObraSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmPlan.resx">
+      <DependentUpon>FrmPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmProvincias.resx">
       <DependentUpon>FrmProvincias.cs</DependentUpon>

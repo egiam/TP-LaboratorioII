@@ -33,28 +33,28 @@
             this.panelformularios = new System.Windows.Forms.Panel();
             this.panelSubTabla2 = new System.Windows.Forms.Panel();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
+            this.btnSS = new System.Windows.Forms.Button();
+            this.btnDescuento = new System.Windows.Forms.Button();
+            this.btnTS = new System.Windows.Forms.Button();
+            this.btnSuministros = new System.Windows.Forms.Button();
+            this.btnDF = new System.Windows.Forms.Button();
+            this.btnFacturas = new System.Windows.Forms.Button();
+            this.btnDR = new System.Windows.Forms.Button();
+            this.btnRecetas = new System.Windows.Forms.Button();
+            this.btnDE = new System.Windows.Forms.Button();
+            this.btnES = new System.Windows.Forms.Button();
+            this.btnTD = new System.Windows.Forms.Button();
+            this.btnMedicos = new System.Windows.Forms.Button();
             this.panelSubTabla1 = new System.Windows.Forms.Panel();
             this.btnSiguiente = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnSexos = new System.Windows.Forms.Button();
+            this.btnSucursales = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnContacto = new System.Windows.Forms.Button();
+            this.btnTC = new System.Windows.Forms.Button();
+            this.btnPlan = new System.Windows.Forms.Button();
+            this.btnOS = new System.Windows.Forms.Button();
             this.btnLogistica = new System.Windows.Forms.Button();
             this.btnBarrios = new System.Windows.Forms.Button();
             this.btnLocalidades = new System.Windows.Forms.Button();
@@ -122,18 +122,18 @@
             // 
             this.panelSubTabla2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.panelSubTabla2.Controls.Add(this.btnVolver);
-            this.panelSubTabla2.Controls.Add(this.button6);
-            this.panelSubTabla2.Controls.Add(this.button19);
-            this.panelSubTabla2.Controls.Add(this.button20);
-            this.panelSubTabla2.Controls.Add(this.button21);
-            this.panelSubTabla2.Controls.Add(this.button22);
-            this.panelSubTabla2.Controls.Add(this.button23);
-            this.panelSubTabla2.Controls.Add(this.button24);
-            this.panelSubTabla2.Controls.Add(this.button25);
-            this.panelSubTabla2.Controls.Add(this.button26);
-            this.panelSubTabla2.Controls.Add(this.button27);
-            this.panelSubTabla2.Controls.Add(this.button28);
-            this.panelSubTabla2.Controls.Add(this.button29);
+            this.panelSubTabla2.Controls.Add(this.btnSS);
+            this.panelSubTabla2.Controls.Add(this.btnDescuento);
+            this.panelSubTabla2.Controls.Add(this.btnTS);
+            this.panelSubTabla2.Controls.Add(this.btnSuministros);
+            this.panelSubTabla2.Controls.Add(this.btnDF);
+            this.panelSubTabla2.Controls.Add(this.btnFacturas);
+            this.panelSubTabla2.Controls.Add(this.btnDR);
+            this.panelSubTabla2.Controls.Add(this.btnRecetas);
+            this.panelSubTabla2.Controls.Add(this.btnDE);
+            this.panelSubTabla2.Controls.Add(this.btnES);
+            this.panelSubTabla2.Controls.Add(this.btnTD);
+            this.panelSubTabla2.Controls.Add(this.btnMedicos);
             this.panelSubTabla2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSubTabla2.Location = new System.Drawing.Point(141, 0);
             this.panelSubTabla2.Name = "panelSubTabla2";
@@ -162,270 +162,246 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // button6
+            // btnSS
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 407);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(141, 37);
-            this.button6.TabIndex = 31;
-            this.button6.Text = "Consulta1";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnSS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSS.FlatAppearance.BorderSize = 0;
+            this.btnSS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnSS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSS.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSS.Location = new System.Drawing.Point(0, 407);
+            this.btnSS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSS.Name = "btnSS";
+            this.btnSS.Size = new System.Drawing.Size(141, 37);
+            this.btnSS.TabIndex = 31;
+            this.btnSS.Text = "Sucursales Sumin";
+            this.btnSS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSS.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // btnDescuento
             // 
-            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(0, 370);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
-            this.button19.Name = "button19";
-            this.button19.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(141, 37);
-            this.button19.TabIndex = 30;
-            this.button19.Text = "Consulta1";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button19.UseVisualStyleBackColor = true;
+            this.btnDescuento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDescuento.FlatAppearance.BorderSize = 0;
+            this.btnDescuento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnDescuento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescuento.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDescuento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDescuento.Location = new System.Drawing.Point(0, 370);
+            this.btnDescuento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDescuento.Name = "btnDescuento";
+            this.btnDescuento.Size = new System.Drawing.Size(141, 37);
+            this.btnDescuento.TabIndex = 30;
+            this.btnDescuento.Text = "Descuentos";
+            this.btnDescuento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDescuento.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // btnTS
             // 
-            this.button20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(0, 333);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
-            this.button20.Name = "button20";
-            this.button20.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button20.Size = new System.Drawing.Size(141, 37);
-            this.button20.TabIndex = 29;
-            this.button20.Text = "Consulta1";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button20.UseVisualStyleBackColor = true;
+            this.btnTS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTS.FlatAppearance.BorderSize = 0;
+            this.btnTS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnTS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTS.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTS.Location = new System.Drawing.Point(0, 333);
+            this.btnTS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTS.Name = "btnTS";
+            this.btnTS.Size = new System.Drawing.Size(141, 37);
+            this.btnTS.TabIndex = 29;
+            this.btnTS.Text = "Tipo Suministro";
+            this.btnTS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTS.UseVisualStyleBackColor = true;
             // 
-            // button21
+            // btnSuministros
             // 
-            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(0, 296);
-            this.button21.Margin = new System.Windows.Forms.Padding(2);
-            this.button21.Name = "button21";
-            this.button21.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button21.Size = new System.Drawing.Size(141, 37);
-            this.button21.TabIndex = 28;
-            this.button21.Text = "Consulta1";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button21.UseVisualStyleBackColor = true;
+            this.btnSuministros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSuministros.FlatAppearance.BorderSize = 0;
+            this.btnSuministros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnSuministros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnSuministros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuministros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuministros.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSuministros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSuministros.Location = new System.Drawing.Point(0, 296);
+            this.btnSuministros.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuministros.Name = "btnSuministros";
+            this.btnSuministros.Size = new System.Drawing.Size(141, 37);
+            this.btnSuministros.TabIndex = 28;
+            this.btnSuministros.Text = "Suministros";
+            this.btnSuministros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSuministros.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // btnDF
             // 
-            this.button22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(0, 259);
-            this.button22.Margin = new System.Windows.Forms.Padding(2);
-            this.button22.Name = "button22";
-            this.button22.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button22.Size = new System.Drawing.Size(141, 37);
-            this.button22.TabIndex = 27;
-            this.button22.Text = "Consulta1";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button22.UseVisualStyleBackColor = true;
+            this.btnDF.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDF.FlatAppearance.BorderSize = 0;
+            this.btnDF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnDF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDF.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDF.Location = new System.Drawing.Point(0, 259);
+            this.btnDF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDF.Name = "btnDF";
+            this.btnDF.Size = new System.Drawing.Size(141, 37);
+            this.btnDF.TabIndex = 27;
+            this.btnDF.Text = "Detalle Factura";
+            this.btnDF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDF.UseVisualStyleBackColor = true;
             // 
-            // button23
+            // btnFacturas
             // 
-            this.button23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(0, 222);
-            this.button23.Margin = new System.Windows.Forms.Padding(2);
-            this.button23.Name = "button23";
-            this.button23.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button23.Size = new System.Drawing.Size(141, 37);
-            this.button23.TabIndex = 26;
-            this.button23.Text = "Consulta1";
-            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button23.UseVisualStyleBackColor = true;
+            this.btnFacturas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFacturas.FlatAppearance.BorderSize = 0;
+            this.btnFacturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFacturas.Location = new System.Drawing.Point(0, 222);
+            this.btnFacturas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFacturas.Name = "btnFacturas";
+            this.btnFacturas.Size = new System.Drawing.Size(141, 37);
+            this.btnFacturas.TabIndex = 26;
+            this.btnFacturas.Text = "Facturas";
+            this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFacturas.UseVisualStyleBackColor = true;
             // 
-            // button24
+            // btnDR
             // 
-            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(0, 185);
-            this.button24.Margin = new System.Windows.Forms.Padding(2);
-            this.button24.Name = "button24";
-            this.button24.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button24.Size = new System.Drawing.Size(141, 37);
-            this.button24.TabIndex = 25;
-            this.button24.Text = "Consulta1";
-            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button24.UseVisualStyleBackColor = true;
+            this.btnDR.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDR.FlatAppearance.BorderSize = 0;
+            this.btnDR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnDR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDR.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDR.Location = new System.Drawing.Point(0, 185);
+            this.btnDR.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDR.Name = "btnDR";
+            this.btnDR.Size = new System.Drawing.Size(141, 37);
+            this.btnDR.TabIndex = 25;
+            this.btnDR.Text = "Detalle Receta";
+            this.btnDR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDR.UseVisualStyleBackColor = true;
             // 
-            // button25
+            // btnRecetas
             // 
-            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(0, 148);
-            this.button25.Margin = new System.Windows.Forms.Padding(2);
-            this.button25.Name = "button25";
-            this.button25.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button25.Size = new System.Drawing.Size(141, 37);
-            this.button25.TabIndex = 24;
-            this.button25.Text = "Consulta1";
-            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button25.UseVisualStyleBackColor = true;
+            this.btnRecetas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRecetas.FlatAppearance.BorderSize = 0;
+            this.btnRecetas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnRecetas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecetas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRecetas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRecetas.Location = new System.Drawing.Point(0, 148);
+            this.btnRecetas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRecetas.Name = "btnRecetas";
+            this.btnRecetas.Size = new System.Drawing.Size(141, 37);
+            this.btnRecetas.TabIndex = 24;
+            this.btnRecetas.Text = "Recetas";
+            this.btnRecetas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRecetas.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // btnDE
             // 
-            this.button26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.Location = new System.Drawing.Point(0, 111);
-            this.button26.Margin = new System.Windows.Forms.Padding(2);
-            this.button26.Name = "button26";
-            this.button26.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button26.Size = new System.Drawing.Size(141, 37);
-            this.button26.TabIndex = 23;
-            this.button26.Text = "Consulta1";
-            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button26.UseVisualStyleBackColor = true;
+            this.btnDE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDE.FlatAppearance.BorderSize = 0;
+            this.btnDE.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnDE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnDE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDE.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDE.Location = new System.Drawing.Point(0, 111);
+            this.btnDE.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDE.Name = "btnDE";
+            this.btnDE.Size = new System.Drawing.Size(141, 37);
+            this.btnDE.TabIndex = 23;
+            this.btnDE.Text = "Detalle Entrega";
+            this.btnDE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDE.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // btnES
             // 
-            this.button27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.Location = new System.Drawing.Point(0, 74);
-            this.button27.Margin = new System.Windows.Forms.Padding(2);
-            this.button27.Name = "button27";
-            this.button27.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button27.Size = new System.Drawing.Size(141, 37);
-            this.button27.TabIndex = 22;
-            this.button27.Text = "Consulta1";
-            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button27.UseVisualStyleBackColor = true;
+            this.btnES.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnES.FlatAppearance.BorderSize = 0;
+            this.btnES.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnES.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnES.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnES.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnES.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnES.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnES.Location = new System.Drawing.Point(0, 74);
+            this.btnES.Margin = new System.Windows.Forms.Padding(2);
+            this.btnES.Name = "btnES";
+            this.btnES.Size = new System.Drawing.Size(141, 37);
+            this.btnES.TabIndex = 22;
+            this.btnES.Text = "Entrega Suministro";
+            this.btnES.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnES.UseVisualStyleBackColor = true;
             // 
-            // button28
+            // btnTD
             // 
-            this.button28.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button28.FlatAppearance.BorderSize = 0;
-            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.Location = new System.Drawing.Point(0, 37);
-            this.button28.Margin = new System.Windows.Forms.Padding(2);
-            this.button28.Name = "button28";
-            this.button28.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button28.Size = new System.Drawing.Size(141, 37);
-            this.button28.TabIndex = 21;
-            this.button28.Text = "Consulta1";
-            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button28.UseVisualStyleBackColor = true;
+            this.btnTD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTD.FlatAppearance.BorderSize = 0;
+            this.btnTD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnTD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnTD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTD.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTD.Location = new System.Drawing.Point(0, 37);
+            this.btnTD.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTD.Name = "btnTD";
+            this.btnTD.Size = new System.Drawing.Size(141, 37);
+            this.btnTD.TabIndex = 21;
+            this.btnTD.Text = "Tipo Documento";
+            this.btnTD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTD.UseVisualStyleBackColor = true;
             // 
-            // button29
+            // btnMedicos
             // 
-            this.button29.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button29.FlatAppearance.BorderSize = 0;
-            this.button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button29.Location = new System.Drawing.Point(0, 0);
-            this.button29.Margin = new System.Windows.Forms.Padding(2);
-            this.button29.Name = "button29";
-            this.button29.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button29.Size = new System.Drawing.Size(141, 37);
-            this.button29.TabIndex = 20;
-            this.button29.Text = "Consulta1";
-            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button29.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button29.UseVisualStyleBackColor = true;
+            this.btnMedicos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMedicos.FlatAppearance.BorderSize = 0;
+            this.btnMedicos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnMedicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnMedicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMedicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMedicos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMedicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedicos.Location = new System.Drawing.Point(0, 0);
+            this.btnMedicos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMedicos.Name = "btnMedicos";
+            this.btnMedicos.Size = new System.Drawing.Size(141, 37);
+            this.btnMedicos.TabIndex = 20;
+            this.btnMedicos.Text = "Medicos";
+            this.btnMedicos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMedicos.UseVisualStyleBackColor = true;
             // 
             // panelSubTabla1
             // 
             this.panelSubTabla1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.panelSubTabla1.Controls.Add(this.btnSiguiente);
-            this.panelSubTabla1.Controls.Add(this.button18);
-            this.panelSubTabla1.Controls.Add(this.button17);
-            this.panelSubTabla1.Controls.Add(this.button16);
-            this.panelSubTabla1.Controls.Add(this.button15);
-            this.panelSubTabla1.Controls.Add(this.button14);
-            this.panelSubTabla1.Controls.Add(this.button13);
-            this.panelSubTabla1.Controls.Add(this.button12);
-            this.panelSubTabla1.Controls.Add(this.button11);
+            this.panelSubTabla1.Controls.Add(this.btnSexos);
+            this.panelSubTabla1.Controls.Add(this.btnSucursales);
+            this.panelSubTabla1.Controls.Add(this.btnEmpleados);
+            this.panelSubTabla1.Controls.Add(this.btnClientes);
+            this.panelSubTabla1.Controls.Add(this.btnContacto);
+            this.panelSubTabla1.Controls.Add(this.btnTC);
+            this.panelSubTabla1.Controls.Add(this.btnPlan);
+            this.panelSubTabla1.Controls.Add(this.btnOS);
             this.panelSubTabla1.Controls.Add(this.btnLogistica);
             this.panelSubTabla1.Controls.Add(this.btnBarrios);
             this.panelSubTabla1.Controls.Add(this.btnLocalidades);
@@ -459,173 +435,160 @@
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
-            // button18
+            // btnSexos
             // 
-            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(0, 407);
-            this.button18.Margin = new System.Windows.Forms.Padding(2);
-            this.button18.Name = "button18";
-            this.button18.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button18.Size = new System.Drawing.Size(141, 37);
-            this.button18.TabIndex = 19;
-            this.button18.Text = "Consulta1";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = true;
+            this.btnSexos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSexos.FlatAppearance.BorderSize = 0;
+            this.btnSexos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnSexos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnSexos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSexos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSexos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSexos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSexos.Location = new System.Drawing.Point(0, 407);
+            this.btnSexos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSexos.Name = "btnSexos";
+            this.btnSexos.Size = new System.Drawing.Size(141, 37);
+            this.btnSexos.TabIndex = 19;
+            this.btnSexos.Text = "Sexos";
+            this.btnSexos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSexos.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // btnSucursales
             // 
-            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(0, 370);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(141, 37);
-            this.button17.TabIndex = 18;
-            this.button17.Text = "Consulta1";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnSucursales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSucursales.FlatAppearance.BorderSize = 0;
+            this.btnSucursales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnSucursales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnSucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSucursales.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSucursales.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSucursales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSucursales.Location = new System.Drawing.Point(0, 370);
+            this.btnSucursales.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSucursales.Name = "btnSucursales";
+            this.btnSucursales.Size = new System.Drawing.Size(141, 37);
+            this.btnSucursales.TabIndex = 18;
+            this.btnSucursales.Text = "Sucursales";
+            this.btnSucursales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSucursales.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btnEmpleados
             // 
-            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(0, 333);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(141, 37);
-            this.button16.TabIndex = 17;
-            this.button16.Text = "Consulta1";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 333);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(141, 37);
+            this.btnEmpleados.TabIndex = 17;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEmpleados.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btnClientes
             // 
-            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(0, 296);
-            this.button15.Margin = new System.Windows.Forms.Padding(2);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(141, 37);
-            this.button15.TabIndex = 16;
-            this.button15.Text = "Consulta1";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button15.UseVisualStyleBackColor = true;
+            this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(0, 296);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(141, 37);
+            this.btnClientes.TabIndex = 16;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClientes.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // btnContacto
             // 
-            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(0, 259);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(141, 37);
-            this.button14.TabIndex = 15;
-            this.button14.Text = "Consulta1";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnContacto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnContacto.FlatAppearance.BorderSize = 0;
+            this.btnContacto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnContacto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContacto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnContacto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContacto.Location = new System.Drawing.Point(0, 259);
+            this.btnContacto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnContacto.Name = "btnContacto";
+            this.btnContacto.Size = new System.Drawing.Size(141, 37);
+            this.btnContacto.TabIndex = 15;
+            this.btnContacto.Text = "Contacto";
+            this.btnContacto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnContacto.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // btnTC
             // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(0, 222);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(141, 37);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "Consulta1";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button13.UseVisualStyleBackColor = true;
+            this.btnTC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTC.FlatAppearance.BorderSize = 0;
+            this.btnTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTC.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTC.Location = new System.Drawing.Point(0, 222);
+            this.btnTC.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTC.Name = "btnTC";
+            this.btnTC.Size = new System.Drawing.Size(141, 37);
+            this.btnTC.TabIndex = 14;
+            this.btnTC.Text = "Tipo Contacto";
+            this.btnTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTC.UseVisualStyleBackColor = true;
+            this.btnTC.Click += new System.EventHandler(this.btnTC_Click);
             // 
-            // button12
+            // btnPlan
             // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(0, 185);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(141, 37);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "Consulta1";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnPlan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlan.FlatAppearance.BorderSize = 0;
+            this.btnPlan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnPlan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlan.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPlan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlan.Location = new System.Drawing.Point(0, 185);
+            this.btnPlan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPlan.Name = "btnPlan";
+            this.btnPlan.Size = new System.Drawing.Size(141, 37);
+            this.btnPlan.TabIndex = 13;
+            this.btnPlan.Text = "Planes";
+            this.btnPlan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlan.UseVisualStyleBackColor = true;
+            this.btnPlan.Click += new System.EventHandler(this.btnPlan_Click);
             // 
-            // button11
+            // btnOS
             // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(0, 148);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(141, 37);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Consulta1";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnOS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOS.FlatAppearance.BorderSize = 0;
+            this.btnOS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnOS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOS.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnOS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOS.Location = new System.Drawing.Point(0, 148);
+            this.btnOS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOS.Name = "btnOS";
+            this.btnOS.Size = new System.Drawing.Size(141, 37);
+            this.btnOS.TabIndex = 12;
+            this.btnOS.Text = "Obra Social";
+            this.btnOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOS.UseVisualStyleBackColor = true;
+            this.btnOS.Click += new System.EventHandler(this.btnOS_Click);
             // 
             // btnLogistica
             // 
@@ -640,11 +603,9 @@
             this.btnLogistica.Location = new System.Drawing.Point(0, 111);
             this.btnLogistica.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogistica.Name = "btnLogistica";
-            this.btnLogistica.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnLogistica.Size = new System.Drawing.Size(141, 37);
             this.btnLogistica.TabIndex = 11;
             this.btnLogistica.Text = "Logistica";
-            this.btnLogistica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogistica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogistica.UseVisualStyleBackColor = true;
             this.btnLogistica.Click += new System.EventHandler(this.btnLogistica_Click);
@@ -662,11 +623,9 @@
             this.btnBarrios.Location = new System.Drawing.Point(0, 74);
             this.btnBarrios.Margin = new System.Windows.Forms.Padding(2);
             this.btnBarrios.Name = "btnBarrios";
-            this.btnBarrios.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnBarrios.Size = new System.Drawing.Size(141, 37);
             this.btnBarrios.TabIndex = 10;
             this.btnBarrios.Text = "Barrios";
-            this.btnBarrios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBarrios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBarrios.UseVisualStyleBackColor = true;
             this.btnBarrios.Click += new System.EventHandler(this.btnBarrios_Click);
@@ -684,11 +643,9 @@
             this.btnLocalidades.Location = new System.Drawing.Point(0, 37);
             this.btnLocalidades.Margin = new System.Windows.Forms.Padding(2);
             this.btnLocalidades.Name = "btnLocalidades";
-            this.btnLocalidades.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnLocalidades.Size = new System.Drawing.Size(141, 37);
             this.btnLocalidades.TabIndex = 9;
             this.btnLocalidades.Text = "Localidades";
-            this.btnLocalidades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLocalidades.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLocalidades.UseVisualStyleBackColor = true;
             this.btnLocalidades.Click += new System.EventHandler(this.btnLocalidades_Click);
@@ -706,11 +663,9 @@
             this.btnProvincias.Location = new System.Drawing.Point(0, 0);
             this.btnProvincias.Margin = new System.Windows.Forms.Padding(2);
             this.btnProvincias.Name = "btnProvincias";
-            this.btnProvincias.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnProvincias.Size = new System.Drawing.Size(141, 37);
             this.btnProvincias.TabIndex = 8;
             this.btnProvincias.Text = "Provincias";
-            this.btnProvincias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProvincias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProvincias.UseVisualStyleBackColor = true;
             this.btnProvincias.Click += new System.EventHandler(this.button7_Click);
@@ -1049,14 +1004,14 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelSubTabla1;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnSexos;
+        private System.Windows.Forms.Button btnSucursales;
+        private System.Windows.Forms.Button btnEmpleados;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnContacto;
+        private System.Windows.Forms.Button btnTC;
+        private System.Windows.Forms.Button btnPlan;
+        private System.Windows.Forms.Button btnOS;
         private System.Windows.Forms.Button btnLogistica;
         private System.Windows.Forms.Button btnBarrios;
         private System.Windows.Forms.Button btnLocalidades;
@@ -1073,18 +1028,18 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelSubTabla2;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button btnSS;
+        private System.Windows.Forms.Button btnDescuento;
+        private System.Windows.Forms.Button btnTS;
+        private System.Windows.Forms.Button btnSuministros;
+        private System.Windows.Forms.Button btnDF;
+        private System.Windows.Forms.Button btnFacturas;
+        private System.Windows.Forms.Button btnDR;
+        private System.Windows.Forms.Button btnRecetas;
+        private System.Windows.Forms.Button btnDE;
+        private System.Windows.Forms.Button btnES;
+        private System.Windows.Forms.Button btnTD;
+        private System.Windows.Forms.Button btnMedicos;
         private System.Windows.Forms.Button btnSiguiente;
     }
 }

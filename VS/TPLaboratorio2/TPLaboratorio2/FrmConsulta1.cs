@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 using TPLaboratorio2.Dao;
+using TPLaboratorio2.Tablas;
 
 namespace TPLaboratorio2
 {
@@ -49,6 +51,13 @@ namespace TPLaboratorio2
         private void txtTipoSuministro_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmConsulta1_Load(object sender, EventArgs e)
+        {
+            ConeccionEntreForms conex = new ConeccionEntreForms();
+            BackColor = Color.FromArgb(45, 66, 91);
+            conex.AlternarColorGRD(grdResultado);
         }
     }
 }

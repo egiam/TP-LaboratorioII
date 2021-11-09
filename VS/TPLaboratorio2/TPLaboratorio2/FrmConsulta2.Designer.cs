@@ -171,7 +171,7 @@ namespace TPLaboratorio2
             // rpvClientes
             // 
             this.rpvClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.rpvClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.rpvClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.rpvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rpvClientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rpvClientes.LocalReport.ReportEmbeddedResource = "TPLaboratorio2.Reportes.Consulta2.ReporteClientes.rdlc";

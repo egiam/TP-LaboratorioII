@@ -33,9 +33,12 @@ namespace TPLaboratorio2.Tablas
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogistica));
             this.label3 = new System.Windows.Forms.Label();
-            this.grdES = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.grdES)).BeginInit();
+            this.grdLogistica = new System.Windows.Forms.DataGridView();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.grdLogistica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -50,13 +53,13 @@ namespace TPLaboratorio2.Tablas
             this.label3.TabIndex = 34;
             this.label3.Text = "Logistica";
             // 
-            // grdES
+            // grdLogistica
             // 
-            this.grdES.AllowUserToAddRows = false;
-            this.grdES.AllowUserToDeleteRows = false;
-            this.grdES.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.grdES.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
-            this.grdES.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grdLogistica.AllowUserToAddRows = false;
+            this.grdLogistica.AllowUserToDeleteRows = false;
+            this.grdLogistica.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.grdLogistica.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
+            this.grdLogistica.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -64,8 +67,8 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdES.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.grdES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdLogistica.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.grdLogistica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,10 +76,10 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdES.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdES.Location = new System.Drawing.Point(173, 77);
-            this.grdES.Name = "grdES";
-            this.grdES.ReadOnly = true;
+            this.grdLogistica.DefaultCellStyle = dataGridViewCellStyle2;
+            this.grdLogistica.Location = new System.Drawing.Point(173, 77);
+            this.grdLogistica.Name = "grdLogistica";
+            this.grdLogistica.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,13 +87,27 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdES.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.grdLogistica.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.grdES.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.grdES.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.grdES.RowTemplate.ReadOnly = true;
-            this.grdES.Size = new System.Drawing.Size(455, 361);
-            this.grdES.TabIndex = 33;
+            this.grdLogistica.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.grdLogistica.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.grdLogistica.RowTemplate.ReadOnly = true;
+            this.grdLogistica.Size = new System.Drawing.Size(455, 361);
+            this.grdLogistica.TabIndex = 33;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(769, 11);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 35;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmLogistica
             // 
@@ -98,12 +115,14 @@ namespace TPLaboratorio2.Tablas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.grdES);
+            this.Controls.Add(this.grdLogistica);
             this.Name = "FrmLogistica";
             this.Text = "FrmLogistica";
             this.Load += new System.EventHandler(this.FrmLogistica_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdES)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdLogistica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,6 +131,7 @@ namespace TPLaboratorio2.Tablas
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView grdES;
+        private System.Windows.Forms.DataGridView grdLogistica;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

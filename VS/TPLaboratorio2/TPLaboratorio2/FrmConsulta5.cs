@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 using TPLaboratorio2.Dao;
 
@@ -15,6 +16,8 @@ namespace TPLaboratorio2
 
         private void FrmConsulta5_Load(object sender, EventArgs e)
         {
+            BackColor = Color.FromArgb(45, 66, 91);
+
             List<Parametro> parametros = new List<Parametro>();
             DataTable tabla = HelperDao.GetInstance().EjecutarSP("pa_mes_pas", parametros);
 
