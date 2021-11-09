@@ -85,7 +85,7 @@
                         <Style>
                           <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
-                          <Color>White</Color>
+                          <Color>LightGreen</Color>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -372,7 +372,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Cantidad de Clientes</Caption>
+                <Caption>Cantidad de clientes por mes</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontFamily>Microsoft YaHei</FontFamily>
@@ -381,7 +381,7 @@
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                 </Style>
-                <Position>TopLeft</Position>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
               </ChartTitle>
             </ChartTitles>
             <Palette>Excel</Palette>
@@ -411,7 +411,6 @@
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>DarkGray</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>

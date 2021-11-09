@@ -74,7 +74,7 @@ namespace TPLaboratorio2.Tablas
 
             grilla.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             grilla.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-            grilla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            grilla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             grilla.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
 
