@@ -91,6 +91,7 @@ namespace TPLaboratorio2
             this.rpvClientes.ServerReport.BearerToken = null;
             this.rpvClientes.Size = new System.Drawing.Size(776, 373);
             this.rpvClientes.TabIndex = 3;
+            this.rpvClientes.Load += new System.EventHandler(this.rpvClientes_Load);
             // 
             // btnCerrar
             // 

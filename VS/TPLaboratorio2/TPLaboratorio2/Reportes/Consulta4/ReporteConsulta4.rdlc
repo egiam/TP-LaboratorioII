@@ -48,15 +48,15 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>6.01896cm</Width>
+                  <Width>4.98708cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.01896cm</Width>
+                  <Width>4.98708cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.66615cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -68,7 +68,11 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Obra Social</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -77,9 +81,9 @@
                           <rd:DefaultName>Textbox2</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
+                            <BackgroundColor>#0369cd</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -98,7 +102,11 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Descuento Total Aplicado</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -110,6 +118,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>#0369cd</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -121,7 +130,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.66615cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -142,7 +151,7 @@
                           <rd:DefaultName>obraSocial</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Color>SteelBlue</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -172,7 +181,7 @@
                           <rd:DefaultName>descuentoAplicado</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
+                              <Color>SteelBlue</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -204,10 +213,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>6.66433cm</Top>
-            <Left>1.10807cm</Left>
-            <Height>1.2cm</Height>
-            <Width>12.03792cm</Width>
+            <Top>1.05516cm</Top>
+            <Left>0.49953cm</Left>
+            <Height>1.33229cm</Height>
+            <Width>9.97417cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -534,16 +543,15 @@
                 <Caption>Cantidad de Afiliados por Obra Social</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
+                  <FontSize>11pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
-                  <Color>#a6a6a6</Color>
                 </Style>
                 <Position>TopLeft</Position>
               </ChartTitle>
             </ChartTitles>
-            <Palette>Pacific</Palette>
+            <Palette>Excel</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
@@ -561,23 +569,28 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.68474cm</Top>
-            <Left>2.2587cm</Left>
-            <Height>5cm</Height>
-            <Width>7.5cm</Width>
+            <Top>1.05516cm</Top>
+            <Left>10.8712cm</Left>
+            <Height>8.04271cm</Height>
+            <Width>9.12688cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>White</BackgroundColor>
+              <BackgroundColor>LightGrey</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
         </ReportItems>
         <Height>4.97917in</Height>
-        <Style />
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>LightGrey</BackgroundColor>
+        </Style>
       </Body>
       <Width>8.25in</Width>
       <Page>

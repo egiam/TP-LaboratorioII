@@ -39,5 +39,10 @@ namespace TPLaboratorio2
             rpvClientes.RefreshReport();
 
         }
+
+        private void rpvClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -85,7 +85,6 @@
                         <Style>
                           <FontSize>11pt</FontSize>
                           <FontWeight>Bold</FontWeight>
-                          <Color>LightGreen</Color>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -375,7 +374,7 @@
                 <Caption>Cantidad de clientes por mes</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontFamily>Microsoft YaHei</FontFamily>
+                  <FontFamily>arial</FontFamily>
                   <FontSize>11pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <TextAlign>Left</TextAlign>
@@ -411,6 +410,7 @@
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
+              <BackgroundColor>LightGrey</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
@@ -420,6 +420,7 @@
           <Border>
             <Style>None</Style>
           </Border>
+          <BackgroundColor>LightGrey</BackgroundColor>
         </Style>
       </Body>
       <Width>3.62326in</Width>

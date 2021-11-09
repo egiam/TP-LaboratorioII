@@ -32,15 +32,16 @@ create or alter proc pa_clientes_mes
 @anio int
 as
 begin
-select datename(month,fecha) 'mes',
-year(fecha) 'anio',
-count(f.id_cliente) 'cantidad',
+select datename(month,fecha) 'Mes',
+year(fecha) 'Año',
+count(f.id_cliente) 'Cantidad',
 format(sum(df.precio_unitario*cantidad*(1-descuento)) / count(f.id_cliente),'c2','es-ar')
-'promedio'
+'Promedio'
 from facturas f join clientes c on f.id_cliente = c.id_cliente
 join detalles_factura df on f.id_factura = df.id_factura
 where year(fecha) = @anio
 group by datename(month,fecha), year(fecha)
+order by 4
 end
 --exec pa_clientes_mes 2021
 
