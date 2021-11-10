@@ -46,7 +46,7 @@ namespace TPLaboratorio2.Tablas
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(769, 11);
+            this.btnCerrar.Location = new System.Drawing.Point(845, 11);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
@@ -106,7 +106,7 @@ namespace TPLaboratorio2.Tablas
             this.grdPlan.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdPlan.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.grdPlan.RowTemplate.ReadOnly = true;
-            this.grdPlan.Size = new System.Drawing.Size(800, 361);
+            this.grdPlan.Size = new System.Drawing.Size(876, 361);
             this.grdPlan.TabIndex = 47;
             this.grdPlan.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdPlan_CellFormatting);
             // 
@@ -114,7 +114,7 @@ namespace TPLaboratorio2.Tablas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(876, 450);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grdPlan);
