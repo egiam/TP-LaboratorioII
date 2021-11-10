@@ -263,3 +263,23 @@ D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmSuministros.resources
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmTipoDoc.resources
 D:\UTN\Carrera\Semestre 2\LCII\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmTipoSuministro.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmClientes.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmContacto.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmDescuentos.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmDetalleEntrega.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmDetalleFactura.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmDetalleReceta.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmEmpleados.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmEntregaSum.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmFacturas.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmMedicos.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmObraSocial.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmPlan.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmRecetas.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmSexos.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmSucursales.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmSucursalSumin.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmSuministros.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmTipoContacto.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmTipoDoc.resources
+C:\Users\Felpu\Documents\GitHub\TP-LaboratorioII\VS\TPLaboratorio2\TPLaboratorio2\obj\Debug\TPLaboratorio2.Tablas.FrmTipoSuministro.resources

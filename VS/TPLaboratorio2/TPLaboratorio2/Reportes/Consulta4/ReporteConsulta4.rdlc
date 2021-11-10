@@ -175,7 +175,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>descuentoAplicado</rd:DefaultName>
@@ -190,6 +192,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -215,8 +218,8 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.05516cm</Top>
             <Left>0.49953cm</Left>
-            <Height>1.33229cm</Height>
-            <Width>9.97417cm</Width>
+            <Height>1.3323cm</Height>
+            <Width>9.97416cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
