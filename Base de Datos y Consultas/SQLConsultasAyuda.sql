@@ -52,16 +52,14 @@ select id_detalle_receta Codigo, id_receta 'Codigo de Receta', s.nombre Suminist
 from detalles_receta dr join suministros s on dr.codigo_barra = s.codigo_barra
 
 -- factura
-select id_factura Codigo, c.apellido+', '+c.nombre Cliente, Fecha, e.apellido+', '+e.nombre Empleado
-from facturas f join clientes c on f.id_cliente = c.id_cliente join empleados e on f.id_empleado = e.id_empleado
+select id_factura Codigo, c.apellido+', '+c.nombre Cliente, Fecha, e.apellido+', '+e.nombre Empleado from facturas f join clientes c on f.id_cliente = c.id_cliente join empleados e on f.id_empleado = e.id_empleado
 
 -- detalle factura
-select id_detalle_factura Codigo, id_factura 'Codigo de Factura', precio_unitario 'Precio por Unidad', Cantidad, Descuento, Reembolsado, s.nombre Suministro
+select id_detalle_factura Codigo, id_factura 'Codigo de Factura', precio_unitario 'Precio por Unidad', Cantidad, Descuento, Reembolsado, s.nombre Suministro, df.precio_unitario * df.cantidad Importe
 from detalles_factura df join suministros s on df.codigo_barra = s.codigo_barra
 
 -- suministros 
-select codigo_barra Codigo, s.Nombre, Descripcion, venta_libre, Precio, tipo, stock_minimo 'Stock Minimo', Stock
-from suministros s join tipos_suministro ts on s.id_tipo_suministro = ts.id_tipo_suministro
+select codigo_barra Codigo, s.Nombre, Descripcion, venta_libre, Precio, tipo, stock_minimo 'Stock Minimo', Stock from suministros s join tipos_suministro ts on s.id_tipo_suministro = ts.id_tipo_suministro
 
 -- tipo suministros
 select * from tipos_suministro
@@ -71,6 +69,5 @@ select id_descuento Codigo, Tipo, Descuento, fecha_desde 'Desde', fecha_hasta Ha
 from descuentos d join tipos_suministro ts on d.id_tipo_suministro = ts.id_tipo_suministro join localidades l on d.cod_localidad = l.cod_localidad join planes p on d.id_plan = p.id_plan join obras_sociales os on p.id_obra_social = os.id_obra_social
 
 --sucursales suministros
-select id_sucursal_suministro Codigo, s.nombre Suministro, id_sucursal 'Codigo de Sucursal', ss.stock_minimo 'Stock Minimo', ss.Stock
-from sucursales_suministros ss join suministros s on ss.codigo_barra = s.codigo_barra 
+select id_sucursal_suministro Codigo, s.nombre Suministro, id_sucursal 'Codigo de Sucursal', ss.stock_minimo 'Stock Minimo', ss.Stock from sucursales_suministros ss join suministros s on ss.codigo_barra = s.codigo_barra 
 

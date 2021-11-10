@@ -117,6 +117,7 @@
             this.panelformularios.Name = "panelformularios";
             this.panelformularios.Size = new System.Drawing.Size(882, 555);
             this.panelformularios.TabIndex = 2;
+            this.panelformularios.Paint += new System.Windows.Forms.PaintEventHandler(this.panelformularios_Paint);
             // 
             // panelSubTabla2
             // 
@@ -180,6 +181,7 @@
             this.btnSS.Text = "Sucursales Sumin";
             this.btnSS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSS.UseVisualStyleBackColor = true;
+            this.btnSS.Click += new System.EventHandler(this.btnSS_Click);
             // 
             // btnDescuento
             // 
@@ -188,8 +190,8 @@
             this.btnDescuento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnDescuento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnDescuento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescuento.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
             this.btnDescuento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDescuento.Location = new System.Drawing.Point(0, 370);
             this.btnDescuento.Margin = new System.Windows.Forms.Padding(2);
@@ -199,6 +201,7 @@
             this.btnDescuento.Text = "Descuentos";
             this.btnDescuento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDescuento.UseVisualStyleBackColor = true;
+            this.btnDescuento.Click += new System.EventHandler(this.btnDescuento_Click);
             // 
             // btnTS
             // 
@@ -218,6 +221,7 @@
             this.btnTS.Text = "Tipo Suministro";
             this.btnTS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTS.UseVisualStyleBackColor = true;
+            this.btnTS.Click += new System.EventHandler(this.btnTS_Click);
             // 
             // btnSuministros
             // 
@@ -226,8 +230,8 @@
             this.btnSuministros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnSuministros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnSuministros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuministros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuministros.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSuministros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuministros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSuministros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSuministros.Location = new System.Drawing.Point(0, 296);
             this.btnSuministros.Margin = new System.Windows.Forms.Padding(2);
@@ -237,6 +241,7 @@
             this.btnSuministros.Text = "Suministros";
             this.btnSuministros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSuministros.UseVisualStyleBackColor = true;
+            this.btnSuministros.Click += new System.EventHandler(this.btnSuministros_Click);
             // 
             // btnDF
             // 
@@ -245,8 +250,8 @@
             this.btnDF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnDF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDF.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
             this.btnDF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDF.Location = new System.Drawing.Point(0, 259);
             this.btnDF.Margin = new System.Windows.Forms.Padding(2);
@@ -256,6 +261,7 @@
             this.btnDF.Text = "Detalle Factura";
             this.btnDF.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDF.UseVisualStyleBackColor = true;
+            this.btnDF.Click += new System.EventHandler(this.btnDF_Click);
             // 
             // btnFacturas
             // 
@@ -264,8 +270,8 @@
             this.btnFacturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacturas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFacturas.Location = new System.Drawing.Point(0, 222);
             this.btnFacturas.Margin = new System.Windows.Forms.Padding(2);
@@ -275,6 +281,7 @@
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFacturas.UseVisualStyleBackColor = true;
+            this.btnFacturas.Click += new System.EventHandler(this.btnFacturas_Click);
             // 
             // btnDR
             // 
@@ -283,8 +290,8 @@
             this.btnDR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnDR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDR.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
             this.btnDR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDR.Location = new System.Drawing.Point(0, 185);
             this.btnDR.Margin = new System.Windows.Forms.Padding(2);
@@ -294,6 +301,7 @@
             this.btnDR.Text = "Detalle Receta";
             this.btnDR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDR.UseVisualStyleBackColor = true;
+            this.btnDR.Click += new System.EventHandler(this.btnDR_Click);
             // 
             // btnRecetas
             // 
@@ -302,8 +310,8 @@
             this.btnRecetas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnRecetas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecetas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecetas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnRecetas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecetas.Location = new System.Drawing.Point(0, 148);
             this.btnRecetas.Margin = new System.Windows.Forms.Padding(2);
@@ -313,6 +321,7 @@
             this.btnRecetas.Text = "Recetas";
             this.btnRecetas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRecetas.UseVisualStyleBackColor = true;
+            this.btnRecetas.Click += new System.EventHandler(this.btnRecetas_Click);
             // 
             // btnDE
             // 
@@ -332,6 +341,7 @@
             this.btnDE.Text = "Detalle Entrega";
             this.btnDE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDE.UseVisualStyleBackColor = true;
+            this.btnDE.Click += new System.EventHandler(this.btnDE_Click);
             // 
             // btnES
             // 
@@ -351,6 +361,7 @@
             this.btnES.Text = "Entrega Suministro";
             this.btnES.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnES.UseVisualStyleBackColor = true;
+            this.btnES.Click += new System.EventHandler(this.btnES_Click);
             // 
             // btnTD
             // 
@@ -370,6 +381,7 @@
             this.btnTD.Text = "Tipo Documento";
             this.btnTD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTD.UseVisualStyleBackColor = true;
+            this.btnTD.Click += new System.EventHandler(this.btnTD_Click);
             // 
             // btnMedicos
             // 
@@ -378,8 +390,8 @@
             this.btnMedicos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnMedicos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnMedicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedicos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMedicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMedicos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnMedicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedicos.Location = new System.Drawing.Point(0, 0);
             this.btnMedicos.Margin = new System.Windows.Forms.Padding(2);
@@ -389,6 +401,7 @@
             this.btnMedicos.Text = "Medicos";
             this.btnMedicos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMedicos.UseVisualStyleBackColor = true;
+            this.btnMedicos.Click += new System.EventHandler(this.btnMedicos_Click);
             // 
             // panelSubTabla1
             // 
@@ -453,6 +466,7 @@
             this.btnSexos.Text = "Sexos";
             this.btnSexos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSexos.UseVisualStyleBackColor = true;
+            this.btnSexos.Click += new System.EventHandler(this.btnSexos_Click);
             // 
             // btnSucursales
             // 
@@ -481,8 +495,8 @@
             this.btnEmpleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpleados.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmpleados.Location = new System.Drawing.Point(0, 333);
             this.btnEmpleados.Margin = new System.Windows.Forms.Padding(2);
@@ -501,8 +515,8 @@
             this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClientes.Location = new System.Drawing.Point(0, 296);
             this.btnClientes.Margin = new System.Windows.Forms.Padding(2);

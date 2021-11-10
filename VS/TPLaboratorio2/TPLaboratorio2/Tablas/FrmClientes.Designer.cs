@@ -53,6 +53,7 @@ namespace TPLaboratorio2.Tablas
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 49;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
             // label3
             // 
@@ -70,6 +71,8 @@ namespace TPLaboratorio2.Tablas
             // 
             this.grdPlan.AllowUserToAddRows = false;
             this.grdPlan.AllowUserToDeleteRows = false;
+            this.grdPlan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdPlan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.grdPlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -89,7 +92,6 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdPlan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdPlan.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.grdPlan.Location = new System.Drawing.Point(0, 78);
             this.grdPlan.Name = "grdPlan";
             this.grdPlan.ReadOnly = true;

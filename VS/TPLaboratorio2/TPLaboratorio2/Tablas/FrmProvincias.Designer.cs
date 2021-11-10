@@ -65,7 +65,7 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdProvincias.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdProvincias.Location = new System.Drawing.Point(274, 93);
+            this.grdProvincias.Location = new System.Drawing.Point(251, 93);
             this.grdProvincias.Name = "grdProvincias";
             this.grdProvincias.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -80,7 +80,7 @@ namespace TPLaboratorio2.Tablas
             this.grdProvincias.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdProvincias.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.grdProvincias.RowTemplate.ReadOnly = true;
-            this.grdProvincias.Size = new System.Drawing.Size(262, 361);
+            this.grdProvincias.Size = new System.Drawing.Size(314, 361);
             this.grdProvincias.TabIndex = 0;
             this.grdProvincias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdProvincias_CellContentClick);
             // 

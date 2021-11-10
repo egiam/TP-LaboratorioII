@@ -41,8 +41,8 @@ namespace TPLaboratorio2.Tablas
         public void AlternarColorGRD(DataGridView grilla)
         {
             grilla.BackgroundColor = Color.FromArgb(45, 66, 91);
-            //grilla.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(160, 255, 255);
-            //grilla.DefaultCellStyle.BackColor = Color.LightBlue;
+            grilla.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(55, 75, 110);
+            //grilla.DefaultCellStyle.BackColor = Color.FromArgb(50, 70, 100);
             //grilla.ForeColor = Color.White;
             //grilla.ColumnHeadersDefaultCellStyle.BackColor = Color.DarkGray;
 
@@ -74,8 +74,10 @@ namespace TPLaboratorio2.Tablas
 
             grilla.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             grilla.CellBorderStyle = DataGridViewCellBorderStyle.Single;
-            grilla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            grilla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             grilla.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            grilla.Anchor = AnchorStyles.Bottom;
         }
 
     }

@@ -157,6 +157,7 @@ namespace TPLaboratorio2
             this.dgReseltado.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgReseltado.Size = new System.Drawing.Size(443, 340);
             this.dgReseltado.TabIndex = 8;
+            //this.dgReseltado.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgReseltado_CellFormatting);
             // 
             // rpvClientes
             // 

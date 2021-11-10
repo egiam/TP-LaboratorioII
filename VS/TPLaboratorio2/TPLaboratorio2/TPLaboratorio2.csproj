@@ -150,11 +150,47 @@
     <Compile Include="Tablas\FrmContacto.Designer.cs">
       <DependentUpon>FrmContacto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tablas\FrmDescuentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmDescuentos.Designer.cs">
+      <DependentUpon>FrmDescuentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmDetalleEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmDetalleEntrega.Designer.cs">
+      <DependentUpon>FrmDetalleEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmDetalleFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmDetalleFactura.Designer.cs">
+      <DependentUpon>FrmDetalleFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmDetalleReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmDetalleReceta.Designer.cs">
+      <DependentUpon>FrmDetalleReceta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tablas\FrmEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tablas\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmEntregaSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmEntregaSum.Designer.cs">
+      <DependentUpon>FrmEntregaSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmFacturas.Designer.cs">
+      <DependentUpon>FrmFacturas.cs</DependentUpon>
     </Compile>
     <Compile Include="Tablas\FrmLocalidades.cs">
       <SubType>Form</SubType>
@@ -167,6 +203,12 @@
     </Compile>
     <Compile Include="Tablas\FrmLogistica.Designer.cs">
       <DependentUpon>FrmLogistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmMedicos.Designer.cs">
+      <DependentUpon>FrmMedicos.cs</DependentUpon>
     </Compile>
     <Compile Include="Tablas\FrmObraSocial.cs">
       <SubType>Form</SubType>
@@ -186,17 +228,53 @@
     <Compile Include="Tablas\FrmProvincias.Designer.cs">
       <DependentUpon>FrmProvincias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tablas\FrmRecetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmRecetas.Designer.cs">
+      <DependentUpon>FrmRecetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmSexos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmSexos.Designer.cs">
+      <DependentUpon>FrmSexos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tablas\FrmSucursales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tablas\FrmSucursales.Designer.cs">
       <DependentUpon>FrmSucursales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tablas\FrmSucursalSumin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmSucursalSumin.Designer.cs">
+      <DependentUpon>FrmSucursalSumin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmSuministros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmSuministros.Designer.cs">
+      <DependentUpon>FrmSuministros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tablas\FrmTipoContacto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tablas\FrmTipoContacto.Designer.cs">
       <DependentUpon>FrmTipoContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmTipoDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmTipoDoc.Designer.cs">
+      <DependentUpon>FrmTipoDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\FrmTipoSuministro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\FrmTipoSuministro.Designer.cs">
+      <DependentUpon>FrmTipoSuministro.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmConsulta1.resx">
       <DependentUpon>FrmConsulta1.cs</DependentUpon>
@@ -239,14 +317,35 @@
     <EmbeddedResource Include="Tablas\FrmContacto.resx">
       <DependentUpon>FrmContacto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmDescuentos.resx">
+      <DependentUpon>FrmDescuentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmDetalleEntrega.resx">
+      <DependentUpon>FrmDetalleEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmDetalleFactura.resx">
+      <DependentUpon>FrmDetalleFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmDetalleReceta.resx">
+      <DependentUpon>FrmDetalleReceta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmEntregaSum.resx">
+      <DependentUpon>FrmEntregaSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmFacturas.resx">
+      <DependentUpon>FrmFacturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmLocalidades.resx">
       <DependentUpon>FrmLocalidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmLogistica.resx">
       <DependentUpon>FrmLogistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmMedicos.resx">
+      <DependentUpon>FrmMedicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmObraSocial.resx">
       <DependentUpon>FrmObraSocial.cs</DependentUpon>
@@ -257,11 +356,29 @@
     <EmbeddedResource Include="Tablas\FrmProvincias.resx">
       <DependentUpon>FrmProvincias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmRecetas.resx">
+      <DependentUpon>FrmRecetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmSexos.resx">
+      <DependentUpon>FrmSexos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmSucursales.resx">
       <DependentUpon>FrmSucursales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmSucursalSumin.resx">
+      <DependentUpon>FrmSucursalSumin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmSuministros.resx">
+      <DependentUpon>FrmSuministros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tablas\FrmTipoContacto.resx">
       <DependentUpon>FrmTipoContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmTipoDoc.resx">
+      <DependentUpon>FrmTipoDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\FrmTipoSuministro.resx">
+      <DependentUpon>FrmTipoSuministro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

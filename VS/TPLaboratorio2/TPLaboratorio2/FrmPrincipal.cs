@@ -218,7 +218,7 @@ namespace ModernGUI_V3
         private void button7_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmProvincias>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnConsulta2_Click(object sender, EventArgs e)
@@ -245,13 +245,13 @@ namespace ModernGUI_V3
         private void btnLocalidades_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmLocalidades>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnBarrios_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmBarrios>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void panelBarraTitulo_Paint(object sender, PaintEventArgs e)
@@ -270,49 +270,132 @@ namespace ModernGUI_V3
         private void btnLogistica_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmLogistica>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnOS_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmObraSocial>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnPlan_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmPlan>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnTC_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmTipoContacto>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnContacto_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmContacto>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmClientes>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmEmpleados>();
-            HideSubMenu();
+            //HideSubMenu();
         }
 
         private void btnSucursales_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmSucursales>();
-            HideSubMenu();
+            //HideSubMenu();
+        }
+
+        private void btnSexos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmSexos>();
+            //HideSubMenu();
+        }
+
+        private void btnMedicos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmMedicos>();
+            //HideSubMenu();
+        }
+
+        private void btnTD_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmTipoDoc>();
+            //HideSubMenu();
+        }
+
+        private void btnES_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmEntregaSum>();
+            //HideSubMenu();
+        }
+
+        private void btnDE_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmDetalleEntrega>();
+            //HideSubMenu();
+        }
+
+        private void btnRecetas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRecetas>();
+            //HideSubMenu();
+        }
+
+        private void btnDR_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmDetalleReceta>();
+            //HideSubMenu();
+        }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmFacturas>();
+            //HideSubMenu();
+        }
+
+        private void btnDF_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmDetalleFactura>();
+            //HideSubMenu();
+        }
+
+        private void btnSuministros_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmSuministros>();
+            //HideSubMenu();
+        }
+
+        private void btnTS_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmTipoSuministro>();
+            //HideSubMenu();
+        }
+
+        private void btnDescuento_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmDescuentos>();
+            //HideSubMenu();
+        }
+
+        private void btnSS_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmSucursalSumin>();
+            //HideSubMenu();
+        }
+
+        private void panelformularios_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
 

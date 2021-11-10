@@ -53,6 +53,7 @@ namespace TPLaboratorio2.Tablas
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 49;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
             // label3
             // 
@@ -61,9 +62,9 @@ namespace TPLaboratorio2.Tablas
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(358, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 26);
+            this.label3.Size = new System.Drawing.Size(111, 26);
             this.label3.TabIndex = 48;
-            this.label3.Text = "Contacto";
+            this.label3.Text = "Sucursales";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // grdPlan
@@ -91,7 +92,7 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdPlan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdPlan.Location = new System.Drawing.Point(222, 77);
+            this.grdPlan.Location = new System.Drawing.Point(198, 77);
             this.grdPlan.Name = "grdPlan";
             this.grdPlan.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -106,7 +107,7 @@ namespace TPLaboratorio2.Tablas
             this.grdPlan.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdPlan.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.grdPlan.RowTemplate.ReadOnly = true;
-            this.grdPlan.Size = new System.Drawing.Size(357, 361);
+            this.grdPlan.Size = new System.Drawing.Size(441, 361);
             this.grdPlan.TabIndex = 47;
             // 
             // FrmSucursales

@@ -77,7 +77,7 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdLocalidades.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdLocalidades.Location = new System.Drawing.Point(227, 93);
+            this.grdLocalidades.Location = new System.Drawing.Point(190, 93);
             this.grdLocalidades.Name = "grdLocalidades";
             this.grdLocalidades.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -92,7 +92,7 @@ namespace TPLaboratorio2.Tablas
             this.grdLocalidades.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdLocalidades.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.grdLocalidades.RowTemplate.ReadOnly = true;
-            this.grdLocalidades.Size = new System.Drawing.Size(362, 361);
+            this.grdLocalidades.Size = new System.Drawing.Size(423, 361);
             this.grdLocalidades.TabIndex = 21;
             // 
             // btnCerrar
