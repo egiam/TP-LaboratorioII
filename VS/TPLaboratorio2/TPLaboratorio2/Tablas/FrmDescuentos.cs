@@ -23,7 +23,7 @@ namespace TPLaboratorio2.Tablas
             BackColor = Color.FromArgb(45, 66, 91);
             label3.ForeColor = Color.White;
             conex.AlternarColorGRD(grdPlan);
-            string select = "select id_descuento Codigo, Tipo, Descuento, fecha_desde 'Desde', fecha_hasta Hasta, Localidad, p.Nombre+' - '+os.nombre 'Plan' " +
+            string select = "select id_descuento Codigo, Tipo, str(d.descuento * 100) +'%' Descuento, fecha_desde 'Desde', fecha_hasta Hasta, Localidad, p.Nombre+' - '+os.nombre 'Plan' " +
                             "from descuentos d join tipos_suministro ts on d.id_tipo_suministro = ts.id_tipo_suministro join localidades l on d.cod_localidad = l.cod_localidad join planes p on d.id_plan = p.id_plan join obras_sociales os on p.id_obra_social = os.id_obra_social";
             grdPlan.DataSource = conex.Coneccion(select);
         }

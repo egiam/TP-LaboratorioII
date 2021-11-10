@@ -38,5 +38,30 @@ namespace TPLaboratorio2.Tablas
         {
             this.Close();
         }
+
+        private void grdPlan_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            //if (this.grdPlan.Columns[e.ColumnIndex].Name == "tipo")
+            //{
+            //    if (e.Value != null)
+            //    {
+            //        if (e.Value.GetType() != typeof(System.DBNull))
+            //        {
+            //            //Stock menor a 30
+            //            if (Convert.ToString(e.Value) == "Masculino")
+            //            {
+            //                //e.CellStyle.BackColor = Color.LightSalmon;
+            //                e.CellStyle.ForeColor = Color.LimeGreen;
+            //            }
+            //            //Stock menor a 20
+            //            if (Convert.ToString(e.Value) == "Femenino")
+            //            {
+            //                //e.CellStyle.BackColor = Color.Salmon;
+            //                e.CellStyle.ForeColor = Color.Magenta;
+            //            }
+            //        }
+            //    }
+            //}
+        }
     }
 }
