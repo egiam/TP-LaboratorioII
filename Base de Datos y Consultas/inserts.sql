@@ -1,5 +1,6 @@
 -- Insertar
-
+use Farmaceutica
+go
 
 --PROVINCIAS
 INSERT INTO PROVINCIAS (provincia) VALUES('CORDOBA')
@@ -406,3 +407,9 @@ select * from descuentos
 	Insert into descuentos values(1,0.1,'1/1/2021','31/12/2021',7,1)
 
 select * from sucursales_suministros
+
+	Insert into sucursales_suministros values(1,2,30,15)
+	Insert into sucursales_suministros values(2,1,40,20)
+	Insert into sucursales_suministros values(3,4,50,20)
+	Insert into sucursales_suministros values(4,3,10,5)
+	Insert into sucursales_suministros values(2,3,45,15)

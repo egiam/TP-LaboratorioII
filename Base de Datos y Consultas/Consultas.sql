@@ -1,4 +1,5 @@
-
+use Farmaceutica
+go
 --1) Totales por mes, suministro y tipo suministro.
 create or alter proc pa_total_facturacion
 @fecha_desde datetime = null,
