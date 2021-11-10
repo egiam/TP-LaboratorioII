@@ -249,12 +249,12 @@ select * from suministros
 
 	Insert into suministros values('Paracetamol','Tafirol, de 1 g. Comprimido.',1,199.99,1,20,50)
 	Insert into suministros values('Ibuprofeno','Walgreens, de 200 mg. Comprimido.',1,299.99,1,20,50)
-	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,1,10,30)
-	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Balanza','Balanza personal',1,5000,5,15,20)
-	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Tensiómetro','Tensiómetro personal',1,8000,5,10,11)
+	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,1,25,30)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Balanza','Balanza personal',1,5000,5,25,30)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Tensiómetro','Tensiómetro personal',1,8000,5,20,11)
 
-	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema Facial','Crema hidratante',1,1000,4,9,11)
-	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema de manos','Crema hidratante para manos',1,8000,4,12,18)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema Facial','Crema hidratante',1,1000,4,20,11)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema de manos','Crema hidratante para manos',1,8000,4,20,18)
 
 
 	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Desodorate Axe','Desodorante corporal',1,170,3,20,50)
@@ -411,5 +411,5 @@ select * from sucursales_suministros
 	Insert into sucursales_suministros values(1,2,30,15)
 	Insert into sucursales_suministros values(2,1,40,20)
 	Insert into sucursales_suministros values(3,4,50,20)
-	Insert into sucursales_suministros values(4,3,10,5)
+	Insert into sucursales_suministros values(4,3,10,30)
 	Insert into sucursales_suministros values(2,3,45,15)

@@ -399,6 +399,11 @@ namespace ModernGUI_V3
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL

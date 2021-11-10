@@ -79,7 +79,8 @@ where c.id_cliente=2 and  year(fecha)=year(getdate())
 
 GO
 
---4) Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social --NO SE USA
+--4) Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social 
+--NO SE USA
 create or alter proc pa_tiene_os
 @codigo int = 1
 as
@@ -116,9 +117,10 @@ GO
 
 --exec pa_tiene_os 1
 
---5) Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos --NO SE USA
+--5) Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos 
 --de venta libre, por obra social en los que lo recaudado fue superior a lo recaudado 
 --en medicamentos que no sean de venta libre
+--NO SE USA
 create or alter proc pa_med_os
 as
 begin
@@ -150,8 +152,9 @@ or
 GO
 
 --exec pa_med_os
---6) Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año --NO SE USA
+--6) Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año 
 --en particular que se ingresará por parámetro.
+--NO SE USA
 create or alter proc pa_medico_año
 @año int
 as
