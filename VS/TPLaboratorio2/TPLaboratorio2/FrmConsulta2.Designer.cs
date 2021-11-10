@@ -129,11 +129,11 @@ namespace TPLaboratorio2
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(372, 5);
+            this.label2.Location = new System.Drawing.Point(347, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 26);
+            this.label2.Size = new System.Drawing.Size(175, 26);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Consulta 2";
+            this.label2.Text = "Clientes Mensual";
             // 
             // dgReseltado
             // 
@@ -157,7 +157,6 @@ namespace TPLaboratorio2
             this.dgReseltado.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgReseltado.Size = new System.Drawing.Size(443, 340);
             this.dgReseltado.TabIndex = 8;
-            //this.dgReseltado.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgReseltado_CellFormatting);
             // 
             // rpvClientes
             // 

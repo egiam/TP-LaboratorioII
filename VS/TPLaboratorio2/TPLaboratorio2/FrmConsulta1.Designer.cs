@@ -30,7 +30,6 @@ namespace TPLaboratorio2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
@@ -42,10 +41,8 @@ namespace TPLaboratorio2
             this.FechaHasta = new System.Windows.Forms.Label();
             this.lblFechaDesde = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.grdResultado = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdResultado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,46 +185,21 @@ namespace TPLaboratorio2
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(338, 3);
+            this.label3.Location = new System.Drawing.Point(325, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 26);
+            this.label3.Size = new System.Drawing.Size(202, 26);
             this.label3.TabIndex = 19;
-            this.label3.Text = "Consulta 1";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.grdResultado);
-            this.groupBox1.Location = new System.Drawing.Point(17, 171);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(777, 310);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
+            this.label3.Text = "Mensual Suministro";
             // 
             // grdResultado
             // 
-            this.grdResultado.AllowUserToAddRows = false;
-            this.grdResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdResultado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.grdResultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdResultado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdResultado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdResultado.Enabled = false;
-            this.grdResultado.Location = new System.Drawing.Point(3, 16);
+            this.grdResultado.Location = new System.Drawing.Point(125, 177);
             this.grdResultado.Name = "grdResultado";
-            this.grdResultado.Size = new System.Drawing.Size(771, 291);
-            this.grdResultado.TabIndex = 0;
-            this.grdResultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.grdResultado.Size = new System.Drawing.Size(589, 326);
+            this.grdResultado.TabIndex = 20;
             // 
             // FrmConsulta1
             // 
@@ -235,6 +207,7 @@ namespace TPLaboratorio2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(843, 515);
+            this.Controls.Add(this.grdResultado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblFechaDesde);
             this.Controls.Add(this.FechaHasta);
@@ -242,7 +215,6 @@ namespace TPLaboratorio2
             this.Controls.Add(this.dtpDesde);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.txtTipoSuministro);
@@ -251,7 +223,6 @@ namespace TPLaboratorio2
             this.Text = "Consulta 1";
             this.Load += new System.EventHandler(this.FrmConsulta1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -271,7 +242,6 @@ namespace TPLaboratorio2
         private System.Windows.Forms.Label FechaHasta;
         private System.Windows.Forms.Label lblFechaDesde;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView grdResultado;
     }
 }

@@ -58,6 +58,7 @@ namespace TPLaboratorio2
             ConeccionEntreForms conex = new ConeccionEntreForms();
             BackColor = Color.FromArgb(45, 66, 91);
             conex.AlternarColorGRD(grdResultado);
+            grdResultado.ScrollBars = ScrollBars.Both;
         }
     }
 }

@@ -18,7 +18,8 @@ namespace ModernGUI_V3
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-
+            btnMaximizar.Enabled = false;
+            btnRestaurar.Enabled = false;
         }
 
         private void CustomizeDesign()

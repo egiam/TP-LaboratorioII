@@ -7,8 +7,8 @@ create or alter proc pa_total_facturacion
 @tipo varchar (50)= '%'
 as
 begin
-select month (f.fecha) 'Mes', year (f.fecha) 'Año', s.nombre 'Suministro', t.tipo 'Tipo de suministro',
-format(sum (d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento))),'c2','es-ar')'Total de facturacion'
+select	month (f.fecha) 'Mes', year (f.fecha) 'Año', s.nombre 'Suministro', t.tipo 'Tipo de suministro',
+		format(sum (d.precio_unitario*d.cantidad*(1-descuento)),'c2','es-ar')'Total de facturacion'
 --format(sum(d.precio_unitario*d.cantidad-(d.precio_unitario*d.cantidad*(1-descuento)))/count(f.id_factura),'c2','es-ar') 'promedio de facturacion'
 from facturas f join detalles_factura d
 on f.id_factura = d.id_factura
@@ -57,8 +57,8 @@ begin
 select e.nombre+' '+e.apellido 'Empleado', c.nombre+' '+c.apellido 'Cliente',
 count (f.id_factura) 'Cantidad',
 format(sum(cantidad*precio_unitario),'c2','es-ar') 'Total' ,
-format(min(f.fecha),'dd/mm/yyyy') 'PrimerFecha',
-format(max(f.fecha),'dd/mm/yyyy') 'UltimaFecha'
+format(min(f.fecha),'dd/MM/yyyy') 'PrimerFecha',
+format(max(f.fecha),'dd/MM/yyyy') 'UltimaFecha'
 from empleados e join facturas f on e.id_empleado=f.id_empleado
 join detalles_factura df on df.id_factura=f.id_factura
 join clientes c on c.id_cliente=f.id_cliente

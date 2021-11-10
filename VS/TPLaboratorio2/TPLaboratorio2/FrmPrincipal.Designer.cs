@@ -769,7 +769,7 @@
             this.btnConsulta5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnConsulta5.Size = new System.Drawing.Size(188, 34);
             this.btnConsulta5.TabIndex = 11;
-            this.btnConsulta5.Text = "Consulta5";
+            this.btnConsulta5.Text = "Gasto Cliente Mes Pas.";
             this.btnConsulta5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsulta5.UseVisualStyleBackColor = true;
@@ -791,7 +791,7 @@
             this.btnConsulta4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnConsulta4.Size = new System.Drawing.Size(188, 34);
             this.btnConsulta4.TabIndex = 10;
-            this.btnConsulta4.Text = "Consulta4";
+            this.btnConsulta4.Text = "Cantidad Afiliados";
             this.btnConsulta4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsulta4.UseVisualStyleBackColor = true;
@@ -813,7 +813,7 @@
             this.btnConsulta3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnConsulta3.Size = new System.Drawing.Size(188, 34);
             this.btnConsulta3.TabIndex = 9;
-            this.btnConsulta3.Text = "Consulta3";
+            this.btnConsulta3.Text = "Cantidad Facturas";
             this.btnConsulta3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsulta3.UseVisualStyleBackColor = true;
@@ -835,7 +835,7 @@
             this.btnConsulta2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnConsulta2.Size = new System.Drawing.Size(188, 34);
             this.btnConsulta2.TabIndex = 8;
-            this.btnConsulta2.Text = "Consulta2";
+            this.btnConsulta2.Text = "Clientes Mensual";
             this.btnConsulta2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsulta2.UseVisualStyleBackColor = true;
@@ -857,7 +857,7 @@
             this.btnConsulta1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnConsulta1.Size = new System.Drawing.Size(188, 34);
             this.btnConsulta1.TabIndex = 7;
-            this.btnConsulta1.Text = "Consulta1";
+            this.btnConsulta1.Text = "Mensual Suministro";
             this.btnConsulta1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsulta1.UseVisualStyleBackColor = true;
