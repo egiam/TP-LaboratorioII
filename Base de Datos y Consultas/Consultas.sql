@@ -51,11 +51,12 @@ GO
 --la fecha de la primer y ultima factura por empleado y cliente, 
 --para las facturas de este año que oscilen entre los codigos 1 y 10
 --ordenado por vendedor, cantidad de ventas en forma descendente y cliente.
+
 create or alter proc pa_consulta3
 as
 begin
 select e.nombre+' '+e.apellido 'Empleado', c.nombre+' '+c.apellido 'Cliente',
-count (f.id_factura) 'Cantidad',
+count (distinct f.id_factura) 'Cantidad',
 format(sum(cantidad*precio_unitario),'c2','es-ar') 'Total' ,
 format(min(f.fecha),'dd/MM/yyyy') 'PrimerFecha',
 format(max(f.fecha),'dd/MM/yyyy') 'UltimaFecha'
@@ -71,6 +72,9 @@ end
 GO
 
 --exec pa_consulta3
+select * 
+from facturas f join clientes c on f.id_cliente=c.id_cliente
+where c.id_cliente=2 and  year(fecha)=year(getdate())
 
 
 GO
@@ -158,28 +162,29 @@ where id_medico not in (select re.id_medico
 						where year(fecha) >= @año)
 -- exec pa_medico_año @año = 2019
 
---7) Cantidades de afiliados por obra social que realizaron compras, y total de --CONSULTA 4
+--7) Cantidades de afiliados por obra social que realizaron compras, y total de 
 --descuentos aplicados filtrando aquellas obras sociales que tengan como mínimo la cantidad
 --de afiliados indicado por parámetro
+--CONSULTA 4
 create or alter proc pa_clie_osocial
 @min_cant_afiliados int=0
 as
 begin
-select o.nombre 'obraSocial', count(c.id_cliente) 'cantidadAfiliados',
+select o.nombre 'obraSocial', count(distinct c.id_cliente) 'cantidadAfiliados',
 format(sum(df.descuento*precio_unitario*cantidad),'c2','es-ar')'descuentoAplicado'
 from clientes c join planes p on c.id_plan = p.id_plan
 join obras_sociales o on p.id_obra_social = o.id_obra_social
 join facturas f on f.id_cliente=c.id_cliente
 join detalles_factura df on df.id_factura=f.id_factura
 group by o.nombre
-having count(c.id_cliente)>=@min_cant_afiliados
+having count(distinct c.id_cliente)>=@min_cant_afiliados
 order by 1
 end
 
 GO
 
 --exec pa_clie_osocial 1
-
+select * from clientes
 --8) Listado que muestre el monto máximo, mínimo y total que gastó cada cliente el mes pasado,
 --pero solo donde el importe total gastado sea menor a $10000
 create or alter proc pa_mes_pas

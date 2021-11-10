@@ -305,7 +305,7 @@ select * from empleados
 	Insert into facturas values(2,'15/10/2021',6)
 	Insert into facturas values(4,'16/10/2021',7)
 	Insert into facturas values(1,'18/10/2021',8)
-	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',9)
+	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',8)
 	insert into facturas values(3,'11/9/2021',10)
 	Insert into facturas(id_cliente, fecha, id_empleado) values(5,'19/09/2021',6)
 	Insert into facturas(id_cliente, fecha, id_empleado) values(7,'13/08/2021',8)
