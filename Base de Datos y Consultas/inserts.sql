@@ -192,17 +192,17 @@ select * from clientes
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Álvarez','Claudio', 'Roure', 900, 4, 987654, 1, 3,'25/2/1979',1,25);
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Campos','Raul', 'San Martin', 850, 7, 3456234, 1, 1,'15/2/1996',1,13);
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Durán','Carla', 'Belgrano', 850,3, 3467834, 1, 2,'15/5/1976',2,31);
-	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Pérez','María', 'Monserrat', 850,6, 148625, 1, 3,'5/9/1983',2,14);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Pérez','María', 'Monserrat', 850,6, 148625, 1, 15,'5/9/1983',2,14);
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Zamora','Carlos Luis', 'Manantiales', 850,7, 4865565, 1, 4,'25/1/1989',1,41);
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Pérez','Ana', 'Avellaneda', 850,1, 8462451, 1, 1,'25/12/1981',2,45);
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Perea','Luis M.', 'Don Bosco', 850,6, 75625855, 1, 2,'31/12/1982',1,12);
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Ponce','Carmelo', 'Colon', 850,4, 234565432, 2, 3,'1/1/1984',1,32);
-	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Gales','Julia', 'Colon', 850,4, 74565545, 2, 4,'1/2/1988',2,86);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Gales','Julia', 'Colon', 850,4, 74565545, 2, 8,'1/2/1988',2,86);
 	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Suarez','Paola', 'Colon', 850,4, 85555455, 3, 2,'27/6/1985',2,98);
-	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Maranini','Jose', 'Colon', 850,4, 238955432, 2, 1,'7/8/1977',1,65);
-	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Fonceca','Berta', 'Alverdi', 850,2, 4785565, 3, 4,'29/7/1999',2,54);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Maranini','Jose', 'Colon', 850,4, 238955432, 2, 16,'7/8/1977',1,65);
+	INSERT INTO CLIENTES (APELLIDO, NOMBRE, calle,nro_calle,cod_barrio, nro_doc,id_tipo_doc,id_plan,fecha_nac,id_tipo_sexo,nro_afiliado) VALUES ('Fonceca','Berta', 'Alverdi', 850,2, 4785565, 3, 15,'29/7/1999',2,54);
 
-
+	select * from facturas
 select * from contactos
 
 	Insert into contactos values('alonsoC@hotmail.com',1,null,2,null,null) --contacto, id_cliente, id_empresas_log, id_tipo_contacto, id_empleado, id_sucursal
@@ -254,9 +254,16 @@ select * from suministros
 
 	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema Facial','Crema hidratante',1,1000,4,9,11)
 	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema de manos','Crema hidratante para manos',1,8000,4,12,18)
-	
+
+
 	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Desodorate Axe','Desodorante corporal',1,170,3,20,50)
 
+		
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Kit cosmetología','Kit de estética',1,3000,4,50,50)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Esmalte de uñas rojo','Esmalte de uñas rojo',1,800,4,50,50)
+
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Lavandina en gel Ayudin','Desinfectante de superficies',1,800,2,30,20)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Ciff','Desengrasante de superficies',1,800,2,15,0)
 	
 	select * from entrega_suministro
 	select * from suministros
@@ -280,10 +287,13 @@ select * from detalles_entregas
 	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (4,8,20)
 
 	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (5,1,10)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (5,11,10)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (5,10,30)
 
 	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (6,1,30)
 	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (6,2,15)
 	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (7,3,25)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (7,12,5)
 
 	
 
@@ -299,23 +309,68 @@ select * from empleados
 	Insert into facturas(id_cliente, fecha, id_empleado) values(5,'19/09/2021',6)
 	Insert into facturas(id_cliente, fecha, id_empleado) values(7,'13/08/2021',8)
 
+	Insert into facturas values(2,'5/06/2020',10)
+	Insert into facturas values(15,'1/2/2020',9)
+	Insert into facturas values(12,'11/12/2020',4)
+	Insert into facturas values(2,'1/1/2020',7)
+	Insert into facturas values(1,'20/05/2020',7)
+	Insert into facturas values(4,'20/08/2020',10)
+	Insert into facturas values(11,'20/08/2020',10)
+
+
+
 
 	select * from suministros
 select * from detalles_factura
+select * from tipos_suministro
 
 	Insert into detalles_factura values(1,150,2,0.05,0,1)
-	Insert into detalles_factura values(1,150,3,0.04,0,1)
-	Insert into detalles_factura values(1,150,5,0.06,0,1)
+	Insert into detalles_factura values(1,150,3,0.04,0,2)
+	Insert into detalles_factura values(1,150,5,0.06,0,3)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(1,170,2,0.05,0,8)
+
 	Insert into detalles_factura values(2,150,1,0.09,0,1)
 	Insert into detalles_factura values(2,200,4,0.07,1,3)
+
 	Insert into detalles_factura values(3,250,1,0.1,0,2)
+
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(4,350,1,0.1,0,2)
-	insert into detalles_factura values(4,225,4,0.2,0,2)
+	
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,400,2,0.1,0,2)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,1000,3,0.1,0,3)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(7,500,4,0.1,0,1)
+	insert into detalles_factura values(7,225,4,0.2,0,2)
 
-	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(1,170,2,0.05,0,8)
+
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(8,7500,1,0.1,0,5)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(8,4500,2,0.1,0,4)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(8,150,2,0.1,0,1)
+
+
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(9,950,2,0.1,0,6)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(9,150,2,0.1,0,8)
+
+
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(10,800,2,0.1,0,12)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(10,800,2,0.1,0,11)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(10,1000,2,0.1,1,6)
+
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(11,350,1,0.1,0,2)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(11,500,4,0.1,0,1)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(11,150,2,0.1,0,8)
+
+
+	Insert into detalles_factura values(12,150,5,0.06,0,3)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(12,350,1,0.1,0,2)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(12,800,2,0.1,0,11)
+
+	insert into detalles_factura values(13,225,4,0.2,0,2)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(13,500,4,0.1,0,1)
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(13,350,1,0.1,0,2)
+
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(14,170,2,0.05,0,8)
+
+	
 
 
 select * from suministros

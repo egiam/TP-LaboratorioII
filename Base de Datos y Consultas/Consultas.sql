@@ -13,17 +13,15 @@ from facturas f join detalles_factura d
 on f.id_factura = d.id_factura
 join suministros s on s.codigo_barra=d.codigo_barra
 join tipos_suministro t on t.id_tipo_suministro=s.id_tipo_suministro
-join detalles_receta dr on dr.codigo_barra=s.codigo_barra
+--join detalles_receta dr on dr.codigo_barra=s.codigo_barra
 where f.fecha between @fecha_desde and @fecha_hasta
 and t.tipo like '%'+@tipo+'%'
-and cod_aprobacion is not null
+--and cod_aprobacion is not null
 group by month (f.fecha), year (f.fecha), s.nombre, t.tipo
 order by 2,1
 end
 
-select * from facturas f
-where month(fecha)=8
-select * from detalles_factura
+GO
 
 --exec pa_total_facturacion '1/1/2021','31/12/2021'
 
@@ -43,6 +41,9 @@ where year(fecha) = @anio
 group by datename(month,fecha), year(fecha)
 order by 4
 end
+
+GO
+
 --exec pa_clientes_mes 2021
 
 --3) Se quiere saber la cantidad de facturas, la facturacion total, 
@@ -64,9 +65,17 @@ where year(fecha)=year(getdate()) and f.id_factura between 1 and 10
 group by e.nombre+' '+e.apellido, c.nombre+' '+c.apellido
 order by 1, 3 desc, 2
 end
-exec pa_consulta3
+
+
+GO
+
+--exec pa_consulta3
+
+
+GO
+
 --4) Verificar si el cliente tiene obra social, si tiene mostrar los datos de la obra social --NO SE USA
-create proc pa_tiene_os
+create or alter proc pa_tiene_os
 @codigo int = 1
 as
 begin
@@ -96,12 +105,16 @@ begin
 select 'no tiene obra social'
 end
 end
+
+
+GO
+
 --exec pa_tiene_os 1
 
 --5) Se quiere saber el precio promedio de medicamento, el total recaudado en medicamentos --NO SE USA
 --de venta libre, por obra social en los que lo recaudado fue superior a lo recaudado 
 --en medicamentos que no sean de venta libre
-create proc pa_med_os
+create or alter proc pa_med_os
 as
 begin
 select ts.tipo 'medicamento', str(pl.id_obra_social) + ' ' + os.nombre 'obra social',
@@ -127,10 +140,14 @@ or
 		where su.venta_libre = 0
 		group by su.codigo_barra) is null
 		end
+
+
+GO
+
 --exec pa_med_os
 --6) Emitir un listado con los datos de los médicos que no registran ninguna receta desde un año --NO SE USA
 --en particular que se ingresará por parámetro.
-create proc pa_medico_año
+create or alter proc pa_medico_año
 @año int
 as
 select nombre + space(2) + apellido 'nombre médico', matricula 'matricula'
@@ -157,6 +174,8 @@ group by o.nombre
 having count(c.id_cliente)>=@min_cant_afiliados
 order by 1
 end
+
+GO
 
 --exec pa_clie_osocial 1
 
