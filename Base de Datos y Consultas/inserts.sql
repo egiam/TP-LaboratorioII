@@ -146,9 +146,13 @@ select * from Sexos
 
 select * from empresas_logistica
 
+select * from barrios
+
 	Insert into empresas_logistica values('Marques y Asociados', 9, 1502, 'Alberdi')
 	Insert into empresas_logistica values('Falabella',4, 2500, 'Mendoza')
 	Insert into empresas_logistica values('Coniferal', 5, 3500, 'Don Bosco')
+	Insert into empresas_logistica (nombre, cod_barrio, nro_calle, calle) values ('OCASA', 7, 1010, 'Belgrano')
+	Insert into empresas_logistica (nombre, cod_barrio, nro_calle, calle) values ('Andreani', 9, 250, 'Ayacucho')
 
 select * from tipos_documento
 
@@ -168,16 +172,16 @@ select * from sucursales
 
 select * from empleados
 
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Ayelén','Allende','25 de Mayo',915,5,'22/11/1989',1,34587842,2,3,5);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Mariela','Lupo','Gral.Alvear',297,1,'15/3/1979',1,28578412,2,1,2);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Martín','Torres','Santa Rosa',153,1,'11/11/1988',1,33645785,1,3,2);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Florencia','Luque','Ricchieri',3226,4,'05/03/1986',1,32957187,2,1,4);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Juan','Rodriguez','La Rioja',2401,6,'06/3/1975',1,2784124,1,3,5);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Marcos','Carrizo','Colombres',976,8,'25/01/1979',1,29304215,1,2,1);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Leticia','Miranda','Obispo Clara',380,8,'30/07/1983',1,30547812,2,1,1);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Silvia','Juarez','Murcia',1884,11,'27/12/1984',1,30997245,2,3,3);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Esteban','Perez','Málaga',1891,11,'14/08/1985',1,31547124,1,2,2);
-	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log,id_sucursal) values ('Sebastian','Ledesma','Ovidio Lagos',78,5,'09/02/1985',1,31247847,1,2,4);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log) values ('Ayelén','Allende','25 de Mayo',915,5,'22/11/1989',1,34587842,2,3);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log) values ('Mariela','Lupo','Gral.Alvear',297,1,'15/3/1979',1,28578412,2,1);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log) values ('Martín','Torres','Santa Rosa',153,1,'11/11/1988',1,33645785,1,3);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log) values ('Florencia','Luque','Ricchieri',3226,4,'05/03/1986',1,32957187,2,1);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_empresas_log) values ('Juan','Rodriguez','La Rioja',2401,6,'06/3/1975',1,2784124,1,3);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_sucursal) values ('Marcos','Carrizo','Colombres',976,8,'25/01/1979',1,29304215,1,1);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_sucursal) values ('Leticia','Miranda','Obispo Clara',380,8,'30/07/1983',1,30547812,2,1);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_sucursal) values ('Silvia','Juarez','Murcia',1884,11,'27/12/1984',1,30997245,2,3);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_sucursal) values ('Esteban','Perez','Málaga',1891,11,'14/08/1985',1,31547124,1,2);
+	INSERT into empleados (nombre,apellido,calle,nro_calle,cod_barrio,fecha_nac,id_tipo_doc,nro_doc,id_tipo_sexo,id_sucursal) values ('Sebastian','Ledesma','Ovidio Lagos',78,5,'09/02/1985',1,31247847,1,4);
 
 
 select * from clientes
@@ -216,13 +220,21 @@ select * from medicos
 	Insert into medicos values('Maria','Bettos',111)
 	Insert into medicos values('Monica','Gates',222)
 	Insert into medicos values('Emanuel','Garcia',331)
+	Insert into medicos (nombre, apellido, matricula) values ('Mariela','Gómez',301)
+	Insert into medicos (nombre, apellido, matricula) values ('Omar','Fernández',301)
 
+select * from sucursales
 select * from entrega_suministro
 
 	insert into entrega_suministro values('15/10/2021',2,3)
 	insert into entrega_suministro values('16/10/2021',3,4)
-	insert into entrega_suministro values('18/10/2021',8,2)
-	insert into entrega_suministro values('24/10/2021',6,1)
+	insert into entrega_suministro values('18/10/2021',1,2)
+	insert into entrega_suministro (fecha, id_empleado, id_sucursal )values('09/11/2021',4,1)
+	insert into entrega_suministro (fecha, id_empleado, id_sucursal )values('09/11/2021',5,3)
+	insert into entrega_suministro (fecha, id_empleado, id_sucursal )values('09/11/2021',5,1)
+	insert into entrega_suministro (fecha, id_empleado, id_sucursal )values('09/11/2021',5,1)
+
+	select * from empleados
 
 select * from tipos_suministro
 
@@ -235,34 +247,66 @@ select * from tipos_suministro
 select * from suministros
 
 	Insert into suministros values('Paracetamol','Tafirol, de 1 g. Comprimido.',1,199.99,1,20,50)
-	Insert into suministros values('Ibuprofeno','Walgreens, de 200 mg. Comprimido.',1,299.99,2,20,50)
-	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,3,10,30)
-	insert into suministros values('Prueba','Probando para consulta',0,299.99,4,15,20)
+	Insert into suministros values('Ibuprofeno','Walgreens, de 200 mg. Comprimido.',1,299.99,1,20,50)
+	Insert into suministros values('Dexalergin','Teva, Dexametasona 0,25 mg, Clorfeniramina 2 mg. Comprimido.',1,99.99,1,10,30)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Balanza','Balanza personal',1,5000,5,15,20)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Tensiómetro','Tensiómetro personal',1,8000,5,10,11)
+
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema Facial','Crema hidratante',1,1000,4,9,11)
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Crema de manos','Crema hidratante para manos',1,8000,4,12,18)
 	
+	insert into suministros (nombre, descripcion, venta_libre, precio, id_tipo_suministro, stock_minimo, stock) values('Desodorate Axe','Desodorante corporal',1,170,3,20,50)
 
-
+	
+	select * from entrega_suministro
+	select * from suministros
 select * from detalles_entregas
 
 	Insert into detalles_entregas values(1,1,20)
-	Insert into detalles_entregas values(2,2,20)
-	Insert into detalles_entregas values(3,3,10)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (1,1,30)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (1,2,15)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (1,3,25)
+
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (2,4,5)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (2,5,2)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (2,6,10)
+
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (3,7,9)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (3,8,20)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (3,1,10)
+
+
+	insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (4,7,9)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (4,8,20)
+
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (5,1,10)
+
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (6,1,30)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (6,2,15)
+	Insert into detalles_entregas (id_entrega_suministro, codigo_barra, cantidad) values (7,3,25)
+
+	
 
 select * from facturas
 select * from clientes
+select * from empleados
 
-	Insert into facturas values(2,'15/10/2021',3)
-	Insert into facturas values(4,'16/10/2021',5)
-	Insert into facturas values(1,'18/10/2021',2)
-	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',2)
-	insert into facturas values(3,'11/9/2021',5)
-	Insert into facturas(id_cliente, fecha, id_empleado) values(5,'19/09/2021',3)
-	Insert into facturas(id_cliente, fecha, id_empleado) values(7,'13/08/2021',4)
+	Insert into facturas values(2,'15/10/2021',6)
+	Insert into facturas values(4,'16/10/2021',7)
+	Insert into facturas values(1,'18/10/2021',8)
+	Insert into facturas(id_cliente, fecha, id_empleado) values(1,'19/10/2021',9)
+	insert into facturas values(3,'11/9/2021',10)
+	Insert into facturas(id_cliente, fecha, id_empleado) values(5,'19/09/2021',6)
+	Insert into facturas(id_cliente, fecha, id_empleado) values(7,'13/08/2021',8)
+
+
+	select * from suministros
 select * from detalles_factura
 
 	Insert into detalles_factura values(1,150,2,0.05,0,1)
 	Insert into detalles_factura values(1,150,3,0.04,0,1)
 	Insert into detalles_factura values(1,150,5,0.06,0,1)
-	Insert into detalles_factura values(1,150,1,0.09,0,1)
+	Insert into detalles_factura values(2,150,1,0.09,0,1)
 	Insert into detalles_factura values(2,200,4,0.07,1,3)
 	Insert into detalles_factura values(3,250,1,0.1,0,2)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(4,350,1,0.1,0,2)
@@ -270,10 +314,17 @@ select * from detalles_factura
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,400,2,0.1,0,2)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(6,1000,3,0.1,0,3)
 	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(7,500,4,0.1,0,1)
+
+	Insert into detalles_factura(id_factura, precio_unitario, cantidad, descuento, reembolsado, codigo_barra) values(1,170,2,0.05,0,8)
+
+
 select * from suministros
 select * from recetas
 
+select * from clientes
 
+
+-----
 	Insert into recetas values(1,2,'Dolor del Cuerpo','15/10/2021',1)
 	Insert into recetas values(2,3,'Dolor de Cabeza','16/10/2021',2)
 	Insert into recetas values(3,5,'Dolor de Panza','18/10/2021',3)
