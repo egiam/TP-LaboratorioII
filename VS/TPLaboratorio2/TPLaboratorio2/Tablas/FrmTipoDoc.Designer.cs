@@ -92,7 +92,7 @@ namespace TPLaboratorio2.Tablas
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdPlan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.grdPlan.Location = new System.Drawing.Point(305, 77);
+            this.grdPlan.Location = new System.Drawing.Point(264, 77);
             this.grdPlan.Name = "grdPlan";
             this.grdPlan.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
@@ -107,7 +107,7 @@ namespace TPLaboratorio2.Tablas
             this.grdPlan.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grdPlan.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.grdPlan.RowTemplate.ReadOnly = true;
-            this.grdPlan.Size = new System.Drawing.Size(235, 361);
+            this.grdPlan.Size = new System.Drawing.Size(297, 361);
             this.grdPlan.TabIndex = 47;
             // 
             // FrmTipoDoc

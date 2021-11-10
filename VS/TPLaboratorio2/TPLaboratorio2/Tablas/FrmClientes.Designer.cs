@@ -109,6 +109,7 @@ namespace TPLaboratorio2.Tablas
             this.grdPlan.RowTemplate.ReadOnly = true;
             this.grdPlan.Size = new System.Drawing.Size(800, 372);
             this.grdPlan.TabIndex = 47;
+            this.grdPlan.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdPlan_CellFormatting);
             // 
             // FrmClientes
             // 

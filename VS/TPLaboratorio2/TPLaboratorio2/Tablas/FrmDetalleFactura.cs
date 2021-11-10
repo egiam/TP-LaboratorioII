@@ -23,7 +23,7 @@ namespace TPLaboratorio2.Tablas
             BackColor = Color.FromArgb(45, 66, 91);
             label3.ForeColor = Color.White;
             conex.AlternarColorGRD(grdPlan);
-            string select = "select id_detalle_factura Codigo, id_factura 'Codigo de Factura', precio_unitario 'Precio por Unidad', Cantidad, Descuento, Reembolsado, s.nombre Suministro, df.precio_unitario * df.cantidad Importe from detalles_factura df join suministros s on df.codigo_barra = s.codigo_barra";
+            string select = "select id_detalle_factura Codigo, id_factura 'Codigo de Factura', precio_unitario 'Precio por Unidad', Cantidad, str(descuento * 100) +'%' Descuento, Reembolsado, s.nombre Suministro, df.precio_unitario * df.cantidad * (1 - descuento) Importe from detalles_factura df join suministros s on df.codigo_barra = s.codigo_barra";
             grdPlan.DataSource = conex.Coneccion(select);
         }
 
