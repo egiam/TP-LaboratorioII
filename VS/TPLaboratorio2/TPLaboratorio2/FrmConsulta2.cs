@@ -24,6 +24,15 @@ namespace TPLaboratorio2
             this.rpvClientes.RefreshReport();
             txtAnio.Text = DateTime.Now.ToString("yyyy");
 
+            List<Parametro> parametros = new List<Parametro>();
+            parametros.Add(new Parametro("@anio", txtAnio.Text));
+            DataTable tabla = HelperDao.GetInstance().EjecutarSP("pa_clientes_mes", parametros);
+
+            dgReseltado.DataSource = tabla;
+            rpvClientes.LocalReport.DataSources.Clear();
+            rpvClientes.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", tabla));
+
+            rpvClientes.RefreshReport();
         }
 
         private void btnGenerar_Click(object sender, EventArgs e)
